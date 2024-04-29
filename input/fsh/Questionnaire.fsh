@@ -1,16 +1,21 @@
-Profile: PreviousInterventionsQuestionnaire
+Profile: Questionnaire
 Parent: QuestionnaireResponse
 Description: "Questionario utilizado para conocer las intervenciones clinicas previas del paciente, relevantes para el procedimiento de cardio cirugía."
 
 * item ^slicing.discriminator.type = #value
 * item ^slicing.discriminator.path = "linkId"
 * item ^slicing.rules = #open
-* item 1..5
+* item 1..8
 * item contains previousAngioplasty 1..1 and
         numberOfPreviousCardiacSurgeries 1..1 and
         dateOfLastAngioplasty 1..1 and
         dateOfLastCardiacSurgery 1..1 and
-        previousSurgeries 1..1
+        previousSurgeries 1..1 and
+        heartCatheterization 1..1 and
+        otherCardiacProcedures 1..1  and 
+        otherNonCardiacProcedures 1..1 
+
+
 
 
 * item[previousAngioplasty].linkId = "previous_angioplasty"
@@ -35,3 +40,17 @@ Description: "Questionario utilizado para conocer las intervenciones clinicas pr
 * item[previousSurgeries].answer 1..3
 * item[previousSurgeries].answer.value[x] only Coding
 * item[previousSurgeries].answer.value[x] from PreviousSurgeriesVS  
+
+* item[heartCatheterization].linkId = "heart_catheterization"
+* item[heartCatheterization].answer 1..3
+* item[heartCatheterization].answer.value[x] only Coding
+* item[heartCatheterization].answer.value[x] from HeartCatheterizationVS  
+
+* item[otherCardiacProcedures].linkId = "other_cardiac_procedures"
+* item[otherCardiacProcedures].answer 1..1
+* item[otherCardiacProcedures].answer.value[x] only boolean
+
+* item[otherNonCardiacProcedures].linkId = "other_non_cardiac_procedures"
+* item[otherNonCardiacProcedures].answer 1..1
+* item[otherNonCardiacProcedures].answer.value[x] only boolean
+

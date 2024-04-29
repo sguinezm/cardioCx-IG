@@ -88,7 +88,6 @@ Title: "Válvulas usadas en el procedimiento de cardiocirugía"
 Description: "Válvulas usadas en el procedimiento de cardiocirugía"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.1"
 * ^status = #active
 * ^date = "2024-04-16"
 * ^contact.name = "Sergio"
@@ -100,3 +99,21 @@ Description: "Válvulas usadas en el procedimiento de cardiocirugía"
 * #91134007 "Válvula mitral"
 * #46030003 "Válvula tricúspide"
 * #39057004 "Válvula pulmonar"
+
+CodeSystem: HeartCatheterizationCS
+Id: HeartCatheterizationCS
+Title: "Cateterizaciones cardíacas"
+Description: "Códigos en la que se reportan las cateterizaciones cardíacas"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Sergio"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "sguinezm@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Never"
+* #2 "this_admission"
+* #3 "previous_admission"

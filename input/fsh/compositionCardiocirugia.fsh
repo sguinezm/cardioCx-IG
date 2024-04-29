@@ -18,7 +18,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section.code from CardioCompositionSectionCodesVS (required)
 * section contains
     patientSection 1..1 MS and
-    PreviousInterventionsSection 0..1 MS and
+    QuestionnaireSection 0..1 MS and
     PractitionerSection 1..1 MS and
     EncounterSection 1..1 MS and
     ProcedureSection 1..1 MS and
@@ -50,17 +50,17 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[patientSection].entry[emergencyContact] only Reference(RelatedPerson)
 * section[patientSection].entry[emergencyContact] ^short = "Se referencia a las personas que pueden ser contactadas al momento de una emergencia"
 
-* section[PreviousInterventionsSection] ^short = "Antecedentes de intervenciones acerca del paciente."
-* section[PreviousInterventionsSection] ^definition = "Antecedentes de intervenciones previas para realizar el procedimiento al paciente."
-* section[PreviousInterventionsSection].code = #2
-* section[PreviousInterventionsSection].focus only Reference(Procedure)
-* section[PreviousInterventionsSection].entry ^slicing.discriminator.type = #profile
-* section[PreviousInterventionsSection].entry ^slicing.discriminator.path = "resolve()"
-* section[PreviousInterventionsSection].entry ^slicing.rules = #open
-* section[PreviousInterventionsSection].entry 1..1
-* section[PreviousInterventionsSection].entry contains previousInterventionsQuestionnaire 1..1
-* section[PreviousInterventionsSection].entry[previousInterventionsQuestionnaire] only Reference(PreviousInterventionsQuestionnaire)
-* section[PreviousInterventionsSection].entry[previousInterventionsQuestionnaire] ^short = "Referencia al recurso que contiene la información de antecedentes."
+* section[QuestionnaireSection] ^short = "Cuestionario realizado al paciente."
+* section[QuestionnaireSection] ^definition = "Antecedentes de intervenciones previas para realizar el procedimiento al paciente."
+* section[QuestionnaireSection].code = #2
+* section[QuestionnaireSection].focus only Reference(Procedure)
+* section[QuestionnaireSection].entry ^slicing.discriminator.type = #profile
+* section[QuestionnaireSection].entry ^slicing.discriminator.path = "resolve()"
+* section[QuestionnaireSection].entry ^slicing.rules = #open
+* section[QuestionnaireSection].entry 1..1
+* section[QuestionnaireSection].entry contains Questionnaire 1..1
+* section[QuestionnaireSection].entry[Questionnaire] only Reference(Questionnaire)
+* section[QuestionnaireSection].entry[Questionnaire] ^short = "Referencia al recurso que contiene la información de antecedentes."
 
 * section[PractitionerSection] ^short = "Profesionales involucrados."
 * section[PractitionerSection] ^definition = "Sección en la que se definen los profesionales involucrados en el procedimiento."

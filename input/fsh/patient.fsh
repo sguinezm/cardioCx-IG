@@ -1,3 +1,6 @@
+Alias: $numeroCasa = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
+
+
 // This is a simple example of a FSH file.
 // This file can be renamed, and additional FSH files can be added.
 // SUSHI will look for definitions in any file using the .fsh ending.
@@ -5,11 +8,13 @@ Profile: PatientCardio
 Parent: PacienteCl
 Description: "Recurso que representa al paciente chileno en la plataforma de Cardio."
 
+* address.line.extension contains $numeroCasa named numeroCasa 0..1 
+* address.line.extension contains AddressNeighborhoodCardioCx named poblacion 0..1 
+
 
 Instance: PatientExample
 InstanceOf: PatientCardio
 Description: "An example of a patient with a license to krill."
-
 
 
 // ------------------ Elementos obligatorios desde la Core ---------------- 
