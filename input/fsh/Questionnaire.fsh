@@ -15,9 +15,6 @@ Description: "Questionario utilizado para conocer las intervenciones clinicas pr
         otherCardiacProcedures 1..1  and 
         otherNonCardiacProcedures 1..1 
 
-
-
-
 * item[previousAngioplasty].linkId = "previous_angioplasty"
 * item[previousAngioplasty].answer 1..1
 * item[previousAngioplasty].answer.value[x] only Coding

@@ -90,10 +90,13 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureSection].entry ^slicing.discriminator.type = #profile
 * section[ProcedureSection].entry ^slicing.discriminator.path = "resolve()"
 * section[ProcedureSection].entry ^slicing.rules = #open
-* section[ProcedureSection].entry 1..1
-* section[ProcedureSection].entry contains cardioCxProcedure 1..1
+* section[ProcedureSection].entry 2..2  
+* section[ProcedureSection].entry contains cardioCxProcedure 1..1 and
+                                            AnginaObservation 1..1
 * section[ProcedureSection].entry[cardioCxProcedure] only Reference(ProcedureCardio)
 * section[ProcedureSection].entry[cardioCxProcedure] ^short = "Procedimiento médico de la cardiocirugía."
+* section[ProcedureSection].entry[AnginaObservation] only Reference(AnginaObservation)
+* section[ProcedureSection].entry[AnginaObservation] ^short = "Angina reportada por el paciente"
 
 
 

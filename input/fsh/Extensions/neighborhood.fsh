@@ -2,15 +2,13 @@ Extension: AddressNeighborhoodCardioCx
 Id: AddressNeighborhoodCardioCx
 Title: "Población CardioCx"
 Description: "Población/barrio en la dirección del paciente de la plataforma CardioCx"
-Context: Address.line
-* ^extension[0].url = "https:centrocardiovascular.cl/StructureDefinition/AddressNeighborhoodCardioCx"
-* ^extension[=].valueCode = #fhir
-* ^version = "0.1"
+Context: Address
+* ^version = "1.0"
 * ^experimental = false
 * ^date = "2024-04-29"
-* ^publisher = "Sergio Guíñez"
+* ^publisher = "Jaime González"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "sguinezm@gmail.com"
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * . ^short = "AddressNeighborhoodCardioCx"
 * . 0..*

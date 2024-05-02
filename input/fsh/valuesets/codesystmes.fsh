@@ -7,9 +7,9 @@ Description: "Códigos para secciones de composition para cardio cirugías."
 * ^version = "0.1"
 * ^status = #active
 * ^date = "2024-04-16"
-* ^contact.name = "Sergio"
+* ^contact.name = "Jaime González"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "sguinezm@gmail.com"
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * #1 "Sección 1"
@@ -28,9 +28,9 @@ Description: "Códigos para tiempo transcurrido de angioplastias previas."
 * ^version = "0.1"
 * ^status = #active
 * ^date = "2024-04-16"
-* ^contact.name = "Sergio"
+* ^contact.name = "Jaime González"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "sguinezm@gmail.com"
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
@@ -49,9 +49,9 @@ Description: "Códigos para las cirugías realizadas previamente"
 * ^version = "0.1"
 * ^status = #active
 * ^date = "2024-04-16"
-* ^contact.name = "Sergio"
+* ^contact.name = "Jaime González"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "sguinezm@gmail.com"
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
@@ -69,9 +69,9 @@ Description: "Códigos para definir el número de cirugías cardíacas previas"
 * ^version = "0.1"
 * ^status = #active
 * ^date = "2024-04-16"
-* ^contact.name = "Sergio"
+* ^contact.name = "Jaime González"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "sguinezm@gmail.com"
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
@@ -90,9 +90,9 @@ Description: "Válvulas usadas en el procedimiento de cardiocirugía"
 * ^caseSensitive = true
 * ^status = #active
 * ^date = "2024-04-16"
-* ^contact.name = "Sergio"
+* ^contact.name = "Jaime González"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "sguinezm@gmail.com"
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * #34202007 "Válvula aórtica"
@@ -109,11 +109,49 @@ Description: "Códigos en la que se reportan las cateterizaciones cardíacas"
 * ^version = "0.1"
 * ^status = #active
 * ^date = "2024-04-16"
-* ^contact.name = "Sergio"
+* ^contact.name = "Jaime González"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "sguinezm@gmail.com"
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Never"
+* #1 "never"
 * #2 "this_admission"
 * #3 "previous_admission"
+
+
+CodeSystem: UrgencyLevelCS
+Id: UrgencyLevelCS
+Title: "Niveles de urgencia del procedimiento"
+Description: "Códigos para definir el nivel de urgencia con la que se le realiza el procedimiento al paciente"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "emergency"
+* #2 "elective"
+
+
+CodeSystem: AnginaObservationCS
+Id: AnginaObservationCS
+Title: "Escala de dolor de angina"
+Description: "Dolor reportado por el paciente relacionado con una angina, en una escala."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "CCS 0"
+* #61490001 "CCS 1"
+* #41334000 "CCS 2"
+* #85284003 "CCS 3"
+* #89323001 "CCS 4"

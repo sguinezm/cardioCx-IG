@@ -1,7 +1,7 @@
-ValueSet: PreviousAngioplastyVs
-Id: PreviousAngioplastyVS
-Title: "Códigos para tiempo transcurrido de angioplastias previas."
-Description: "Códigos para tiempo transcurrido de angioplastias previas."
+ValueSet: AnginaObservationVS
+Id: AnginaObservationVS
+Title: "Nivel de angina presentado por el paciente"
+Description: "Nivel de angina reportado por el paciente"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -11,4 +11,4 @@ Description: "Códigos para tiempo transcurrido de angioplastias previas."
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system PreviousAngioplastyCS
+* include codes from system AnginaObservationCS

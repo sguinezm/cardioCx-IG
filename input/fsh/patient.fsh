@@ -9,7 +9,7 @@ Parent: PacienteCl
 Description: "Recurso que representa al paciente chileno en la plataforma de Cardio."
 
 * address.line.extension contains $numeroCasa named numeroCasa 0..1 
-* address.line.extension contains AddressNeighborhoodCardioCx named poblacion 0..1 
+* address.extension contains AddressNeighborhoodCardioCx named poblacion 0..1 
 
 
 Instance: PatientExample
