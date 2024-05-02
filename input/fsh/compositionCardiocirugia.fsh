@@ -7,7 +7,7 @@ Title: "Composition Cardiocirugia"
 Description: "Recurso que contiene las referencias identificadas por secciones a los recursos necesarios para representar la información de cirugias cardiacas."
 
 
-* section 1..6 MS
+* section 1..7 MS
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.ordered = false
@@ -22,6 +22,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
     PractitionerSection 1..1 MS and
     EncounterSection 1..1 MS and
     ProcedureSection 1..1 MS and
+    CardiovascularHistorySection 1..1 MS and
     OrganizationSection 1..1 MS and
     PreoperativeRiskFactorsSection 1..1 MS
 
@@ -91,14 +92,33 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureSection].entry ^slicing.discriminator.path = "resolve()"
 * section[ProcedureSection].entry ^slicing.rules = #open
 * section[ProcedureSection].entry 2..2  
-* section[ProcedureSection].entry contains cardioCxProcedure 1..1 and
-                                            AnginaObservation 1..1
+* section[ProcedureSection].entry contains cardioCxProcedure 1..1 
 * section[ProcedureSection].entry[cardioCxProcedure] only Reference(ProcedureCardio)
 * section[ProcedureSection].entry[cardioCxProcedure] ^short = "Procedimiento médico de la cardiocirugía."
-* section[ProcedureSection].entry[AnginaObservation] only Reference(AnginaObservation)
-* section[ProcedureSection].entry[AnginaObservation] ^short = "Angina reportada por el paciente"
 
-
+* section[CardiovascularHistorySection] ^short = "Historial cardíaco"
+* section[CardiovascularHistorySection] ^definition = "Sección en la que se describe el historial cardiaco del paciente."
+* section[CardiovascularHistorySection].focus only Reference(Observation)
+* section[CardiovascularHistorySection].entry ^slicing.discriminator.type = #profile
+* section[CardiovascularHistorySection].entry ^slicing.discriminator.path = "resolve()"
+* section[CardiovascularHistorySection].entry ^slicing.rules = #open
+* section[CardiovascularHistorySection].entry 4..5  
+* section[CardiovascularHistorySection].entry contains AnginaObservation 1..1 and
+                                                    FunctionalCapacityObservation 1..1 and
+                                                    PreviousIMObservation 1..1 and
+                                                    MostRecentIMObservation 1..1 and
+                                                    CongestiveHeartFailureCondition 0..1
+ 
+* section[CardiovascularHistorySection].entry[AnginaObservation] only Reference(AnginaObservation)
+* section[CardiovascularHistorySection].entry[AnginaObservation] ^short = "Angina de pecho reportada por el paciente"
+* section[CardiovascularHistorySection].entry[FunctionalCapacityObservation] only Reference(FunctionalCapacityObservation)
+* section[CardiovascularHistorySection].entry[FunctionalCapacityObservation] ^short = "Capacidad funcional del paciente"
+* section[CardiovascularHistorySection].entry[PreviousIMObservation] only Reference(PreviousIMObservation)
+* section[CardiovascularHistorySection].entry[PreviousIMObservation] ^short = "Número de infartos al miocardio previos"
+* section[CardiovascularHistorySection].entry[MostRecentIMObservation] only Reference(MostRecentIMObservation)
+* section[CardiovascularHistorySection].entry[MostRecentIMObservation] ^short = "Días transcurridos desde el último infarto al miocardio"
+* section[CardiovascularHistorySection].entry[CongestiveHeartFailureCondition] only Reference(CongestiveHeartFailureCondition)
+* section[CardiovascularHistorySection].entry[CongestiveHeartFailureCondition] ^short = "Se indica que el paciente presenta falla cardíaca congestiva"
 
 
 

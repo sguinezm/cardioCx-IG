@@ -155,3 +155,62 @@ Description: "Dolor reportado por el paciente relacionado con una angina, en una
 * #41334000 "CCS 2"
 * #85284003 "CCS 3"
 * #89323001 "CCS 4"
+
+
+CodeSystem: FunctionalCapacityCS
+Id: FunctionalCapacityCS
+Title: "Escala de dolor de angina"
+Description: "Dolor reportado por el paciente relacionado con una angina, en una escala."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #420300004 "Clasificación de la Asociación Cardiológica de Nueva York - Clase I (hallazgo)"
+* #421704003 "Clasificación de la Asociación Cardiológica de Nueva York - Clase II (hallazgo)"
+* #420913000 "Clasificación de la Asociación Cardiológica de Nueva York - Clase III (hallazgo)"
+* #422293003 "Clasificación de la Asociación Cardiológica de Nueva York - Clase IV (hallazgo)"
+
+CodeSystem: PreviousIMCS
+Id: PreviousIMCS
+Title: "Número de infartos al miocardio previos"
+Description: "categorización del número de infartos al miocardio previos."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #"none" "Ninguno"
+* #"one" "Uno"
+* #"two or more" "Dos o más"
+* #"unknown" "Desconocido"
+
+
+CodeSystem: MostRecentIMCS
+Id: MostRecentIMCS
+Title: "Infarto al miocardio más reciente"
+Description: "Categorización utilizada para describir cuándo fue el IM más reciente."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #"No MI" "Sin infartos al miocardio"
+* #"< 6 hours before operation" "< 6 horas antes de la operación"
+* #"6-24 hours before operation" "6-24 horas antes de la operación"
+* #"1-7 days before operation" "1-7 días antes de la operación"
+* #"8-21 days before operation" "8-21 días antes de la operación"
+* #"22-90 days before operation" "22-90 días antes de la operación"
+* #">90 days before operation" ">90 días antes de la operación"
