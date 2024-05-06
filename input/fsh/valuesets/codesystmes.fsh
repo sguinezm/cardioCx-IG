@@ -214,3 +214,73 @@ Description: "Categorización utilizada para describir cuándo fue el IM más re
 * #"8-21 days before operation" "8-21 días antes de la operación"
 * #"22-90 days before operation" "22-90 días antes de la operación"
 * #">90 days before operation" ">90 días antes de la operación"
+
+CodeSystem: SmokingConditionCS
+Id: SmokingConditionCS
+Title: "Condición de fumador"
+Description: "Categorización utilizada para describir la condición de fumador del paciente"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #8392000 "No fumador"
+* #8517006 "Ex fumador"
+* #77176002 "Fumador"
+
+
+CodeSystem: DiabetesConditionCS
+Id: DiabetesConditionCS
+Title: "Presencia de diabetes en el paciente"
+Description: "Categorización utilizada para descibir si el paciente tiene (o no) diabetes y cuál es su tratamiento"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+ 
+* #225302006 "Insulin regime (regime/therapy)"
+* #170746002 "Diabetic on oral treatment (finding)"
+* #418995006 "Feeding and dietary regime (regime/therapy)"
+
+CodeSystem: CLDConditionCS
+Id: CLDConditionCS
+Title: "Presencia de enfermedad pulmonar crónica"
+Description: "Categorización utilizada para descibir si el paciente tiene (o no) alguna enfermedad pulmonar crónica"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+ 
+* #195967001 "Asthma (disorder)"
+* #13645005 " Chronic obstructive pulmonary disease (disorder)"
+
+
+CodeSystem: ExtracardiacArteriopathyCS
+Id: ExtracardiacArteriopathyCS
+Title: "Presencia de arteriopatía extracardíaca"
+Description: "Categorización utilizada para descibir si el paciente tiene (o no) alguna arteriopatía extracardíaca  "
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #400047006 "Peripheral vascular disease (disorder) "
+* #62914000 "Cerebrovascular disease (disorder)"

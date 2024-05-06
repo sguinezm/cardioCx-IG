@@ -7,7 +7,7 @@ Title: "Composition Cardiocirugia"
 Description: "Recurso que contiene las referencias identificadas por secciones a los recursos necesarios para representar la información de cirugias cardiacas."
 
 
-* section 1..7 MS
+* section 1..8 MS
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.ordered = false
@@ -24,7 +24,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
     ProcedureSection 1..1 MS and
     CardiovascularHistorySection 1..1 MS and
     OrganizationSection 1..1 MS and
-    PreoperativeRiskFactorsSection 1..1 MS
+    PreoperativeRiskFactorsSection 1..1 MS and
+    MedicalConditionSection 1..1
 
 * section[patientSection] ^short = "Sección del paciente"
 * section[patientSection] ^definition = "Información acerca del paciente"
@@ -128,3 +129,33 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[PreoperativeRiskFactorsSection] ^short = "Factores de riesgo preoperatorios"
 * section[PreoperativeRiskFactorsSection] ^definition = "Sección en la que se describen los factores de riesgo preoperatorios del paciente."
+
+* section[MedicalConditionSection] ^short = "Condiciones médicas del paciente"
+* section[MedicalConditionSection] ^definition = "Sección en la que se describen las condiciones médicas presentadas por el  paciente."
+* section[MedicalConditionSection].focus only Reference(Observation)
+* section[MedicalConditionSection].entry ^slicing.discriminator.type = #profile
+* section[MedicalConditionSection].entry ^slicing.discriminator.path = "resolve()"
+* section[MedicalConditionSection].entry ^slicing.rules = #open
+* section[MedicalConditionSection].entry 7..7  
+* section[MedicalConditionSection].entry contains SmokingCondition 1..1 and
+                                                DiabetesCondition 1..1  and
+                                                HypertensionCondition 1..1 and 
+                                                HypercholesterolemiaCondition 1..1 and
+                                                CarotidBruitCondition 1..1 and
+                                                ChronicLungDiseaseCondition 1..1 and
+                                                ExtraCardiacArteriopathyContiditon 1..1
+
+* section[MedicalConditionSection].entry[SmokingCondition] only Reference(SmokingCondition)
+* section[MedicalConditionSection].entry[SmokingCondition] ^short = "Historial de fumador del paciente"
+* section[MedicalConditionSection].entry[DiabetesCondition] only Reference(DiabetesCondition)
+* section[MedicalConditionSection].entry[DiabetesCondition] ^short = "Condición de paciente con diabetes"
+* section[MedicalConditionSection].entry[HypertensionCondition] only Reference(HypertensionCondition)
+* section[MedicalConditionSection].entry[HypertensionCondition] ^short = "Condición de paciente con hipertensión"
+* section[MedicalConditionSection].entry[HypercholesterolemiaCondition] only Reference(HypercholesterolemiaCondition)
+* section[MedicalConditionSection].entry[HypercholesterolemiaCondition] ^short = "Condición de paciente con hipercolesterolemia"
+* section[MedicalConditionSection].entry[CarotidBruitCondition] only Reference(CarotidBruitCondition)
+* section[MedicalConditionSection].entry[CarotidBruitCondition] ^short = "Condición de paciente con soplos carotideos"
+* section[MedicalConditionSection].entry[ChronicLungDiseaseCondition] only Reference(ChronicLungDiseaseCondition)
+* section[MedicalConditionSection].entry[ChronicLungDiseaseCondition] ^short = "Condición de enfermedad pulmonar crónica"
+* section[MedicalConditionSection].entry[ExtraCardiacArteriopathyContiditon] only Reference(ExtraCardiacArteriopathyContiditon)
+* section[MedicalConditionSection].entry[ExtraCardiacArteriopathyContiditon] ^short = "Condición de arteriopatía extra cardíaca"
