@@ -124,11 +124,11 @@ Title: "ChronicLungDiseaseCondition"
 * code.coding[type].code ^definition = "Tipo de enfermedad pulmonar crónica "
 
 
-Profile: ExtraCardiacArteriopathyContiditon
+Profile: ExtraCardiacArteriopathyCondition
 Parent: Observation
 Description: "Se indica la condición de ateriopatía extracardíaca"
 
-Title: "ExtraCardiacArteriopathyContiditon"
+Title: "ExtraCardiacArteriopathyCondition"
 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
@@ -157,26 +157,42 @@ Title: "ExtraCardiacArteriopathyContiditon"
 * code.coding[type].code ^definition = "Tipo de arteriopatía extracardíaca"
 
 
-Profile: NephropathyContiditon
+Profile: NephropathyCondition
 Parent: Observation
 Description: "Se indica si el paciente posee alguna nefropatía"
 
-Title: "NephropathyContiditon"
+Title: "NephropathyCondition"
 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
 * code.coding 2..5
 * code.coding contains nephropathy 1..1 and
-                    type 1..4 and
-                    none 0..1
+                    type 1..4
 
 * code.coding[nephropathy].code 1..1
 * code.coding[nephropathy].code = $loinc#90708001
 * code.coding[nephropathy].code ^definition = " Kidney disease (disorder"
 * code.coding[type].code only code
-* code.coding[type].code from NephropathypathyVS
+* code.coding[type].code from NephropathyConditionVS
 * code.coding[type].code ^definition = "Tipo de nefropatía extracardíaca"
-* code.coding[none].code 0..1
-* code.coding[none].code = $loinc#260413007
-* code.coding[none].code ^definition = "None (qualifier value)"
+
+
+Profile: TypeOfDiseaseCondition
+Parent: Observation
+Description: "Se indica si el paciente posee alguna nefropatía"
+
+Title: "TypeOfDiseaseCondition"
+
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* code.coding 2..5
+* code.coding contains disease 1..1 and
+                    type 1..5
+* code.coding[disease].code 1..1
+* code.coding[disease].code = $loinc#62914000
+* code.coding[disease].code ^definition = "Enfermedad cerebrovascular (trastorno)"
+* code.coding[type].code only code
+* code.coding[type].code from TypeOfDiseaseConditionVS
+* code.coding[type].code ^definition = "Enfermedad cerebrovascular"

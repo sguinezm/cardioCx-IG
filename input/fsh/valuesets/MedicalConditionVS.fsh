@@ -66,8 +66,8 @@ Description: "Códigos para categorizar alguna condición de arteriopatía extra
 
 
 
-ValueSet: NephropathypathyVS
-Id: NephropathypathyVS
+ValueSet: NephropathyConditionVS
+Id: NephropathyConditionVS
 Title: "Condición de nefropatía presentada por el paciente"
 Description: "Códigos para categorizar alguna condición de nefropatía del paciente"
 * ^experimental = false
@@ -79,5 +79,23 @@ Description: "Códigos para categorizar alguna condición de nefropatía del pac
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system NephropathypathyCS
+* include codes from system NephropathyConditionCS
+
+
+
+
+ValueSet: TypeOfDiseaseConditionVS
+Id: TypeOfDiseaseConditionVS
+Title: "Tipo de enfermedad"
+Description: "Códigos definir tipo de enfermedad"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* include codes from system TypeOfDiseaseConditionCS
 

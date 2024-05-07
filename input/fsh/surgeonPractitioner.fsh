@@ -65,3 +65,23 @@ Title: "SurgeonPractitionerCardio"
 * identifier.type.coding.display ^definition = "Glosa del Código Documento"
 * identifier.value ^short = "Número o valor de identificación"
 * identifier.value ^definition = "Número o valor de identificación"
+
+* qualification ^slicing.discriminator.type = #value
+* qualification ^slicing.discriminator.path = "use"
+* qualification ^slicing.description = "Especialidad y subespecialidad"
+* qualification ^slicing.rules = #open
+* qualification ^short = "Especialidad y subespecialdiad "
+
+* qualification contains
+    Esp 0..* and
+    SubEsp 0..* 
+* qualification[Esp].code.text 1..1
+* qualification[Esp].period MS
+* qualification[Esp].period ^short = "Período en el cual se entregó la especialidad considerando fecha de emisión y de caducidad"
+* qualification[Esp].period.start ^short = "Fecha de emisión"
+* qualification[Esp].period.end ^short = "Fecha de expiración"
+* qualification[Esp].issuer ^short = "Entidad que otorga la especialidad"
+* qualification[Esp].issuer ^definition = "El nombre de la entidad se solicitará en texto libre"
+* qualification[Esp].issuer.display ^short = "La entidad que otorga en texto libre"
+* qualification[Esp].issuer.display ^definition = "La entidad que otorga en texto libre"
+* qualification[SubEsp].code.text 1..1

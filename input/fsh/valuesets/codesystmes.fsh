@@ -286,8 +286,8 @@ Description: "Categorización utilizada para descibir si el paciente tiene (o no
 * #62914000 "Cerebrovascular disease (disorder)"
 
 
-CodeSystem: NephropathypathyCS
-Id: NephropathypathyCS
+CodeSystem: NephropathyConditionCS
+Id: NephropathyConditionCS
 Title: "Presencia de arteriopatía extracardíaca"
 Description: "Categorización utilizada para descibir si las nefropatías del paciente"
 * ^experimental = false
@@ -299,5 +299,28 @@ Description: "Categorización utilizada para descibir si las nefropatías del pa
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #400047006 "Peripheral vascular disease (disorder) "
-* #62914000 "Cerebrovascular disease (disorder)"
+* #1 "None"
+* #2 "Functional transplant"
+* #3 "creatinene > 200 umol/l"
+* #4 "dialisis acute renal failure"
+* #5 "dialisis chronic renal failure"
+
+
+CodeSystem: TypeOfDiseaseConditionCS
+Id: TypeOfDiseaseConditionCS
+Title: "Presencia de enfermedad"
+Description: "Categorización del tipo de enfermedad"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #371632003 "coma (trastorno)"
+* #230690007 "accidente cerebrovascular (trastorno)"
+* #36179005 "síndrome de déficit neurológico isquémico reversible (trastorno)"
+* #266257000 "ataque isquémico transitorio (trastorno)"
+* #415582006 "estenosis (anomalía morfológica)"
