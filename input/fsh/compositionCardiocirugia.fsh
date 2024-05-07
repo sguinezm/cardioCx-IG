@@ -136,14 +136,15 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[MedicalConditionSection].entry ^slicing.discriminator.type = #profile
 * section[MedicalConditionSection].entry ^slicing.discriminator.path = "resolve()"
 * section[MedicalConditionSection].entry ^slicing.rules = #open
-* section[MedicalConditionSection].entry 7..7  
+* section[MedicalConditionSection].entry 8..8  
 * section[MedicalConditionSection].entry contains SmokingCondition 1..1 and
                                                 DiabetesCondition 1..1  and
                                                 HypertensionCondition 1..1 and 
                                                 HypercholesterolemiaCondition 1..1 and
                                                 CarotidBruitCondition 1..1 and
                                                 ChronicLungDiseaseCondition 1..1 and
-                                                ExtraCardiacArteriopathyContiditon 1..1
+                                                ExtraCardiacArteriopathyContiditon 1..1 and
+                                                NephropathyCondition 1..1
 
 * section[MedicalConditionSection].entry[SmokingCondition] only Reference(SmokingCondition)
 * section[MedicalConditionSection].entry[SmokingCondition] ^short = "Historial de fumador del paciente"
@@ -159,3 +160,5 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[MedicalConditionSection].entry[ChronicLungDiseaseCondition] ^short = "Condición de enfermedad pulmonar crónica"
 * section[MedicalConditionSection].entry[ExtraCardiacArteriopathyContiditon] only Reference(ExtraCardiacArteriopathyContiditon)
 * section[MedicalConditionSection].entry[ExtraCardiacArteriopathyContiditon] ^short = "Condición de arteriopatía extra cardíaca"
+* section[MedicalConditionSection].entry[NephropathyContiditon] only Reference(NephropathyContiditon)
+* section[MedicalConditionSection].entry[NephropathyContiditon] ^short = "Nefropatías del paciente"

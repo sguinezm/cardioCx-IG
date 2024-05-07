@@ -284,3 +284,20 @@ Description: "Categorización utilizada para descibir si el paciente tiene (o no
 
 * #400047006 "Peripheral vascular disease (disorder) "
 * #62914000 "Cerebrovascular disease (disorder)"
+
+
+CodeSystem: NephropathypathyCS
+Id: NephropathypathyCS
+Title: "Presencia de arteriopatía extracardíaca"
+Description: "Categorización utilizada para descibir si las nefropatías del paciente"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #400047006 "Peripheral vascular disease (disorder) "
+* #62914000 "Cerebrovascular disease (disorder)"
