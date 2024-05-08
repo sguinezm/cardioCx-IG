@@ -1,11 +1,11 @@
 Alias: $loinc = http://loinc.org
 
 
-Profile: LastCatheterizationObservation
+Profile: DiseasedCoronarySegmentObservation
 Parent: Observation
 Description: "Observación del número de vasos con problemas."
 
-Title: "LastCatheterizationObservation"
+Title: "DiseasedCoronarySegmentObservation"
 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
