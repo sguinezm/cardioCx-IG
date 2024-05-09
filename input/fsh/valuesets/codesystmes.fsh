@@ -324,3 +324,26 @@ Description: "Categorización del tipo de enfermedad"
 * #36179005 "síndrome de déficit neurológico isquémico reversible (trastorno)"
 * #266257000 "ataque isquémico transitorio (trastorno)"
 * #415582006 "estenosis (anomalía morfológica)"
+
+CodeSystem: NumberDiseasedCoronarySegmentsCS
+Id: NumberDiseasedCoronarySegmentsCS
+Title: "Número de vasos con problemas"
+Description: "Número de vasos con problemas"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #LA137-2	"None"
+* #LA24356-0	"1 vessel without left main coronary artery"
+* #LA24358-6	"2 vessels without left main coronary artery"
+* #LA24360-2	"3 vessels without left main coronary artery"
+* #LA24354-5	"Left main coronary artery alone"
+* #LA24355-2	"1 vessel and left main coronary artery"
+* #LA24357-8	"2 vessels and left main coronary artery"
+* #LA24359-4	"3 vessels and left main coronary artery"
+* #LA13538-6    "Not tested"
