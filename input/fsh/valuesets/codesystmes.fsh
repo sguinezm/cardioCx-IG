@@ -347,3 +347,38 @@ Description: "Número de vasos con problemas"
 * #LA24357-8	"2 vessels and left main coronary artery"
 * #LA24359-4	"3 vessels and left main coronary artery"
 * #LA13538-6    "Not tested"
+
+CodeSystem: LeftMainCoronaryDiseaseCS
+Id: LeftMainCoronaryDiseaseCS
+Title: "Presencia de enfermedad en arteria coronaria principal izquierda"
+Description: "Presencia de enfermedad en arteria coronaria principal izquierda"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "No LMS disease|LMS disease <= 50% diameter stenosis"
+* #2 "LMS disease > 50% diameter stenosis"
+* #3 "Not Investigated"
+
+CodeSystem: EjectionFractionCS
+Id: EjectionFractionCS
+Title: "Fracción de eyección"
+Description: "Fracción de eyección"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #20572008 "Good"
+* #6736007  "Moderate severity"
+* #272519000 "Absence findings"
+* #863932003 "Left ventricular ejection fraction decreased"

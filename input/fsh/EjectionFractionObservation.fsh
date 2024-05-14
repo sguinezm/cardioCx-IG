@@ -24,6 +24,7 @@ Title: "EjectionFractionObservation"
 
 * value[x] only CodeableConcept
 * value[x] 1..1
+* value[x] from EjectionFractionVS
 
 * focus only Reference(ProcedureCardio)
 * focus 1..1

@@ -27,8 +27,9 @@ Title: "SystolicPressureObservation"
 
 
 
-* value[x] only integer
+* value[x] only Quantity
 * value[x] 0..1 MS
+* value[x].value 1..1
 
 * focus only Reference(ProcedureCardio)
 * focus 1..1

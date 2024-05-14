@@ -41,4 +41,5 @@ Title: "DiseasedCoronarySegmentObservation"
 * component.code.coding[PercentStenosis].code ^definition = "Percent stenosis of Ramus intermedius branch from left main coronary artery by Cardiac angiogram"
 
 * component.value[x] 0..1 MS
-* component.value[x] only Quantity
+* component.value[x] only CodeableConcept
+* component.value[x] from LeftMainCoronaryDiseaseVS
