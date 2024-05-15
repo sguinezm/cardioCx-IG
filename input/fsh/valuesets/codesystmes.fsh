@@ -133,8 +133,10 @@ Description: "Códigos para definir el nivel de urgencia con la que se le realiz
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "emergency"
-* #2 "elective"
+* #1 "elective"
+* #2 "urgent"
+* #3 "emergency"
+* #4 "salvage"
 
 
 CodeSystem: AnginaObservationCS
