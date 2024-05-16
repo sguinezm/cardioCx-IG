@@ -41,4 +41,5 @@ Description: "Registro de la cardiocirugía"
 * bodySite[valve] only CodeableConcept
 * bodySite[valve] from ValvesVS
 
-* extension contains UrgencyLevelCardioCx named urgency_level 1..1 
+* extension contains UrgencyLevelCardioCx named urgency_level 1..1 and 
+        SupportingInfoCx named supportingInfo 0..*

@@ -1,5 +1,5 @@
 Profile: SmokingCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica el historial de fumador del paciente"
 
 Title: "SmokingCondition"
@@ -9,7 +9,7 @@ Title: "SmokingCondition"
 
 
 Profile: DiabetesCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica si el paciente presenta diabetes"
 
 Title: "DiabetesCondition"
@@ -35,7 +35,7 @@ Title: "DiabetesCondition"
 
 
 Profile: HypertensionCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica paciente presenta hipertensión"
 
 Title: "HypertensionCondition"
@@ -59,7 +59,7 @@ Title: "HypertensionCondition"
 * code.coding[unknown].code ^definition = "Unknown (qualifier value)"
 
 Profile: HypercholesterolemiaCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica si el paciente presenta hipercolesterolemia"
 
 Title: "HypercholesterolemiaCondition"
@@ -80,7 +80,7 @@ Title: "HypercholesterolemiaCondition"
 
 
 Profile: CarotidBruitCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica si el paciente presenta soplos cardíacos"
 
 Title: "CarotidBruitCondition"
@@ -100,7 +100,7 @@ Title: "CarotidBruitCondition"
 * code.coding[absence].code ^definition = "Carotid bruit absent (situation)"
 
 Profile: ChronicLungDiseaseCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica las enfermedades pulmonares crónicas del paciente"
 
 Title: "ChronicLungDiseaseCondition"
@@ -125,7 +125,7 @@ Title: "ChronicLungDiseaseCondition"
 
 
 Profile: ExtraCardiacArteriopathyCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica la condición de ateriopatía extracardíaca"
 
 Title: "ExtraCardiacArteriopathyCondition"
@@ -158,7 +158,7 @@ Title: "ExtraCardiacArteriopathyCondition"
 
 
 Profile: NephropathyCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica si el paciente posee alguna nefropatía"
 
 Title: "NephropathyCondition"
@@ -179,7 +179,7 @@ Title: "NephropathyCondition"
 
 
 Profile: TypeOfDiseaseCondition
-Parent: Observation
+Parent: Condition
 Description: "Se indica si el paciente posee alguna nefropatía"
 
 Title: "TypeOfDiseaseCondition"
