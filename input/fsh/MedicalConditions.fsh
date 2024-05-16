@@ -172,7 +172,7 @@ Title: "NephropathyCondition"
 
 * code.coding[nephropathy].code 1..1
 * code.coding[nephropathy].code = $loinc#90708001
-* code.coding[nephropathy].code ^definition = " Kidney disease (disorder"
+* code.coding[nephropathy].code ^definition = " Kidney disease (disorder)"
 * code.coding[type].code only code
 * code.coding[type].code from NephropathyConditionVS
 * code.coding[type].code ^definition = "Tipo de nefropatía extracardíaca"
