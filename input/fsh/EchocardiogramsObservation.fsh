@@ -21,7 +21,9 @@ Title: "EchocardiogramsObservation"
                                  aorticRoot 1..1 and 
                                  aorticRootUnmeasured 1..1 and 
                                  rightCavities 1..1 and 
-                                 endocarditis 1..1
+                                 endocarditis 1..1 and 
+                                 valve 1..1 and 
+                                 vegetable 1..1
                                                 
 * component.code.coding[PSAP].code = $snomed#250768007 
 * component.code.coding[PSAP].code 1..1
@@ -59,6 +61,24 @@ Title: "EchocardiogramsObservation"
 * component.code.coding[endocarditis].code = $snomed#56819008
 * component.code.coding[endocarditis].code 1..1
 * component.code.coding[endocarditis].code ^definition = "Presencia de endocarditis"
+
+* component.code.coding[valve].code = $snomed#260852006 
+* component.code.coding[valve].code 1..1
+* component.code.coding[valve].code ^definition = "Tipo de válvula"
+
+* component.code.coding[vegetable].code = $snomed#37163200
+* component.code.coding[vegetable].code 1..1
+* component.code.coding[vegetable].code ^definition = "Se indica si está en estado vegetal"
+
+
+
+
+
+
+
+
+
+
 
 
 
