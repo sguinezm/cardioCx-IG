@@ -16,12 +16,12 @@ Title: "EchocardiogramsObservation"
 * component.code.coding 1..4
 * component.code.coding contains PSAP 0..1 and 
                                  unmeasuredPSAP 0..1 and 
-                                 leftatrium 1..1 and 
+                                 leftAtrium 1..1 and 
                                  unmeasuredLeftAtrium 0..1 and
-                                 aorticRoot and 
-                                 aorticRootUnmeasured and 
-                                 rightCavities and 
-                                 endocarditis
+                                 aorticRoot 1..1 and 
+                                 aorticRootUnmeasured 1..1 and 
+                                 rightCavities 1..1 and 
+                                 endocarditis 1..1
                                                 
 * component.code.coding[PSAP].code = $snomed#250768007 
 * component.code.coding[PSAP].code 1..1
@@ -41,7 +41,7 @@ Title: "EchocardiogramsObservation"
 
 * component.code.coding[unmeasuredLeftAtrium].code = $snomed#272519000
 * component.code.coding[unmeasuredLeftAtrium].code 1..1
-* component.code.coding[lunmeasuredLeftAtrium].code ^definition = "Se indica si la arteria izquierda no es medida"
+* component.code.coding[unmeasuredLeftAtrium].code ^definition = "Se indica si la arteria izquierda no es medida"
 
 
 * component.code.coding[aorticRoot].code = $snomed#8128003
@@ -56,9 +56,9 @@ Title: "EchocardiogramsObservation"
 * component.code.coding[rightCavities].code 1..1
 * component.code.coding[rightCavities].code ^definition = "Estado de la cavidad derecha"
 
-* component.code.coding[rightCavities].code = $snomed#56819008
-* component.code.coding[rightCavities].code 1..1
-* component.code.coding[rightCavities].code ^definition = "Presencia de endocarditis"
+* component.code.coding[endocarditis].code = $snomed#56819008
+* component.code.coding[endocarditis].code 1..1
+* component.code.coding[endocarditis].code ^definition = "Presencia de endocarditis"
 
 
 
