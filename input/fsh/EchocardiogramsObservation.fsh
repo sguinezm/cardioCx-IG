@@ -13,17 +13,21 @@ Title: "EchocardiogramsObservation"
 * component.code.coding ^slicing.discriminator.type = #value
 * component.code.coding ^slicing.discriminator.path = "code"
 * component.code.coding ^slicing.rules = #open
-* component.code.coding 1..8
-* component.code.coding contains PSAP 0..1 and 
-                                 unmeasuredPSAP 0..1 and 
+* component.code.coding 1..14
+* component.code.coding contains PSAP 1..1 and 
+                                 unmeasuredPSAP 1..1 and 
                                  leftAtrium 1..1 and 
-                                 unmeasuredLeftAtrium 0..1 and
+                                 unmeasuredLeftAtrium 1..1 and
                                  aorticRoot 1..1 and 
                                  aorticRootUnmeasured 1..1 and 
                                  rightCavities 1..1 and 
                                  endocarditis 1..1 and 
                                  valve 1..1 and 
-                                 vegetable 1..1
+                                 vegetable 1..1 and 
+                                 vegetableValue 1..1 and
+                                 abscess 1..1 and 
+                                 prosthesisDetachment 1..1 and
+                                 cardiacTumor 1..1
                                                 
 * component.code.coding[PSAP].code = $snomed#250768007 
 * component.code.coding[PSAP].code 1..1
@@ -71,16 +75,24 @@ Title: "EchocardiogramsObservation"
 * component.code.coding[vegetable].code ^definition = "Se indica si está en estado vegetal"
 
 
+* component.code.coding[vegetableValue].code = $snomed#246205007
+* component.code.coding[vegetableValue].code 1..1
+* component.code.coding[vegetableValue].code ^definition = "Se indica cuanto lleva en estado vegetal"
 
 
+* component.code.coding[abscess].code = $snomed#128477000 
+* component.code.coding[abscess].code 1..1
+* component.code.coding[abscess].code ^definition = "Se indica si tiene absceso"
 
 
+* component.code.coding[prosthesisDetachment].code = $snomed#302969009 
+* component.code.coding[prosthesisDetachment].code 1..1
+* component.code.coding[prosthesisDetachment].code ^definition = "Se indica si hay desprendimiento de prótesis"
 
 
-
-
-
-
+* component.code.coding[cardiacTumor].code = $snomed#715403006 
+* component.code.coding[cardiacTumor].code 1..1
+* component.code.coding[cardiacTumor].code ^definition = "Se indica si hay tumor cardíaco"
 
 
 
