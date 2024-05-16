@@ -13,18 +13,13 @@ Title: "EchocardiogramsObservation"
 * component.code.coding ^slicing.discriminator.type = #value
 * component.code.coding ^slicing.discriminator.path = "code"
 * component.code.coding ^slicing.rules = #open
-* component.code.coding 1..1
-* component.code.coding contains PSAP 0..1
+* component.code.coding 1..4
+* component.code.coding contains PSAP 0..1 and 
+                                 unmeasuredPSAP 0..1 and 
+                                 leftatrium 1..1 and 
+                                 unmeasuredLeftAtrium 0..1
                                  
-
-* component.code.coding[PSAP].code.coding ^slicing.discriminator.type = #value
-* component.code.coding[PSAP].code.coding ^slicing.discriminator.path = "code"
-* component.code.coding[PSAP].code.coding ^slicing.rules = #open
-* component.code.coding[PSAP].code.coding 1..2
-* component.code.coding[PSAP].code.coding contains psap 1..1 and 
-                                                   unmeasuredPSAP 0..1
-
-
+                                                
 * component.code.coding[PSAP].code.coding[psap].code = $snomed#250768007 
 * component.code.coding[PSAP].code.coding[psap].code 1..1
 * component.code.coding[PSAP].code.coding[psap] ^definition = "presión sistólica de la arteria pulmonar (entidad observable)"
@@ -34,14 +29,6 @@ Title: "EchocardiogramsObservation"
 * component.code.coding[PSAP].code.coding[unmeasuredPSAP].code 1..1
 * component.code.coding[PSAP].code.coding[unmeasuredPSAP] ^definition = "se indica si la presión sistólica en arteria pulmonar no es medida"
 
-
-
-* component.code.coding[leftAtrium].code.coding ^slicing.discriminator.type = #value
-* component.code.coding[leftAtrium].code.coding ^slicing.discriminator.path = "code"
-* component.code.coding[leftAtrium].code.coding ^slicing.rules = #open
-* component.code.coding[leftAtrium].code.coding 1..2
-* component.code.coding[leftAtrium].code.coding contains leftatrium 1..1 and 
-                                                   unmeasuredLeftAtrium 0..1
 
 
 * component.code.coding[leftAtrium].code.coding[leftatrium].code = $snomed#50408007 
