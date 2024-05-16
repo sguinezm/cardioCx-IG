@@ -13,7 +13,7 @@ Title: "EchocardiogramsObservation"
 * component.code.coding ^slicing.discriminator.type = #value
 * component.code.coding ^slicing.discriminator.path = "code"
 * component.code.coding ^slicing.rules = #open
-* component.code.coding 1..4
+* component.code.coding 1..8
 * component.code.coding contains PSAP 0..1 and 
                                  unmeasuredPSAP 0..1 and 
                                  leftAtrium 1..1 and 
@@ -63,13 +63,6 @@ Title: "EchocardiogramsObservation"
 
 
 
-
-
-
-
-* value[x] only CodeableConcept
-* value[x] 1..1
-* value[x] from EchocardiogramsVS
 
 * focus only Reference(ProcedureCardio)
 * focus 1..1
