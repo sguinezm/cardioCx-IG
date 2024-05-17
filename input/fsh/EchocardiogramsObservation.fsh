@@ -10,11 +10,11 @@ Title: "EchocardiogramsObservation"
 * code =  $snomed#433231002
 * code ^definition = "echocardiograms"
 
-* component.code.coding ^slicing.discriminator.type = #value
-* component.code.coding ^slicing.discriminator.path = "code"
-* component.code.coding ^slicing.rules = #open
-* component.code.coding 1..29
-* component.code.coding contains PSAP 1..1 and 
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component 1..29
+* component contains PSAP 1..1 and 
                                  unmeasuredPSAP 1..1 and 
                                  leftAtrium 1..1 and 
                                  unmeasuredLeftAtrium 1..1 and
@@ -44,134 +44,134 @@ Title: "EchocardiogramsObservation"
                                  tricuspideValvesInsuficiency 1..1 and 
                                  diagnostics 1..1
                                                 
-* component.code.coding[PSAP].code = $snomed#250768007 
-* component.code.coding[PSAP].code 1..1
-* component.code.coding[PSAP].code ^definition = "presión sistólica de la arteria pulmonar (entidad observable)"
+* component[PSAP].code = $snomed#250768007 
+* component[PSAP].code 1..1
+* component[PSAP].code ^definition = "presión sistólica de la arteria pulmonar (entidad observable)"
 
 
-* component.code.coding[unmeasuredPSAP].code = $snomed#272519000
-* component.code.coding[unmeasuredPSAP].code 1..1
-* component.code.coding[unmeasuredPSAP].code ^definition = "se indica si la presión sistólica en arteria pulmonar no es medida"
-
-
-
-* component.code.coding[leftAtrium].code = $snomed#50408007 
-* component.code.coding[leftAtrium].code 1..1
-* component.code.coding[leftAtrium].code ^definition = "Se indica el estado de la arteria izquierda"
-
-
-* component.code.coding[unmeasuredLeftAtrium].code = $snomed#272519000
-* component.code.coding[unmeasuredLeftAtrium].code 1..1
-* component.code.coding[unmeasuredLeftAtrium].code ^definition = "Se indica si la arteria izquierda no es medida"
-
-
-* component.code.coding[aorticRoot].code = $snomed#8128003
-* component.code.coding[aorticRoot].code 1..1
-* component.code.coding[aorticRoot].code ^definition = "Se indica el estado de la raíz de la aorta"
-
-* component.code.coding[aorticRootUnmeasured].code = $snomed#272519000
-* component.code.coding[aorticRootUnmeasured].code 1..1
-* component.code.coding[aorticRootUnmeasured].code ^definition = "Se indica si la raíz de la aorta no fue medida"
-
-* component.code.coding[rightCavities].code = $snomed#73834008
-* component.code.coding[rightCavities].code 1..1
-* component.code.coding[rightCavities].code ^definition = "Estado de la cavidad derecha"
-
-* component.code.coding[endocarditis].code = $snomed#56819008
-* component.code.coding[endocarditis].code 1..1
-* component.code.coding[endocarditis].code ^definition = "Presencia de endocarditis"
-
-* component.code.coding[valve].code = $snomed#260852006 
-* component.code.coding[valve].code 1..1
-* component.code.coding[valve].code ^definition = "Tipo de válvula"
-
-* component.code.coding[vegetable].code = $snomed#37163200
-* component.code.coding[vegetable].code 1..1
-* component.code.coding[vegetable].code ^definition = "Se indica si está en estado vegetal"
-
-
-* component.code.coding[vegetableValue].code = $snomed#246205007
-* component.code.coding[vegetableValue].code 1..1
-* component.code.coding[vegetableValue].code ^definition = "Se indica cuanto lleva en estado vegetal"
-
-
-* component.code.coding[abscess].code = $snomed#128477000 
-* component.code.coding[abscess].code 1..1
-* component.code.coding[abscess].code ^definition = "Se indica si tiene absceso"
-
-
-* component.code.coding[prosthesisDetachment].code = $snomed#302969009 
-* component.code.coding[prosthesisDetachment].code 1..1
-* component.code.coding[prosthesisDetachment].code ^definition = "Se indica si hay desprendimiento de prótesis"
-
-
-* component.code.coding[cardiacTumor].code = $snomed#715403006 
-* component.code.coding[cardiacTumor].code 1..1
-* component.code.coding[cardiacTumor].code ^definition = "Se indica si hay tumor cardíaco"
-
-
-* component.code.coding[leftVentricleDiastolicDiameter].code = $loinc#59078-6 
-* component.code.coding[leftVentricleDiastolicDiameter].code 1..1
-* component.code.coding[leftVentricleDiastolicDiameter].code ^definition = "Medición de diámetro diastólico de ventriculo izquierdo"
-
-* component.code.coding[leftVentricleSystolicDiameter].code = $loinc#80011-0 
-* component.code.coding[leftVentricleSystolicDiameter].code 1..1
-* component.code.coding[leftVentricleSystolicDiameter].code ^definition = "Medición de diámetro sistólico de ventriculo izquierdo"
-
-* component.code.coding[leftVentricleEjectionFraction].code = $loinc#10230-1 
-* component.code.coding[leftVentricleEjectionFraction].code 1..1
-* component.code.coding[leftVentricleEjectionFraction].code ^definition = "Fraccion de eyección de ventriculo izquierdo"
-
-* component.code.coding[aorticValvesMainGradient].code = $loinc#79963-5
-* component.code.coding[aorticValvesMainGradient].code 1..1
-* component.code.coding[aorticValvesMainGradient].code ^definition = "Válvula principal de valvula aorta"
-
-* component.code.coding[aorticValvesMediumGradient].code = $loinc#80011-0
-* component.code.coding[aorticValvesMediumGradient].code 1..1
-* component.code.coding[aorticValvesMediumGradient].code ^definition = "Válvula media de valvula aorta"
-
-
-* component.code.coding[aorticValvesMaximumSpeed].code = $loinc#20183-0
-* component.code.coding[aorticValvesMaximumSpeed].code 1..1
-* component.code.coding[aorticValvesMaximumSpeed].code ^definition = "Máxima velocidad de valvula aorta"
-
-* component.code.coding[aorticValvesArea].code = $loinc#17984-6
-* component.code.coding[aorticValvesArea].code 1..1
-* component.code.coding[aorticValvesArea].code ^definition = "área de valvula aorta"
-
-* component.code.coding[aorticValvesInsufficiency].code = $loinc#77912-4
-* component.code.coding[aorticValvesInsufficiency].code 1..1
-* component.code.coding[aorticValvesInsufficiency].code ^definition = "Insuficiencia de valvula aorta"
-
-* component.code.coding[mitralValveMainGradient].code = $loinc#18059-6
-* component.code.coding[mitralValveMainGradient].code 1..1
-* component.code.coding[mitralValveMainGradient].code ^definition = "Gradiente principal de valvula Mitral"
-
-
-* component.code.coding[mitralValveMediumGradient].code = $snomed#45331000087106 
-* component.code.coding[mitralValveMediumGradient].code 1..1
-* component.code.coding[mitralValveMediumGradient].code ^definition = "Gradiente media de valvula Mitral"
-
-
-* component.code.coding[mitralValveMaximumSpeed].code = $loinc#80070-6
-* component.code.coding[mitralValveMaximumSpeed].code 1..1
-* component.code.coding[mitralValveMaximumSpeed].code ^definition = "Máxima velocidad de valvula Mitral"
-
-* component.code.coding[mitralValveInsufficiency].code = $loinc#18113-1
-* component.code.coding[mitralValveInsufficiency].code 1..1
-* component.code.coding[mitralValveInsufficiency].code ^definition = "Insuficiencia de valvula mitral"
+* component[unmeasuredPSAP].code = $snomed#272519000
+* component[unmeasuredPSAP].code 1..1
+* component[unmeasuredPSAP].code ^definition = "se indica si la presión sistólica en arteria pulmonar no es medida"
 
 
 
-* component.code.coding[tricuspideValvesInsuficiency].code = $loinc#18115-6
-* component.code.coding[tricuspideValvesInsuficiency].code 1..1
-* component.code.coding[tricuspideValvesInsuficiency].code ^definition = "Insuficiencia de valvula Tricuspide"
+* component[leftAtrium].code = $snomed#50408007 
+* component[leftAtrium].code 1..1
+* component[leftAtrium].code ^definition = "Se indica el estado de la arteria izquierda"
+
+
+* component[unmeasuredLeftAtrium].code = $snomed#272519000
+* component[unmeasuredLeftAtrium].code 1..1
+* component[unmeasuredLeftAtrium].code ^definition = "Se indica si la arteria izquierda no es medida"
+
+
+* component[aorticRoot].code = $snomed#8128003
+* component[aorticRoot].code 1..1
+* component[aorticRoot].code ^definition = "Se indica el estado de la raíz de la aorta"
+
+* component[aorticRootUnmeasured].code = $snomed#272519000
+* component[aorticRootUnmeasured].code 1..1
+* component[aorticRootUnmeasured].code ^definition = "Se indica si la raíz de la aorta no fue medida"
+
+* component[rightCavities].code = $snomed#73834008
+* component[rightCavities].code 1..1
+* component[rightCavities].code ^definition = "Estado de la cavidad derecha"
+
+* component[endocarditis].code = $snomed#56819008
+* component[endocarditis].code 1..1
+* component[endocarditis].code ^definition = "Presencia de endocarditis"
+
+* component[valve].code = $snomed#260852006 
+* component[valve].code 1..1
+* component[valve].code ^definition = "Tipo de válvula"
+
+* component[vegetable].code = $snomed#37163200
+* component[vegetable].code 1..1
+* component[vegetable].code ^definition = "Se indica si está en estado vegetal"
+
+
+* component[vegetableValue].code = $snomed#246205007
+* component[vegetableValue].code 1..1
+* component[vegetableValue].code ^definition = "Se indica cuanto lleva en estado vegetal"
+
+
+* component[abscess].code = $snomed#128477000 
+* component[abscess].code 1..1
+* component[abscess].code ^definition = "Se indica si tiene absceso"
+
+
+* component[prosthesisDetachment].code = $snomed#302969009 
+* component[prosthesisDetachment].code 1..1
+* component[prosthesisDetachment].code ^definition = "Se indica si hay desprendimiento de prótesis"
+
+
+* component[cardiacTumor].code = $snomed#715403006 
+* component[cardiacTumor].code 1..1
+* component[cardiacTumor].code ^definition = "Se indica si hay tumor cardíaco"
+
+
+* component[leftVentricleDiastolicDiameter].code = $loinc#59078-6 
+* component[leftVentricleDiastolicDiameter].code 1..1
+* component[leftVentricleDiastolicDiameter].code ^definition = "Medición de diámetro diastólico de ventriculo izquierdo"
+
+* component[leftVentricleSystolicDiameter].code = $loinc#80011-0 
+* component[leftVentricleSystolicDiameter].code 1..1
+* component[leftVentricleSystolicDiameter].code ^definition = "Medición de diámetro sistólico de ventriculo izquierdo"
+
+* component[leftVentricleEjectionFraction].code = $loinc#10230-1 
+* component[leftVentricleEjectionFraction].code 1..1
+* component[leftVentricleEjectionFraction].code ^definition = "Fraccion de eyección de ventriculo izquierdo"
+
+* component[aorticValvesMainGradient].code = $loinc#79963-5
+* component[aorticValvesMainGradient].code 1..1
+* component[aorticValvesMainGradient].code ^definition = "Válvula principal de valvula aorta"
+
+* component[aorticValvesMediumGradient].code = $loinc#80011-0
+* component[aorticValvesMediumGradient].code 1..1
+* component[aorticValvesMediumGradient].code ^definition = "Válvula media de valvula aorta"
+
+
+* component[aorticValvesMaximumSpeed].code = $loinc#20183-0
+* component[aorticValvesMaximumSpeed].code 1..1
+* component[aorticValvesMaximumSpeed].code ^definition = "Máxima velocidad de valvula aorta"
+
+* component[aorticValvesArea].code = $loinc#17984-6
+* component[aorticValvesArea].code 1..1
+* component[aorticValvesArea].code ^definition = "área de valvula aorta"
+
+* component[aorticValvesInsufficiency].code = $loinc#77912-4
+* component[aorticValvesInsufficiency].code 1..1
+* component[aorticValvesInsufficiency].code ^definition = "Insuficiencia de valvula aorta"
+
+* component[mitralValveMainGradient].code = $loinc#18059-6
+* component[mitralValveMainGradient].code 1..1
+* component[mitralValveMainGradient].code ^definition = "Gradiente principal de valvula Mitral"
+
+
+* component[mitralValveMediumGradient].code = $snomed#45331000087106 
+* component[mitralValveMediumGradient].code 1..1
+* component[mitralValveMediumGradient].code ^definition = "Gradiente media de valvula Mitral"
+
+
+* component[mitralValveMaximumSpeed].code = $loinc#80070-6
+* component[mitralValveMaximumSpeed].code 1..1
+* component[mitralValveMaximumSpeed].code ^definition = "Máxima velocidad de valvula Mitral"
+
+* component[mitralValveInsufficiency].code = $loinc#18113-1
+* component[mitralValveInsufficiency].code 1..1
+* component[mitralValveInsufficiency].code ^definition = "Insuficiencia de valvula mitral"
 
 
 
-* component.code.coding[diagnostics].code = $snomed#439401001
-* component.code.coding[diagnostics].code 1..1
-* component.code.coding[diagnostics].code ^definition = "diagnosticos"
+* component[tricuspideValvesInsuficiency].code = $loinc#18115-6
+* component[tricuspideValvesInsuficiency].code 1..1
+* component[tricuspideValvesInsuficiency].code ^definition = "Insuficiencia de valvula Tricuspide"
+
+
+
+* component[diagnostics].code = $snomed#439401001
+* component[diagnostics].code 1..1
+* component[diagnostics].code ^definition = "diagnosticos"
 
 
 
