@@ -13,7 +13,7 @@ Title: "EchocardiogramsObservation"
 * component.code.coding ^slicing.discriminator.type = #value
 * component.code.coding ^slicing.discriminator.path = "code"
 * component.code.coding ^slicing.rules = #open
-* component.code.coding 1..25
+* component.code.coding 1..29
 * component.code.coding contains PSAP 1..1 and 
                                  unmeasuredPSAP 1..1 and 
                                  leftAtrium 1..1 and 
@@ -38,7 +38,11 @@ Title: "EchocardiogramsObservation"
                                  aorticValvesInsufficiency 1..1 and 
                                  mitralValveMainGradient 1..1 and
                                  mitralValveMediumGradient 1..1 and 
-                                 mitralValveMaximumSpeed 1..1 
+                                 mitralValveMaximumSpeed 1..1 and
+                                 mitralValveArea 1..1 and
+                                 mitralValveInsufficiency 1..1 and 
+                                 tricuspideValvesInsuficiency 1..1 and 
+                                 diagnostics 1..1
                                                 
 * component.code.coding[PSAP].code = $snomed#250768007 
 * component.code.coding[PSAP].code 1..1
@@ -153,6 +157,21 @@ Title: "EchocardiogramsObservation"
 * component.code.coding[mitralValveMaximumSpeed].code 1..1
 * component.code.coding[mitralValveMaximumSpeed].code ^definition = "Máxima velocidad de valvula Mitral"
 
+* component.code.coding[mitralValveInsufficiency].code = $loinc#18113-1
+* component.code.coding[mitralValveInsufficiency].code 1..1
+* component.code.coding[mitralValveInsufficiency].code ^definition = "Insuficiencia de valvula mitral"
+
+
+
+* component.code.coding[tricuspideValvesInsuficiency].code = $loinc#18115-6
+* component.code.coding[tricuspideValvesInsuficiency].code 1..1
+* component.code.coding[tricuspideValvesInsuficiency].code ^definition = "Insuficiencia de valvula Tricuspide"
+
+
+
+* component.code.coding[diagnostics].code = $snomed#439401001
+* component.code.coding[diagnostics].code 1..1
+* component.code.coding[diagnostics].code ^definition = "diagnosticos"
 
 
 
