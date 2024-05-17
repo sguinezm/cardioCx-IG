@@ -176,6 +176,6 @@ Title: "EchocardiogramsObservation"
 
 
 
-
+* component.value[x] only Quantity
 * focus only Reference(ProcedureCardio)
 * focus 1..1
