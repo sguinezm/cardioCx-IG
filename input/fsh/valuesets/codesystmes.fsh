@@ -404,3 +404,39 @@ Description: "Insuficiencia de válvula"
 * #255604002  "Mild"
 * #6736007  "Moderate"
 * #24484000  "Severe"
+
+
+CodeSystem: ValvesNameCS
+Id: ValvesNameCS
+Title: "Válvulas"
+Description: "Válvulas"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Anillos MITRAL CARPENTIER - EDWARDS PHYSIO / MITRAL"
+* #2 "Anillos MITRAL SORIN (Carbomedils Annuloflo)"
+* #3 "Anillos MITRAL ST Jude (Rigid)"
+* #4 "Anillos TRICUSPIDEO (Carpentier Edwards classic)"
+* #5 "Anillos TRICUSPIDEO (MC 3 Eduwards)"
+* #6 "No aplica"
+* #7 "Válvulas Biológica Medtronic Mitral (Mosaic)"
+* #8 "Válvulas Biológica Aórtica (Carpentier Edwards Perimount)"
+* #9 "Válvulas Biológica Medtronic Aórtica (Hancock)"
+* #10 "Válvulas Biológica Medtronic Aórtica (Mosaic)"
+* #11 "Válvulas Biológica Mitral (Carpentier Edwards Perimount)"
+* #12 "Válvulas Biológica ST Judes Medical Aórtica (EPIC)"
+* #13 "Válvulas Biológica ST Judes Medical Mitral (EPIC)"
+* #14 "Válvulas Mecánica Aórtica (Carbomedics)"
+* #15 "Válvulas Mecánica Medtronic Aórtica (ATS)"
+* #16 "Válvulas Mecánica Mitral (Carbomedics)"
+* #17 "Válvulas Mecánica ST Judes Medical Aórtica"
+* #18 "Válvulas Mecánica ST Judes Medical Mitral"
+* #19 "Válvulas Mecánicas Medtronic Mitral (ATS)"
+* #20 "Válvulas SORIN / CARBOMEDICS CARBO - SEAL - AORTICOS"
+
