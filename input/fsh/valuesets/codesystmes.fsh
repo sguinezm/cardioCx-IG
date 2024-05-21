@@ -384,3 +384,23 @@ Description: "Fracción de eyección"
 * #6736007  "Moderate severity"
 * #272519000 "Absence findings"
 * #863932003 "Left ventricular ejection fraction decreased"
+
+
+CodeSystem: ValveInsuficiencyCS
+Id: ValveInsuficiencyCS
+Title: "Insuficiencia de válvula"
+Description: "Insuficiencia de válvula"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #272519000 "None"
+* #86137003  "Trivial"
+* #255604002  "Mild"
+* #6736007  "Moderate"
+* #24484000  "Severe"

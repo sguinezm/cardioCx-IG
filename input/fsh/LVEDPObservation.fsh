@@ -19,6 +19,7 @@ Title: "LVEDPObservation"
 * code.coding[LVEDPPressure].code = $snomed#276363007
 * code.coding[LVEDPPressure].code ^definition = "End-diastolic left ventricular cavity shape"
 
+
 * code.coding[absence].code 1..1
 * code.coding[absence].system = $snomed
 * code.coding[absence].code = $snomed#272519000
