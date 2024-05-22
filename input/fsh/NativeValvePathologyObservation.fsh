@@ -16,9 +16,8 @@ Title: "EndocarditisInfecciosaObservation"
 
 
 
-* value[x] only CodeableConcept
+* value[x] only string
 * value[x] 1..1 MS 
-* value[x] from EndocarditisInfecciosaVS
 
 * focus only Reference(ValveProcedure)
 * focus 1..1
