@@ -485,3 +485,46 @@ Description: "Razón por la cual la válvula es reoperada."
 * #7 "Haemolysis"
 * #8 "Other Reason"
 
+
+
+
+CodeSystem: CirculatoryAssistancesCS
+Id: CirculatoryAssistancesCS
+Title: "Asistencias circulatorias"
+Description: "Asistencias circulatorias"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-22"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #260413007 "none"
+* #233573008  "Extracorporeal membrane oxygenation"
+* #14414005 "Peripheral "
+* #26216008  "Central"
+* #74964007 "Other"
+* #362981000 "other value"
+
+CodeSystem: VenousCannulationsCS
+Id: VenousCannulationsCS
+Title: "Canulación venosa"
+Description: "Canulación venosa"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-22"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #73829009 "right_atrium,"
+* #787588007 "bicava "
+* #83419000 "femoral"
+* #74964007 "Other"
+* #362981000 "other value"
