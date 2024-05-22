@@ -523,8 +523,32 @@ Description: "Canulación venosa"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
-* #73829009 "right_atrium,"
+* #73829009 "right_atrium"
 * #787588007 "bicava "
 * #83419000 "femoral"
 * #74964007 "Other"
 * #362981000 "other value"
+
+
+
+CodeSystem: ArterialCannulationsCS
+Id: ArterialCannulationsCS
+Title: "Canulación arterial"
+Description: "Canulación arterial"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-22"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "ascending_aorta"
+* #2 "TABC"
+* #3 "femoral"
+* #4 "subde"
+* #5 "Other"
+* #6 "other value"
+
