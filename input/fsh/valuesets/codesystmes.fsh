@@ -440,3 +440,48 @@ Description: "Válvulas"
 * #19 "Válvulas Mecánicas Medtronic Mitral (ATS)"
 * #20 "Válvulas SORIN / CARBOMEDICS CARBO - SEAL - AORTICOS"
 
+
+CodeSystem: ExplantTypeCS
+Id: ExplantTypeCS
+Title: "Tipos de explantes."
+Description: "Tipos de explantes."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #262005006  "Not applied"
+* #263818007  "Native"
+* #261018001  "Mechanical" 
+* #12893009  "Biologic"
+* #15879007  "Autograft"
+* #256681002  "Allograft of skin"
+* #72070000  "Ring, device"
+
+CodeSystem: ReoperationValveReasonCS
+Id: ReoperationValveReasonCS
+Title: "Razón por la cual la válvula es reoperada."
+Description: "Razón por la cual la válvula es reoperada."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "Not Applicable"
+* #2 "Thrombosis"
+* #3 "Dehiscence"
+* #4 "Embosis"
+* #5 "Infection"
+* #6 "Intrinsic Failure"
+* #7 "Haemolysis"
+* #8 "Other Reason"
+

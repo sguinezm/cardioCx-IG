@@ -4,9 +4,24 @@ Profile: ValveProcedure
 Parent: Procedure
 Description: "Registro del procedimiento de valvula"
 
-* code.coding.system = $snomed
-* code.coding.code = $snomed#64915003
-* code.coding.display = "Operation on vessels of heart"
+
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* code.coding 2..2
+* code.coding contains principalCode 1..1 and secundaryCodeOne 0..1
+and secundaryCodeTwo 0..1  
+
+* code.coding[principalCode].system = $snomed
+* code.coding[principalCode].code = $snomed#73544002
+* code.coding[principalCode].display = "Operation on heart valve"
+
+* code.coding[secundaryCodeOne].system = $snomed
+* code.coding[secundaryCodeOne].code = $snomed#713295009
+* code.coding[secundaryCodeOne].display = "Surgical replacement - action"
+* code.coding[secundaryCodeTwo].system = $snomed
+* code.coding[secundaryCodeTwo].code = $snomed#4365001
+* code.coding[secundaryCodeTwo].display = "Surgical repair"
 
 * performer ^slicing.discriminator.type = #value
 * performer ^slicing.discriminator.path = "actor"
@@ -40,6 +55,9 @@ Description: "Registro del procedimiento de valvula"
 * bodySite[valve] only CodeableConcept
 * bodySite[valve] from ValvesVS
 
+* reasonCode 1..1 
+* reasonCode from ReoperationValveReasonVS (required)
+
 
 * reasonReference ^slicing.discriminator.type = #profile
 * reasonReference ^slicing.discriminator.path = "resolve()"
@@ -58,7 +76,8 @@ Description: "Registro del procedimiento de valvula"
 * usedReference[valveName] only Reference(ValveDevice)
 
 
-* extension contains UrgencyLevelCardioCx named urgency_level 1..1 and ValveInsuficiencyExt named valve_insuficiency 1..1
+* extension contains UrgencyLevelCardioCx named urgency_level 1..1 and ValveInsuficiencyExt named valveInsuficiency 1..1
+and ExplantTypeExt named explantType 1..1 and ImplantTypeExt named implantType 1..1
 /*
 * extension[supportingInfo] ^slicing.discriminator.type = #profile
 * extension[supportingInfo] ^slicing.discriminator.path = "resolve()"
