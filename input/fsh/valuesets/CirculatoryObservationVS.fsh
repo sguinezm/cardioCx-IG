@@ -1,5 +1,5 @@
-ValueSet: PerfusionObservationVS
-Id: PerfusionObservationVS
+ValueSet: CirculatoryObservationVS
+Id: CirculatoryObservationVS
 Title: "Códigos para la perfusión"
 Description: "Códigos para la perfusión"
 * ^experimental = false
