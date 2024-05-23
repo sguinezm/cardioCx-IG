@@ -615,3 +615,22 @@ Description: "Códigos para la circulación extracorpórea."
 * #1 "No"
 * #2  "Yes-planned" 
 * #3  "Yes-Conversion from off-pump"
+
+
+CodeSystem: CardioplegiaSolutionCS
+Id: CardioplegiaSolutionCS
+Title: "Solución cardioplegia."
+Description: "Solución cardioplegia."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "Not Applicable"
+* #2  "Blood" 
+* #3  "Crystalloid"

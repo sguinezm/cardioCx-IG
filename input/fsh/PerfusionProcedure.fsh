@@ -25,6 +25,15 @@ Description: "Registro del procedimiento de perfusión"
 * performer[perfusionist].actor 1..1
 * performer[perfusionist].actor only Reference(SurgeonPractitionerCardio)
 * performer[perfusionist].actor ^definition = "Definición del médico que actúa como perfusionista"
+/*
+* usedCode ^slicing.discriminator.type = #value
+* usedCode ^slicing.discriminator.path = "coding.code"
+* usedCode ^slicing.rules = #open
+* usedCode 1..1
+* usedCode contains cardioplegiaSolution 1..1
+
+* usedCode[cardioplegiaSolution] from CardioplegiaSolutionVS
+*/
 
 * extension contains ExtracorporealCirculationExt named extracorporeal_circulation 1..1 and
 MyocardialProtectionExt named myocardial_protection 1..1 
