@@ -566,10 +566,33 @@ Description: "Valores aceptados para la presencia de alguna patología de válvu
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
-* #1   "Reumatic"
+* #1  "Reumatic"
 * #2  "Degenerative" 
 * #3  "Congenital"
 * #4  "Myxomatous"
 * #5  "Endocarditis"
 * #6  "Traumatic"
 * #7  "Other"
+
+
+
+CodeSystem: ReasonForBallonUsageCS
+Id: ReasonForBallonUsageCS
+Title: "Razón para utilizar balón"
+Description: "Razón para utilizar balón"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #385432009 "Not applicable"
+* #422773005  "Haemodynamic instability" 
+* #11101003  "PTCA support"
+* #63697000  "CPB wean"
+* #4557003  "Unstable Angina"
+* #262073000  "Prophylactic"

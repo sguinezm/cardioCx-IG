@@ -15,7 +15,9 @@ Title: "PerfusionObservation"
 * code.coding contains circulatoryAssistance 0..1 and 
                        venousCannulations 0..1 and
                        ArterialCannulations 0..1 and 
-                       extracorporealCirculationTime 0..1
+                       extracorporealCirculationTime 0..1 and 
+                       reasonForBallonUsage 0..1 
+
 
 * code.coding[circulatoryAssistance].code 1..1
 * code.coding[circulatoryAssistance].system = $snomed
@@ -37,11 +39,17 @@ Title: "PerfusionObservation"
 * code.coding[ArterialCannulations].code ^definition = "arterial cannulations"
 * value[x] from ArterialCannulationsVS
 
+* code.coding[extracorporealCirculationTime].code 1..1
+* code.coding[extracorporealCirculationTime].system = $snomed
+* code.coding[extracorporealCirculationTime].code = $snomed#251276001
+* code.coding[extracorporealCirculationTime].code ^definition = "extracorporeal circulation time"
 
 
-
-
-
+* code.coding[reasonForBallonUsage].code 1..1
+* code.coding[reasonForBallonUsage].system = $snomed
+* code.coding[reasonForBallonUsage].code = $snomed#34263000
+* code.coding[reasonForBallonUsage].code ^definition = "arterial cannulations"
+* value[x] from ReasonForBallonUsageVS
 
 
 
