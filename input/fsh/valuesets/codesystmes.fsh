@@ -596,3 +596,22 @@ Description: "Razón para utilizar balón"
 * #63697000  "CPB wean"
 * #4557003  "Unstable Angina"
 * #262073000  "Prophylactic"
+
+
+CodeSystem: ExtracorporealCirculationCS
+Id: ExtracorporealCirculationCS
+Title: "Códigos para la circulación extracorpórea."
+Description: "Códigos para la circulación extracorpórea."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "No"
+* #2  "Yes-planned" 
+* #3  "Yes-Conversion from off-pump"
