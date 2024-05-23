@@ -5,7 +5,7 @@ Profile: PAWPObservation
 Parent: Observation
 Description: "Observación de la fecha de la ultima cateterización."
 
-Title: "LastCatheterizationObservation"
+Title: "PAWPObservation"
 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"

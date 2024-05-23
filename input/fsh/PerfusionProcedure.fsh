@@ -26,3 +26,5 @@ Description: "Registro del procedimiento de perfusión"
 * performer[perfusionist].actor only Reference(SurgeonPractitionerCardio)
 * performer[perfusionist].actor ^definition = "Definición del médico que actúa como perfusionista"
 
+* extension contains ExtracorporealCirculationExt named extracorporeal_circulation 1..1 and
+MyocardialProtectionExt named myocardial_protection 1..1 
