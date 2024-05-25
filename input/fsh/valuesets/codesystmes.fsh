@@ -671,3 +671,21 @@ Description: "Observación del modo de infución de cardioplegía en perfusión"
 * #385432009 "Not Applicable"
 * #103362004 "Antegrade" 
 * #103363009 "Retrograde"
+
+CodeSystem: CardioplegiaRhytmCS
+Id: CardioplegiaRhytmCS
+Title: "Observación del ritmo de cardioplegía en perfusión"
+Description: "Observación del ritmo de cardioplegía en perfusión"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #385432009 "Not Applicable"
+* #7087005 "Intermitente" 
+* #255238004 "continuo"
+
