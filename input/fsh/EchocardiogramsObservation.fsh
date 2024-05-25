@@ -39,24 +39,28 @@ Title: "EchocardiogramsObservation"
                     mitralValveMaximumSpeed 0..1 and
                     mitralValveArea 1..1 and
                     mitralValveInsufficiency 1..1 and 
-                    tricuspideValvesInsuficiency 1..1 and 
-                    diagnostics 1..1
+                    tricuspideValvesInsuficiency 1..1 
+                    
 
 * component[PSAP] MS                                                
 * component[PSAP].code = $snomed#250768007 
 * component[PSAP].code 1..1
 * component[PSAP].code ^definition = "presión sistólica de la arteria pulmonar (entidad observable)"
+* component[PSAP].value[x] only integer
+* component[PSAP].value[x] 1..1 
+
+
 
 * component[leftAtrium].code = $snomed#50408007 
 * component[leftAtrium].code 1..1
 * component[leftAtrium].code ^definition = "Se indica el estado de la arteria izquierda"
-* component[leftAtrium].value[x] only Quantity 
-* component[leftAtrium].value[x].value 1..1 
+* component[leftAtrium].value[x] only integer
+* component[leftAtrium].value[x] 1..1 
 
 * component[aorticRoot].code = $snomed#8128003
 * component[aorticRoot].code 1..1
 * component[aorticRoot].code ^definition = "Se indica el estado de la raíz de la aorta"
-* component[aorticRoot].value[x] only Quantity 
+* component[aorticRoot].value[x] only integer
 * component[aorticRoot].value[x].value 1..1 
 
 * component[rightCavities].code = $snomed#73834008
@@ -66,6 +70,8 @@ Title: "EchocardiogramsObservation"
 * component[endocarditis].code = $snomed#56819008
 * component[endocarditis].code 1..1
 * component[endocarditis].code ^definition = "Presencia de endocarditis"
+* component[endocarditis].value[x] only boolean
+* component[endocarditis].value[x].value 1..1 
 
 * component[valve].code = $snomed#260852006 
 * component[valve].code 1..1
@@ -74,27 +80,33 @@ Title: "EchocardiogramsObservation"
 * component[vegetable].code = $snomed#37163200
 * component[vegetable].code 1..1
 * component[vegetable].code ^definition = "Se indica si está en estado vegetal"
+* component[vegetable].value[x] only boolean
+* component[vegetable].value[x].value 1..1 
 
 
 * component[vegetableValue].code = $snomed#246205007
 * component[vegetableValue].code 1..1
 * component[vegetableValue].code ^definition = "Se indica cuanto lleva en estado vegetal"
-
+* component[vegetableValue].value[x] only integer
+* component[vegetableValue].value[x].value 1..1 
 
 * component[abscess].code = $snomed#128477000 
 * component[abscess].code 1..1
 * component[abscess].code ^definition = "Se indica si tiene absceso"
-
+* component[abscess].value[x] only boolean
+* component[abscess].value[x].value 1..1 
 
 * component[prosthesisDetachment].code = $snomed#302969009 
 * component[prosthesisDetachment].code 1..1
 * component[prosthesisDetachment].code ^definition = "Se indica si hay desprendimiento de prótesis"
-
+* component[prosthesisDetachment].value[x] only boolean
+* component[prosthesisDetachment].value[x].value 1..1 
 
 * component[cardiacTumor].code = $snomed#715403006 
 * component[cardiacTumor].code 1..1
 * component[cardiacTumor].code ^definition = "Se indica si hay tumor cardíaco"
-
+* component[cardiacTumor].value[x] only boolean
+* component[cardiacTumor].value[x].value 1..1 
 
 * component[leftVentricleDiastolicDiameter].code = $loinc#59078-6 
 * component[leftVentricleDiastolicDiameter].code 1..1
@@ -174,13 +186,6 @@ Title: "EchocardiogramsObservation"
 
 
 
-* component[diagnostics].code = $snomed#439401001
-* component[diagnostics].code 1..1
-* component[diagnostics].code ^definition = "diagnosticos"
 
-
-
-
-* component.value[x] only Quantity or string
 * focus only Reference(ValveProcedure)
 * focus 1..1
