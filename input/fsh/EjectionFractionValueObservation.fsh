@@ -61,8 +61,10 @@ Description: "Observation EjectionFraction"
 
 * valueQuantity.value = 10
 
-//* focus only Reference(ProcedureCardio)
-//* focus 1..1
+focus only Reference(ProcedureCardio)
+focus 1..1
+
+
 Instance: EjemploObservation1
 InstanceOf: EjectionFractionValueObservation
 Usage: #example
