@@ -50,28 +50,33 @@ Title: "EjectionFractionValueObservation"
 * valueCodeableConcept.coding.system = $snomed
 * valueCodeableConcept.coding.code = $snomed#47492008
 
-Instance: EjemploObservation
+* focus only Reference(ProcedureCardio)
+* focus 1..1
+
+
+Instance: EjemploEjectionFractionObservation
 InstanceOf: EjectionFractionValueObservation
 Usage: #example
 Title: "Observation EjectionFraction"
-Description: "Observation EjectionFraction"
+Description: "Observation EjectionFraction: ejemplo cuando se hizo la observación."
 
 * code = $snomed#70822001
 * status = #final
 
 * valueQuantity.value = 10
 
-focus only Reference(ProcedureCardio)
-focus 1..1
+* focus = Reference("https://fhirserve.cl/R4/Procedure/1")
 
 
-Instance: EjemploObservation1
+Instance: EjemploEjectionFractionNoObservation
 InstanceOf: EjectionFractionValueObservation
 Usage: #example
-Title: "Observation EjectionFraction1"
-Description: "Observation EjectionFraction1"
+Title: "Observation EjectionFraction "
+Description: "Observation EjectionFraction: ejemplo cuando no se hizo la observación."
 
 * code = $snomed#70822001
 * status = #final
 
 * valueCodeableConcept = $snomed#47492008
+
+* focus = Reference("https://fhirserve.cl/R4/Procedure/1")
