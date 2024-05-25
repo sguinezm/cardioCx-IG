@@ -634,3 +634,40 @@ Description: "Solución cardioplegia."
 * #1 "Not Applicable"
 * #2  "Blood" 
 * #3  "Crystalloid"
+
+CodeSystem: CardioplegiaTemperatureCS
+Id: CardioplegiaTemperatureCS
+Title: "Temperatura de la cardioplejía"
+Description: "Temperatura de la cardioplejía"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "Not Applicable"
+* #2  "Warm" 
+* #3  "Cold"
+
+
+CodeSystem: CardioplegiaInfusionModeCS
+Id: CardioplegiaInfusionModeCS
+Title: "Observación del modo de infución de cardioplegía en perfusión"
+Description: "Observación del modo de infución de cardioplegía en perfusión"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #385432009 "Not Applicable"
+* #103362004 "Antegrade" 
+* #103363009 "Retrograde"

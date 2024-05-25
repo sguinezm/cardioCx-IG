@@ -47,22 +47,17 @@ Title: "EchocardiogramsObservation"
 * component[PSAP].code 1..1
 * component[PSAP].code ^definition = "presión sistólica de la arteria pulmonar (entidad observable)"
 
-
-
-
 * component[leftAtrium].code = $snomed#50408007 
 * component[leftAtrium].code 1..1
 * component[leftAtrium].code ^definition = "Se indica el estado de la arteria izquierda"
 * component[leftAtrium].value[x] only Quantity 
 * component[leftAtrium].value[x].value 1..1 
 
-
 * component[aorticRoot].code = $snomed#8128003
 * component[aorticRoot].code 1..1
 * component[aorticRoot].code ^definition = "Se indica el estado de la raíz de la aorta"
 * component[aorticRoot].value[x] only Quantity 
 * component[aorticRoot].value[x].value 1..1 
-
 
 * component[rightCavities].code = $snomed#73834008
 * component[rightCavities].code 1..1
@@ -104,7 +99,7 @@ Title: "EchocardiogramsObservation"
 * component[leftVentricleDiastolicDiameter].code = $loinc#59078-6 
 * component[leftVentricleDiastolicDiameter].code 1..1
 * component[leftVentricleDiastolicDiameter].code ^definition = "Medición de diámetro diastólico de ventriculo izquierdo"
-* component[leftVentricleDiastolicDiameter].value[x] only Quantity 
+* component[leftVentricleDiastolicDiameter].value[x] only Quantity
 * component[leftVentricleDiastolicDiameter].value[x].value 1..1 
 
 * component[leftVentricleSystolicDiameter].code = $loinc#80011-0 
