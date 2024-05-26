@@ -691,22 +691,5 @@ Description: "Observación del ritmo de cardioplegía en perfusión"
 
 
 
-CodeSystem: CumulativeCrossClampTimeCS
-Id: CumulativeCrossClampTimeCS
-Title: "Cumulative Cross Clamp Time"
-Description: "Cumulative Cross Clamp Time"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1 "CumulativeCrossClampTime"
-
-
-
 
 
