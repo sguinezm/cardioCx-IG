@@ -185,6 +185,9 @@ Title: "EchocardiogramsObservation"
 * component[tricuspideValvesInsuficiency].code ^definition = "Insuficiencia de valvula Tricuspide"
 
 
+/**value[x] only CodeableConcept  
+*value[x].coding 0..5*/
+
 
 
 * focus only Reference(ValveProcedure)
