@@ -40,7 +40,18 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                         bodyheightObservation 1..1 and
                                         bodyweightObservation 1..1 and
                                         bloodTypeObservation 0..1 and 
-                                        emergencyContact 0..*
+                                        emergencyContact 0..* and 
+                                        SmokingCondition 1..1 and
+                                        DiabetesCondition 1..1  and
+                                        HypertensionCondition 1..1 and 
+                                        HypercholesterolemiaCondition 1..1 and
+                                        CarotidBruitCondition 1..1 and
+                                        ChronicLungDiseaseCondition 1..1 and
+                                        ExtraCardiacArteriopathyCondition 1..1 and
+                                        NephropathyCondition 1..1 and
+                                        TypeOfDiseaseCondition 1..1
+
+
 * section[patientSection].entry[ageObservation] only Reference(Observation)
 * section[patientSection].entry[ageObservation] ^short = "Referencia  al recurso que contiene la observación de la edad del paciente"
 * section[patientSection].entry[bodyheightObservation] only Reference($observation-bodyheight)
@@ -51,6 +62,24 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[patientSection].entry[bloodTypeObservation] ^short = "Referencia  al recurso que contiene la observación que hace referencia al tipo de sangre del paciente"
 * section[patientSection].entry[emergencyContact] only Reference(RelatedPerson)
 * section[patientSection].entry[emergencyContact] ^short = "Se referencia a las personas que pueden ser contactadas al momento de una emergencia"
+* section[patientSection].entry[SmokingCondition] only Reference(SmokingCondition)
+* section[patientSection].entry[SmokingCondition] ^short = "Historial de fumador del paciente"
+* section[patientSection].entry[DiabetesCondition] only Reference(DiabetesCondition)
+* section[patientSection].entry[DiabetesCondition] ^short = "Condición de paciente con diabetes"
+* section[patientSection].entry[HypertensionCondition] only Reference(HypertensionCondition)
+* section[patientSection].entry[HypertensionCondition] ^short = "Condición de paciente con hipertensión"
+* section[patientSection].entry[HypercholesterolemiaCondition] only Reference(HypercholesterolemiaCondition)
+* section[patientSection].entry[HypercholesterolemiaCondition] ^short = "Condición de paciente con hipercolesterolemia"
+* section[patientSection].entry[CarotidBruitCondition] only Reference(CarotidBruitCondition)
+* section[patientSection].entry[CarotidBruitCondition] ^short = "Condición de paciente con soplos carotideos"
+* section[patientSection].entry[ChronicLungDiseaseCondition] only Reference(ChronicLungDiseaseCondition)
+* section[patientSection].entry[ChronicLungDiseaseCondition] ^short = "Condición de enfermedad pulmonar crónica"
+* section[patientSection].entry[ExtraCardiacArteriopathyCondition] only Reference(ExtraCardiacArteriopathyCondition)
+* section[patientSection].entry[ExtraCardiacArteriopathyCondition] ^short = "Condición de arteriopatía extra cardíaca"
+* section[patientSection].entry[NephropathyCondition] only Reference(NephropathyCondition)
+* section[patientSection].entry[NephropathyCondition] ^short = "Nefropatías del paciente"
+* section[patientSection].entry[TypeOfDiseaseCondition] only Reference(TypeOfDiseaseCondition)
+* section[patientSection].entry[TypeOfDiseaseCondition] ^short = "Tipo de enfermedad"
 
 * section[QuestionnaireSection] ^short = "Cuestionario realizado al paciente."
 * section[QuestionnaireSection] ^definition = "Antecedentes de intervenciones previas para realizar el procedimiento al paciente."
@@ -130,38 +159,4 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PreoperativeRiskFactorsSection] ^short = "Factores de riesgo preoperatorios"
 * section[PreoperativeRiskFactorsSection] ^definition = "Sección en la que se describen los factores de riesgo preoperatorios del paciente."
 
-* section[MedicalConditionSection] ^short = "Condiciones médicas del paciente"
-* section[MedicalConditionSection] ^definition = "Sección en la que se describen las condiciones médicas presentadas por el  paciente."
-* section[MedicalConditionSection].focus only Reference(Observation)
-* section[MedicalConditionSection].entry ^slicing.discriminator.type = #profile
-* section[MedicalConditionSection].entry ^slicing.discriminator.path = "resolve()"
-* section[MedicalConditionSection].entry ^slicing.rules = #open
-* section[MedicalConditionSection].entry 9..9  
-* section[MedicalConditionSection].entry contains SmokingCondition 1..1 and
-                                                DiabetesCondition 1..1  and
-                                                HypertensionCondition 1..1 and 
-                                                HypercholesterolemiaCondition 1..1 and
-                                                CarotidBruitCondition 1..1 and
-                                                ChronicLungDiseaseCondition 1..1 and
-                                                ExtraCardiacArteriopathyCondition 1..1 and
-                                                NephropathyCondition 1..1 and
-                                                TypeOfDiseaseCondition 1..1
 
-* section[MedicalConditionSection].entry[SmokingCondition] only Reference(SmokingCondition)
-* section[MedicalConditionSection].entry[SmokingCondition] ^short = "Historial de fumador del paciente"
-* section[MedicalConditionSection].entry[DiabetesCondition] only Reference(DiabetesCondition)
-* section[MedicalConditionSection].entry[DiabetesCondition] ^short = "Condición de paciente con diabetes"
-* section[MedicalConditionSection].entry[HypertensionCondition] only Reference(HypertensionCondition)
-* section[MedicalConditionSection].entry[HypertensionCondition] ^short = "Condición de paciente con hipertensión"
-* section[MedicalConditionSection].entry[HypercholesterolemiaCondition] only Reference(HypercholesterolemiaCondition)
-* section[MedicalConditionSection].entry[HypercholesterolemiaCondition] ^short = "Condición de paciente con hipercolesterolemia"
-* section[MedicalConditionSection].entry[CarotidBruitCondition] only Reference(CarotidBruitCondition)
-* section[MedicalConditionSection].entry[CarotidBruitCondition] ^short = "Condición de paciente con soplos carotideos"
-* section[MedicalConditionSection].entry[ChronicLungDiseaseCondition] only Reference(ChronicLungDiseaseCondition)
-* section[MedicalConditionSection].entry[ChronicLungDiseaseCondition] ^short = "Condición de enfermedad pulmonar crónica"
-* section[MedicalConditionSection].entry[ExtraCardiacArteriopathyCondition] only Reference(ExtraCardiacArteriopathyCondition)
-* section[MedicalConditionSection].entry[ExtraCardiacArteriopathyCondition] ^short = "Condición de arteriopatía extra cardíaca"
-* section[MedicalConditionSection].entry[NephropathyCondition] only Reference(NephropathyCondition)
-* section[MedicalConditionSection].entry[NephropathyCondition] ^short = "Nefropatías del paciente"
-* section[MedicalConditionSection].entry[TypeOfDiseaseCondition] only Reference(TypeOfDiseaseCondition)
-* section[MedicalConditionSection].entry[TypeOfDiseaseCondition] ^short = "Tipo de enfermedad"
