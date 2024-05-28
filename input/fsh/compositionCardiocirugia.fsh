@@ -46,6 +46,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                         HypertensionCondition 1..1 and 
                                         HypercholesterolemiaCondition 1..1 and
                                         CarotidBruitCondition 1..1 and
+                                        neurologicDisfunction 1..1 and
                                         ChronicLungDiseaseCondition 1..1 and
                                         ExtraCardiacArteriopathyCondition 1..1 and
                                         NephropathyCondition 1..1 and
@@ -72,6 +73,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[patientSection].entry[HypercholesterolemiaCondition] ^short = "Condición de paciente con hipercolesterolemia"
 * section[patientSection].entry[CarotidBruitCondition] only Reference(CarotidBruitCondition)
 * section[patientSection].entry[CarotidBruitCondition] ^short = "Condición de paciente con soplos carotideos"
+* section[patientSection].entry[neurologicDisfunction] only Reference(NeurologicDisfunctionCondition)
+* section[patientSection].entry[neurologicDisfunction] ^short = "Condición de paciente con disfunción neurológica"
 * section[patientSection].entry[ChronicLungDiseaseCondition] only Reference(ChronicLungDiseaseCondition)
 * section[patientSection].entry[ChronicLungDiseaseCondition] ^short = "Condición de enfermedad pulmonar crónica"
 * section[patientSection].entry[ExtraCardiacArteriopathyCondition] only Reference(ExtraCardiacArteriopathyCondition)
