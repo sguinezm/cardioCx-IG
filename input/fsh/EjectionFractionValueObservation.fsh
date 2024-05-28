@@ -44,9 +44,11 @@ Title: "EjectionFractionValueObservation"
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 
 * valueQuantity 0..1 MS
+* valueQuantity.value ^short = "Valor de fracción de eyección, si fue medida." 
 * valueQuantity.value 1..1
 
 * valueCodeableConcept 0..1 MS
+* valueCodeableConcept ^short = "Valor de fracción de eyección, si no fue medida" 
 * valueCodeableConcept.coding.system = $snomed
 * valueCodeableConcept.coding.code = $snomed#47492008
 
