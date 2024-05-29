@@ -689,8 +689,6 @@ Description: "Observación del ritmo de cardioplegía en perfusión"
 * #7087005 "Intermitente" 
 * #255238004 "continuo"
 
-
-
 CodeSystem: PreoperativeHeartRythmObservationCS
 Id: PreoperativeHeartRythmObservationCS
 Title: "Ritmo del corazón en preoperación"
@@ -710,10 +708,7 @@ Description: "Ritmo del corazón en preoperación"
 * #27885002  "Complete atrioventricular block (disorder)"
 * #15976004  "Abnormal circadian rhythm (finding)"
 
-
-
 CodeSystem: ArteriesUsedAsConduitsCS
-
 Id: ArteriesUsedAsConduitsCS
 Title: "arterias usadas como conductos"
 Description: "arterias usadas como conductos"
@@ -734,6 +729,93 @@ Description: "arterias usadas como conductos"
 * #6 "other"
 * #7 "other_value"
 
+CodeSystem: OtherCardiacProcedureDetailsCS
+Id: OtherCardiacProcedureDetailsCS
+Title: "CodeSystem para otros procedimientos cardiacos."
+Description: "CodeSystem para otros procedimientos cardiacos."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
+* #1 "none"
+* #2 "left_ventricular_aneurysm_repair"
+* #3 "ventricular_septal_defect_repair"
+* #4 "interauricular_defect"
+* #5 "batista"
+* #6 "congenital"
+* #7 "transmiocardial_laser_revascularisation"
+* #8 "cardiac_trauma"
+* #9 "cardiac_transplant"
+* #10 "permanent_pacemarker"
+* #11 "circulatory_assist_device_implant"
+* #12 "auricular_fibrillation_treatment"
+* #13 "cardiac_tumor"
+* #14 "other"
+* #15 "other_value"
 
+CodeSystem: OtherNonCardiacProcedureDetailsCS
+Id: OtherNonCardiacProcedureDetailsCS
+Title: "CodeSystem para otros procedimientos no cardiacos."
+Description: "CodeSystem para otros procedimientos no cardiacos."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
+* #1 "none"
+* #2 "aorta"
+* #3 "carotid_endarterectomy"
+* #4 "other_toracic"
+* #5 "other_vascular"
+* #6 "other_value"
+
+CodeSystem: AortaSegmentsCS
+Id: AortaSegmentsCS
+Title: "CodeSystem para los segmentos de la Aorta."
+Description: "CodeSystem para los segmentos de la Aorta."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "root"
+* #2 "ascending"
+* #3 "descending"
+* #4 "abdominal"
+* #5 "arch"
+
+CodeSystem: AorticProceduresCS
+Id: AorticProceduresCS
+Title: "CodeSystem para los procedimientos sobre la Aorta."
+Description: "CodeSystem para los procedimientos sobre la Aorta."
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "interposition_tube_graft"
+* #2 "tube_graft_and_separate_AVR"
+* #3 "root_replacement_graft"
+* #4 "root_replacement_preservation"
+* #5 "root_replacement_homograft"
+* #6 "ross_procedure"
+* #7 "aortic_patch_graft"
+* #8 "valsalva_sinus_repair"
+* #9 "aortoplastic_reduction"
