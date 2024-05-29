@@ -10,7 +10,8 @@ Title: " ArteriesUsedAsConduitsObservation"
 
 * code.coding.system = $snomed
 * code ^definition = "Arterias usadas como conductos"
-* value[x] only CodeableConcept 
+* value[x] only string 
 * value[x] from ArteriesUsedAsConduitsVS
 
+* focus only Reference(ProcedureCardio)
 * focus 1..1
