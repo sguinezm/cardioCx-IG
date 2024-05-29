@@ -689,6 +689,46 @@ Description: "Observación del ritmo de cardioplegía en perfusión"
 * #7087005 "Intermitente" 
 * #255238004 "continuo"
 
+CodeSystem: PacksPerYearCS
+Id: PacksPerYearCS
+Title: "Packs de cigarros por año"
+Description: "Packs de cigarros por año"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #230057008 "Consumo de cigarros (entidad observable)"
+* #258707000 "Año (calificador)"
+
+
+CodeSystem: PreoperativeHeartRythmObservationCS
+Id: PreoperativeHeartRythmObservationCS
+Title: "Ritmo del corazón en preoperación"
+Description: "Ritmo del corazón en preoperación"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #419351001  "Sinus (morphologic abnormality) "
+* #25569003 "Ventricular tachycardia (disorder)"
+* #49436004  "Atrial fibrillation (disorder) "
+* #27885002  "Complete atrioventricular block (disorder)"
+* #15976004  "Abnormal circadian rhythm (finding)"
+
+
+
+
+
 
 
 

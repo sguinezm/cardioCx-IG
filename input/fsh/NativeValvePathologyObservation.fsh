@@ -12,10 +12,6 @@ Title: "EndocarditisInfecciosaObservation"
 * code from NativeValvePathologyVS
 
 
-
-
-
-
 * value[x] only string
 * value[x] 1..1 MS 
 
