@@ -49,7 +49,9 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                         ChronicLungDiseaseCondition 1..1 and
                                         ExtraCardiacArteriopathyCondition 1..1 and
                                         NephropathyCondition 1..1 and
-                                        TypeOfDiseaseCondition 1..1
+                                        TypeOfDiseaseCondition 1..1 and 
+                                        PacksPerYear 1..1 and 
+                                        SmokingHistory 1..1
 
 
 * section[patientSection].entry[ageObservation] only Reference(Observation)
@@ -80,6 +82,12 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[patientSection].entry[NephropathyCondition] ^short = "Nefropatías del paciente"
 * section[patientSection].entry[TypeOfDiseaseCondition] only Reference(TypeOfDiseaseCondition)
 * section[patientSection].entry[TypeOfDiseaseCondition] ^short = "Tipo de enfermedad"
+* section[patientSection].entry[PacksPerYear] only Reference(PacksPerYearObservation)
+* section[patientSection].entry[PacksPerYear] ^short = "Observación de packs por año"
+* section[patientSection].entry[SmokingHistory] only Reference(SmokingObservation)
+* section[patientSection].entry[SmokingHistory] ^short = "Observación de historial fumador"
+
+
 
 * section[QuestionnaireSection] ^short = "Cuestionario realizado al paciente."
 * section[QuestionnaireSection] ^definition = "Antecedentes de intervenciones previas para realizar el procedimiento al paciente."
