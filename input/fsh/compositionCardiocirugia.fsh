@@ -166,7 +166,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 
 
-
+//Acá se agrega la sección de la organización
 
 * section[OrganizationSection] ^short = "Organizaciones involucradas"
 * section[OrganizationSection] ^definition = "Sección en la que se informa qué instituciones están involucradas en el procedimiento (referente, referidor)."
