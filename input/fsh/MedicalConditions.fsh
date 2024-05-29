@@ -1,11 +1,3 @@
-Profile: SmokingCondition
-Parent: Condition
-Description: "Se indica el historial de fumador del paciente"
-
-Title: "SmokingCondition"
-
-* code only CodeableConcept
-* code from SmokingConditionVS (preferred)
 
 
 Profile: DiabetesCondition

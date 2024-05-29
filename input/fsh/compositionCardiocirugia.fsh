@@ -41,7 +41,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                         bodyweightObservation 1..1 and
                                         bloodTypeObservation 0..1 and 
                                         emergencyContact 0..* and 
-                                        SmokingCondition 1..1 and
                                         DiabetesCondition 1..1  and
                                         HypertensionCondition 1..1 and 
                                         HypercholesterolemiaCondition 1..1 and
@@ -63,8 +62,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[patientSection].entry[bloodTypeObservation] ^short = "Referencia  al recurso que contiene la observación que hace referencia al tipo de sangre del paciente"
 * section[patientSection].entry[emergencyContact] only Reference(RelatedPerson)
 * section[patientSection].entry[emergencyContact] ^short = "Se referencia a las personas que pueden ser contactadas al momento de una emergencia"
-* section[patientSection].entry[SmokingCondition] only Reference(SmokingCondition)
-* section[patientSection].entry[SmokingCondition] ^short = "Historial de fumador del paciente"
 * section[patientSection].entry[DiabetesCondition] only Reference(DiabetesCondition)
 * section[patientSection].entry[DiabetesCondition] ^short = "Condición de paciente con diabetes"
 * section[patientSection].entry[HypertensionCondition] only Reference(HypertensionCondition)
