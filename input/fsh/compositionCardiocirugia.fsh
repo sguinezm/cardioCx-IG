@@ -147,7 +147,10 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                     PreviousIMObservation 1..1 and
                                                     MostRecentIMObservation 1..1 and
                                                     CongestiveHeartFailureCondition 0..1 and 
-                                                    LastCatheterizationObservation 0..1 
+                                                    LastCatheterizationObservation 0..1 and 
+                                                    DiseasedCoronarySegmentObservation 0..1 and 
+                                                    EjectionFractionObservation 0..1 and 
+                                                    EjectionFractionValueObservation 0..1
  
 * section[ProcedureCardio].entry[AnginaObservation] only Reference(AnginaObservation)
 * section[ProcedureCardio].entry[AnginaObservation] ^short = "Angina de pecho reportada por el paciente"
@@ -161,6 +164,22 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry[CongestiveHeartFailureCondition] ^short = "Se indica que el paciente presenta falla cardíaca congestiva"
 * section[ProcedureCardio].entry[LastCatheterizationObservation] only Reference(LastCatheterizationObservation)
 * section[ProcedureCardio].entry[LastCatheterizationObservation] ^short = "Se indica que la fecha en la que el paciente tuvo su última cateterización"
+* section[ProcedureCardio].entry[DiseasedCoronarySegmentObservation] only Reference(DiseasedCoronarySegmentObservation)
+* section[ProcedureCardio].entry[DiseasedCoronarySegmentObservation] ^short = "Observación del número de vasos con problemas."
+* section[ProcedureCardio].entry[EjectionFractionObservation] only Reference(EjectionFractionObservation)
+* section[ProcedureCardio].entry[EjectionFractionObservation] ^short = "Observación de la última fracción de eyección."
+* section[ProcedureCardio].entry[EjectionFractionValueObservation] only Reference(EjectionFractionValueObservation)
+* section[ProcedureCardio].entry[EjectionFractionValueObservation] ^short = "Observación del valor de la última fracción de eyección"
+
+
+
+
+
+
+
+
+
+
 
 
 
