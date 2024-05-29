@@ -150,7 +150,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                     LastCatheterizationObservation 0..1 and 
                                                     DiseasedCoronarySegmentObservation 0..1 and 
                                                     EjectionFractionObservation 0..1 and 
-                                                    EjectionFractionValueObservation 0..1
+                                                    EjectionFractionValueObservation 0..1 and 
+                                                    SystolicPressureObservation 0..1 
  
 * section[ProcedureCardio].entry[AnginaObservation] only Reference(AnginaObservation)
 * section[ProcedureCardio].entry[AnginaObservation] ^short = "Angina de pecho reportada por el paciente"
@@ -170,6 +171,11 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry[EjectionFractionObservation] ^short = "Observación de la última fracción de eyección."
 * section[ProcedureCardio].entry[EjectionFractionValueObservation] only Reference(EjectionFractionValueObservation)
 * section[ProcedureCardio].entry[EjectionFractionValueObservation] ^short = "Observación del valor de la última fracción de eyección"
+* section[ProcedureCardio].entry[SystolicPressureObservation] only Reference(SystolicPressureObservation)
+* section[ProcedureCardio].entry[SystolicPressureObservation] ^short = "Presión sistólica observación"
+
+
+
 
 
 
