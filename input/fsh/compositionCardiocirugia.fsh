@@ -7,7 +7,7 @@ Title: "Composition Cardiocirugia"
 Description: "Recurso que contiene las referencias identificadas por secciones a los recursos necesarios para representar la información de cirugias cardiacas."
 
 
-* section 1..8 MS
+* section 1..10 MS
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.ordered = false
@@ -23,8 +23,10 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
     EncounterSection 1..1 MS and
     ProcedureSection 1..1 MS and
     ProcedureCardio 1..1 MS and
-    OrganizationSection 1..1 MS and
-    MedicalConditionSection 1..1
+    OrganizationSection 1..1 MS and 
+    ValveProcedureSection 1..1 MS and 
+    ProcedureEcocardio 1..1 MS and 
+    PerfusionProcedureSection 1..1 MS 
 
 * section[patientSection] ^short = "Sección del paciente"
 * section[patientSection] ^definition = "Información acerca del paciente"
