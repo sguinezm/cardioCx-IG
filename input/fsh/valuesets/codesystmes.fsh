@@ -712,8 +712,27 @@ Description: "Ritmo del corazón en preoperación"
 
 
 
+CodeSystem: ArteriesUsedAsConduitsCS
 
+Id: ArteriesUsedAsConduitsCS
+Title: "arterias usadas como conductos"
+Description: "arterias usadas como conductos"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
+* #1 "no_arteries_were_used"
+* #2 "right_radial"
+* #3 "right_GEPA"
+* #4 "left_AMI"
+* #5 "left_radial"
+* #6 "other"
+* #7 "other_value"
 
 
 
