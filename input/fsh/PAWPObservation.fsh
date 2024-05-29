@@ -3,7 +3,7 @@ Alias: $loinc = http://loinc.org
 
 Profile: PAWPObservation
 Parent: Observation
-Description: "Observación de la fecha de la ultima cateterización."
+Description: "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP) "
 
 Title: "PAWPObservation"
 

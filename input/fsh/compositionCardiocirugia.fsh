@@ -151,7 +151,10 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                     DiseasedCoronarySegmentObservation 0..1 and 
                                                     EjectionFractionObservation 0..1 and 
                                                     EjectionFractionValueObservation 0..1 and 
-                                                    SystolicPressureObservation 0..1 
+                                                    SystolicPressureObservation 0..1 and 
+                                                    AVGradient 0..1 and
+                                                    LVEDPObservation 0..1 and 
+                                                    PAWPObservation 0..1
  
 * section[ProcedureCardio].entry[AnginaObservation] only Reference(AnginaObservation)
 * section[ProcedureCardio].entry[AnginaObservation] ^short = "Angina de pecho reportada por el paciente"
@@ -173,6 +176,12 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry[EjectionFractionValueObservation] ^short = "Observación del valor de la última fracción de eyección"
 * section[ProcedureCardio].entry[SystolicPressureObservation] only Reference(SystolicPressureObservation)
 * section[ProcedureCardio].entry[SystolicPressureObservation] ^short = "Presión sistólica observación"
+* section[ProcedureCardio].entry[AVGradient] only Reference(AVGradient)
+* section[ProcedureCardio].entry[AVGradient] ^short = "Gradiente AV"
+* section[ProcedureCardio].entry[LVEDPObservation] only Reference(LVEDPObservation)
+* section[ProcedureCardio].entry[LVEDPObservation] ^short = "Presión de Fin de Diástole del Ventrículo Izquierdo"
+* section[ProcedureCardio].entry[PAWPObservation] only Reference(PAWPObservation)
+* section[ProcedureCardio].entry[PAWPObservation] ^short = "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP) "
 
 
 
