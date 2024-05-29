@@ -144,7 +144,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                     FunctionalCapacityObservation 1..1 and
                                                     PreviousIMObservation 1..1 and
                                                     MostRecentIMObservation 1..1 and
-                                                    CongestiveHeartFailureCondition 0..1
+                                                    CongestiveHeartFailureCondition 0..1 and 
+                                                    LastCatheterizationObservation 0..1 
  
 * section[ProcedureCardio].entry[AnginaObservation] only Reference(AnginaObservation)
 * section[ProcedureCardio].entry[AnginaObservation] ^short = "Angina de pecho reportada por el paciente"
@@ -156,6 +157,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry[MostRecentIMObservation] ^short = "Días transcurridos desde el último infarto al miocardio"
 * section[ProcedureCardio].entry[CongestiveHeartFailureCondition] only Reference(CongestiveHeartFailureCondition)
 * section[ProcedureCardio].entry[CongestiveHeartFailureCondition] ^short = "Se indica que el paciente presenta falla cardíaca congestiva"
+* section[ProcedureCardio].entry[LastCatheterizationObservation] only Reference(LastCatheterizationObservation)
+* section[ProcedureCardio].entry[LastCatheterizationObservation] ^short = "Se indica que la fecha en la que el paciente tuvo su última cateterización"
 
 
 
