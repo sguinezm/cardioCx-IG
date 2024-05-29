@@ -1,6 +1,6 @@
 Profile: Questionnaire
 Parent: QuestionnaireResponse
-Description: "Questionario utilizado para conocer las intervenciones clinicas previas del paciente, relevantes para el procedimiento de cardio cirugía."
+Description: "Cuestionario utilizado para conocer las intervenciones clinicas previas del paciente, relevantes para el procedimiento de cardio cirugía."
 
 * item ^slicing.discriminator.type = #value
 * item ^slicing.discriminator.path = "linkId"
