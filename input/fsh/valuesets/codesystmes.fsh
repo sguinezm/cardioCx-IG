@@ -689,21 +689,6 @@ Description: "Observación del ritmo de cardioplegía en perfusión"
 * #7087005 "Intermitente" 
 * #255238004 "continuo"
 
-CodeSystem: PacksPerYearCS
-Id: PacksPerYearCS
-Title: "Packs de cigarros por año"
-Description: "Packs de cigarros por año"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #230057008 "Consumo de cigarros (entidad observable)"
-* #258707000 "Año (calificador)"
 
 
 CodeSystem: PreoperativeHeartRythmObservationCS

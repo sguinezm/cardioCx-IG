@@ -7,9 +7,11 @@ Description: "Packs por año"
 
 Title: "PacksPerYearObservation"
 
-
+* code.coding.system = $snomed
+* code.coding.code = $snomed#401201003
+* code.coding.code ^definition = "Packs per year"
 * code.coding 1..1
-* code from PacksPerYearVS
+
 
 
 * value[x] only Quantity
