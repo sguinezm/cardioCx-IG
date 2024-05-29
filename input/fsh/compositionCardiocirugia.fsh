@@ -24,7 +24,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
     ProcedureSection 1..1 MS and
     ProcedureCardio 1..1 MS and
     OrganizationSection 1..1 MS and
-    PreoperativeRiskFactorsSection 1..1 MS and
     MedicalConditionSection 1..1
 
 * section[patientSection] ^short = "Sección del paciente"
@@ -160,11 +159,15 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 
 
+
+
+
+
+
+
 * section[OrganizationSection] ^short = "Organizaciones involucradas"
 * section[OrganizationSection] ^definition = "Sección en la que se informa qué instituciones están involucradas en el procedimiento (referente, referidor)."
 
 
-* section[PreoperativeRiskFactorsSection] ^short = "Factores de riesgo preoperatorios"
-* section[PreoperativeRiskFactorsSection] ^definition = "Sección en la que se describen los factores de riesgo preoperatorios del paciente."
 
 
