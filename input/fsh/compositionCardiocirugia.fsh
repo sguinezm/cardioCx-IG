@@ -208,7 +208,12 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ValveProcedureSection].entry contains stenosis 0..1 and 
                                                 valve 0..1 and 
                                                 insuficiency 0..1 and 
-                                                valveName 0..1 
+                                                valveName 0..1 and 
+                                                valveSize 0..1 and 
+                                                explantType 0..1 and 
+                                                reoperationValveReason 0..1 and
+                                                valveProcedure 0..1 and 
+                                                implantType 0..1 
 
 * section[ValveProcedureSection].entry[stenosis] only Reference(StenosisCondition)
 * section[ValveProcedureSection].entry[stenosis] ^short = "Indica la presencia de stenosis"
@@ -219,8 +224,27 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ValveProcedureSection].entry[insuficiency] only Reference(ValveProcedure)
 * section[ValveProcedureSection].entry[insuficiency] ^short = "Indica la presencia de insuficiencia"
 
-* section[ValveProcedureSection].entry[valveName] only Reference(ValveProcedure)
+* section[ValveProcedureSection].entry[valveName] only Reference(ValveDevice)
 * section[ValveProcedureSection].entry[valveName] ^short = "Indica el nombre de la válvula"
+
+* section[ValveProcedureSection].entry[valveSize] only Reference(ValveDevice)
+* section[ValveProcedureSection].entry[valveSize] ^short = "Indica el tamaño de la válvula"
+
+* section[ValveProcedureSection].entry[explantType] only Reference(ValveProcedure)
+* section[ValveProcedureSection].entry[explantType] ^short = "Indica tipo de explante"
+
+* section[ValveProcedureSection].entry[reoperationValveReason] only Reference(ValveProcedure)
+* section[ValveProcedureSection].entry[reoperationValveReason] ^short = "Indica la razón de reoperación"
+
+* section[ValveProcedureSection].entry[valveProcedure] only Reference(ValveProcedure)
+* section[ValveProcedureSection].entry[valveProcedure] ^short = "Indica el procedimiento de válvula"
+
+* section[ValveProcedureSection].entry[implantType] only Reference(ValveProcedure)
+* section[ValveProcedureSection].entry[implantType] ^short = "Indica el tipo de implante"
+
+
+
+
 
 
 
