@@ -154,7 +154,10 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                     SystolicPressureObservation 0..1 and 
                                                     AVGradient 0..1 and
                                                     LVEDPObservation 0..1 and 
-                                                    PAWPObservation 0..1
+                                                    PAWPObservation 0..1 and 
+                                                    NumberOfDistalArterialAnastomoses 0..1 and 
+                                                    NumberOfDistalVenousAnastomoses 0..1 and 
+                                                    ArteriesUsedAsConduitsObservation 0..1 
  
 * section[ProcedureCardio].entry[AnginaObservation] only Reference(AnginaObservation)
 * section[ProcedureCardio].entry[AnginaObservation] ^short = "Angina de pecho reportada por el paciente"
@@ -181,9 +184,13 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry[LVEDPObservation] only Reference(LVEDPObservation)
 * section[ProcedureCardio].entry[LVEDPObservation] ^short = "Presión de Fin de Diástole del Ventrículo Izquierdo"
 * section[ProcedureCardio].entry[PAWPObservation] only Reference(PAWPObservation)
-* section[ProcedureCardio].entry[PAWPObservation] ^short = "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP) "
-
-
+* section[ProcedureCardio].entry[PAWPObservation] ^short = "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP)"
+* section[ProcedureCardio].entry[NumberOfDistalArterialAnastomoses] only Reference(NumberOfDistalArterialAnastomosesObservation)
+* section[ProcedureCardio].entry[NumberOfDistalArterialAnastomoses] ^short = "Observación de número de arterias distal"
+* section[ProcedureCardio].entry[NumberOfDistalVenousAnastomoses] only Reference(NumberOfDistalVenousAnastomoses)
+* section[ProcedureCardio].entry[NumberOfDistalVenousAnastomoses] ^short = "Observación de número de arterias venosas"
+* section[ProcedureCardio].entry[ArteriesUsedAsConduitsObservation] only Reference(ArteriesUsedAsConduitsObservation)
+* section[ProcedureCardio].entry[ArteriesUsedAsConduitsObservation] ^short = "Observación de arterias usadas como conductos"
 
 
 
