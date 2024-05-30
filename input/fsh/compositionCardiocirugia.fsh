@@ -196,8 +196,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 
 
-* section[ValveProcedureSection] ^short = "Sección del paciente"
-* section[ValveProcedureSection] ^definition = "Información acerca del paciente"
+* section[ValveProcedureSection] ^short = "Sección de válvula"
+* section[ValveProcedureSection] ^definition = "Información acerca de vávula del paciente"
 * section[ValveProcedureSection].code = #1
 * section[ValveProcedureSection].focus only Reference(ValveProcedure)
 
@@ -249,6 +249,31 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[ValveProcedureSection].entry[nativeValvePathology] only Reference(NativeValvePathologyObservation)
 * section[ValveProcedureSection].entry[nativeValvePathology] ^short = "Observación de válvula nativa"
+
+
+
+* section[ProcedureEcocardio] ^short = "Sección de ecocardiograma"
+* section[ProcedureEcocardio] ^definition = "Información acerca del ecocardiograma"
+* section[ProcedureEcocardio].code = #2
+* section[ProcedureEcocardio].focus only Reference(EchocardiogramProcedure)
+
+* section[ProcedureEcocardio].entry ^slicing.discriminator.type = #profile
+* section[ProcedureEcocardio].entry ^slicing.discriminator.path = "resolve()"
+* section[ProcedureEcocardio].entry ^slicing.rules = #open
+* section[ProcedureEcocardio].entry 0..*
+* section[ProcedureEcocardio].entry contains systolicPressureObservation 0..1 
+
+
+
+* section[ProcedureEcocardio].entry[systolicPressureObservation] only Reference(SystolicPressureObservation)
+* section[ProcedureEcocardio].entry[systolicPressureObservation] ^short = "observación de PSAP"
+
+
+
+
+
+
+
 
 
 
