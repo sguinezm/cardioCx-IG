@@ -196,11 +196,21 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 
 
+* section[ValveProcedureSection] ^short = "Sección del paciente"
+* section[ValveProcedureSection] ^definition = "Información acerca del paciente"
+* section[ValveProcedureSection].code = #1
+* section[ValveProcedureSection].focus only Reference(ValveProcedure)
+
+* section[ValveProcedureSection].entry ^slicing.discriminator.type = #profile
+* section[ValveProcedureSection].entry ^slicing.discriminator.path = "resolve()"
+* section[ValveProcedureSection].entry ^slicing.rules = #open
+* section[ValveProcedureSection].entry 0..*
+* section[ValveProcedureSection].entry contains stenosis 0..1 
 
 
 
-
-
+* section[ValveProcedureSection].entry[stenosis] only Reference(Procedure)
+* section[ValveProcedureSection].entry[stenosis] ^short = "Referencia  al recurso que contiene la observación de la edad del paciente"
 
 
 
