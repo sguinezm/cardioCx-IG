@@ -205,13 +205,22 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ValveProcedureSection].entry ^slicing.discriminator.path = "resolve()"
 * section[ValveProcedureSection].entry ^slicing.rules = #open
 * section[ValveProcedureSection].entry 0..*
-* section[ValveProcedureSection].entry contains stenosis 0..1 
+* section[ValveProcedureSection].entry contains stenosis 0..1 and 
+                                                valve 0..1 and 
+                                                insuficiency 0..1 and 
+                                                valveName 0..1 
 
+* section[ValveProcedureSection].entry[stenosis] only Reference(StenosisCondition)
+* section[ValveProcedureSection].entry[stenosis] ^short = "Indica la presencia de stenosis"
 
+* section[ValveProcedureSection].entry[valve] only Reference(ValveProcedure)
+* section[ValveProcedureSection].entry[valve] ^short = "Indica la presencia de stenosis"
 
-* section[ValveProcedureSection].entry[stenosis] only Reference(Procedure)
-* section[ValveProcedureSection].entry[stenosis] ^short = "Referencia  al recurso que contiene la observación de la edad del paciente"
+* section[ValveProcedureSection].entry[insuficiency] only Reference(ValveProcedure)
+* section[ValveProcedureSection].entry[insuficiency] ^short = "Indica la presencia de insuficiencia"
 
+* section[ValveProcedureSection].entry[valveName] only Reference(ValveProcedure)
+* section[ValveProcedureSection].entry[valveName] ^short = "Indica el nombre de la válvula"
 
 
 
