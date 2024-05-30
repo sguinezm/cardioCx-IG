@@ -213,7 +213,9 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                 explantType 0..1 and 
                                                 reoperationValveReason 0..1 and
                                                 valveProcedure 0..1 and 
-                                                implantType 0..1 
+                                                implantType 0..1 and 
+                                                endocarditisInfecciosa 0..1 and 
+                                                nativeValvePathology 0..1 
 
 * section[ValveProcedureSection].entry[stenosis] only Reference(StenosisCondition)
 * section[ValveProcedureSection].entry[stenosis] ^short = "Indica la presencia de stenosis"
@@ -241,6 +243,19 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[ValveProcedureSection].entry[implantType] only Reference(ValveProcedure)
 * section[ValveProcedureSection].entry[implantType] ^short = "Indica el tipo de implante"
+
+* section[ValveProcedureSection].entry[endocarditisInfecciosa] only Reference(EndocarditisInfecciosaObservation)
+* section[ValveProcedureSection].entry[endocarditisInfecciosa] ^short = "Endocarditis infecciosa"
+
+* section[ValveProcedureSection].entry[nativeValvePathology] only Reference(NativeValvePathologyObservation)
+* section[ValveProcedureSection].entry[nativeValvePathology] ^short = "Observación de válvula nativa"
+
+
+
+
+
+
+
 
 
 
