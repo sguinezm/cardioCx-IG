@@ -258,7 +258,20 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                              prosthesisDetachment 0..1 and 
                                              cardiacTumor 0..1 and 
                                              other 0..1 and 
-                                             leftVentricleDiastolicDiameter 0..1 
+                                             leftVentricleDiastolicDiameter 0..1 and 
+                                             leftVentricleSystolicDiameter 0..1 and 
+                                             aorticValvesMainGradient 0..1 and 
+                                             aorticValvesMediumGradient 0..1 and 
+                                             aorticValvesMaximumSpeed 0..1 and 
+                                             aorticValvesArea 0..1 and 
+                                             aorticValvesInsufficiency 0..1 and 
+                                             mitralValveMainGradient 0..1 and 
+                                             mitralValveMediumGradient 0..1 and 
+                                             mitralValveMaximumSpeed 0..1 and 
+                                             mitralValveArea 0..1 and 
+                                             mitralValveInsufficiency 0..1 and 
+                                             tricuspideValvesInsuficiency 0..1 and 
+                                             diagnostics 0..1
 
 * section[ProcedureEcocardio].entry[systolicPressureObservation] only Reference(EchocardiogramsObservation)
 * section[ProcedureEcocardio].entry[systolicPressureObservation] ^short = "observación de PSAP"
@@ -294,26 +307,46 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureEcocardio].entry[other] ^short = "Otra observación"
 
 * section[ProcedureEcocardio].entry[leftVentricleDiastolicDiameter] only Reference(EchocardiogramsObservation)
-* section[ProcedureEcocardio].entry[leftVentricleDiastolicDiameter] ^short = "Otra diámetro de ventriculo izquierdo"
+* section[ProcedureEcocardio].entry[leftVentricleDiastolicDiameter] ^short = "observación diámetro diastólico de ventrículo izquierdo"
 
+* section[ProcedureEcocardio].entry[leftVentricleSystolicDiameter] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[leftVentricleSystolicDiameter] ^short = "Observación diámetro sistólico de ventrículo izquierdo"
 
+* section[ProcedureEcocardio].entry[aorticValvesMainGradient] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[aorticValvesMainGradient] ^short = "observación del gradiente de a válvula principal"
 
+* section[ProcedureEcocardio].entry[aorticValvesMediumGradient] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[aorticValvesMediumGradient] ^short = "observación del gradiente de a válvula aorta media"
 
+* section[ProcedureEcocardio].entry[aorticValvesMaximumSpeed] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[aorticValvesMaximumSpeed] ^short = "observación de la máxima velocidad de válvula aorta"
 
+* section[ProcedureEcocardio].entry[aorticValvesArea] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[aorticValvesArea] ^short = "observación del área de válvula aorta"
 
+* section[ProcedureEcocardio].entry[aorticValvesInsufficiency] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[aorticValvesInsufficiency] ^short = "observación de la insuficiencia de válvula aorta"
 
+* section[ProcedureEcocardio].entry[mitralValveMainGradient] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[mitralValveMainGradient] ^short = "observación de la gradiente principal de la válvula mitral"
 
+* section[ProcedureEcocardio].entry[mitralValveMediumGradient] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[mitralValveMediumGradient] ^short = "observación de la gradiente media de la válvula mitral"
 
+* section[ProcedureEcocardio].entry[mitralValveMaximumSpeed] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[mitralValveMaximumSpeed] ^short = "observación de la velocidad máxima de válvula mitral"
 
+* section[ProcedureEcocardio].entry[mitralValveArea] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[mitralValveArea] ^short = "observación del área de válvula mitral"
 
+* section[ProcedureEcocardio].entry[mitralValveInsufficiency] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[mitralValveInsufficiency] ^short = "observación de la insuficiencia de válvula mitral"
 
+* section[ProcedureEcocardio].entry[tricuspideValvesInsuficiency] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[tricuspideValvesInsuficiency] ^short = "observación de la insuficiencia de válvula tricúspide"
 
-
-
-
-
-
-
+* section[ProcedureEcocardio].entry[diagnostics] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[diagnostics] ^short = "Diagnósticos de ecocardiograma"
 
 
 
