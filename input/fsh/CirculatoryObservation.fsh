@@ -7,7 +7,8 @@ Description: "Indica si se realiza una perfusión"
 
 Title: "CirculatoryObservation"
 
-
+* subject 1..1
+* subject only reference PatientCardio 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open

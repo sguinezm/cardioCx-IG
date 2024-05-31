@@ -1,7 +1,7 @@
 Alias: $observation-bodyheight = http://hl7.org/fhir/StructureDefinition/bodyheight
 Alias: $observation-bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
 
-Profile: CompositionCardio
+Profile: CompositionCardiocirugia
 Parent: Composition
 Title: "Composition Cardiocirugia"
 Description: "Recurso que contiene las referencias identificadas por secciones a los recursos necesarios para representar la información de cirugias cardiacas."
@@ -20,8 +20,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
     patientSection 1..1 MS and
     QuestionnaireSection 0..1 MS and
     PractitionerSection 1..1 MS and
-    EncounterSection 1..1 MS and
-    ProcedureSection 1..1 MS and
     ProcedureCardio 1..1 MS and
     OrganizationSection 1..1 MS and 
     ValveProcedureSection 1..1 MS and 
@@ -121,19 +119,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PractitionerSection].entry[AntestesistPractitioner] ^short = "Referencia al recurso del cirujano en cardiocirugía para difinir el anestesista."
 
 
-* section[EncounterSection] ^short = "Descripción del encuentro médico"
-* section[EncounterSection] ^definition = "Sección en la que se describe el encuentro médico."
 
-* section[ProcedureSection] ^short = "Descripción del procedimiento"
-* section[ProcedureSection] ^definition = "Sección en la que se describe el procedimiento realizado."
-* section[ProcedureSection].focus only Reference(Procedure)
-* section[ProcedureSection].entry ^slicing.discriminator.type = #profile
-* section[ProcedureSection].entry ^slicing.discriminator.path = "resolve()"
-* section[ProcedureSection].entry ^slicing.rules = #open
-* section[ProcedureSection].entry 2..2  
-* section[ProcedureSection].entry contains cardioCxProcedure 1..1 
-* section[ProcedureSection].entry[cardioCxProcedure] only Reference(ProcedureCardio)
-* section[ProcedureSection].entry[cardioCxProcedure] ^short = "Procedimiento médico de la cardiocirugía."
 
 * section[ProcedureCardio] ^short = "Historial cardíaco"
 * section[ProcedureCardio] ^definition = "Sección en la que se describe el historial cardiaco del paciente."
@@ -261,21 +247,30 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureEcocardio].entry ^slicing.discriminator.path = "resolve()"
 * section[ProcedureEcocardio].entry ^slicing.rules = #open
 * section[ProcedureEcocardio].entry 0..*
-* section[ProcedureEcocardio].entry contains systolicPressureObservation 0..1 
+* section[ProcedureEcocardio].entry contains systolicPressureObservation 0..1 and 
+                                             leftatrium 0..1 and 
+                                             aorticRoot 0..1 and 
+                                             rightCavities 0..1 and 
+                                             endocarditis 0..1 and 
+                                             valve 0..1
 
-
-
-* section[ProcedureEcocardio].entry[systolicPressureObservation] only Reference(SystolicPressureObservation)
+* section[ProcedureEcocardio].entry[systolicPressureObservation] only Reference(EchocardiogramsObservation)
 * section[ProcedureEcocardio].entry[systolicPressureObservation] ^short = "observación de PSAP"
 
+* section[ProcedureEcocardio].entry[leftatrium] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[leftatrium] ^short = "observación de arteria izquierda"
 
+* section[ProcedureEcocardio].entry[aorticRoot] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[aorticRoot] ^short = "observación de arteria principal"
 
+* section[ProcedureEcocardio].entry[rightCavities] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[rightCavities] ^short = "observación de cavidad derecha"
 
+* section[ProcedureEcocardio].entry[endocarditis] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[endocarditis] ^short = "observación de endocarditis"
 
-
-
-
-
+* section[ProcedureEcocardio].entry[valve] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[valve] ^short = "observación de tipo de válvua"
 
 
 
