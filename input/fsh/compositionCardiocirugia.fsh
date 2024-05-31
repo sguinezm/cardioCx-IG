@@ -252,7 +252,13 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                              aorticRoot 0..1 and 
                                              rightCavities 0..1 and 
                                              endocarditis 0..1 and 
-                                             valve 0..1
+                                             valve 0..1 and 
+                                             vegetable 0..1 and 
+                                             abscess 0..1 and 
+                                             prosthesisDetachment 0..1 and 
+                                             cardiacTumor 0..1 and 
+                                             other 0..1 and 
+                                             leftVentricleDiastolicDiameter 0..1 
 
 * section[ProcedureEcocardio].entry[systolicPressureObservation] only Reference(EchocardiogramsObservation)
 * section[ProcedureEcocardio].entry[systolicPressureObservation] ^short = "observación de PSAP"
@@ -271,6 +277,33 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[ProcedureEcocardio].entry[valve] only Reference(EchocardiogramsObservation)
 * section[ProcedureEcocardio].entry[valve] ^short = "observación de tipo de válvua"
+
+* section[ProcedureEcocardio].entry[vegetable] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[vegetable] ^short = "observación de estado de vegetación"
+
+* section[ProcedureEcocardio].entry[abscess] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[abscess] ^short = "observación de presencia de absceso"
+
+* section[ProcedureEcocardio].entry[prosthesisDetachment] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[prosthesisDetachment] ^short = "observación de extracción de protesis"
+
+* section[ProcedureEcocardio].entry[cardiacTumor] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[cardiacTumor] ^short = "observación de presencia de tumor cardíaco"
+
+* section[ProcedureEcocardio].entry[other] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[other] ^short = "Otra observación"
+
+* section[ProcedureEcocardio].entry[leftVentricleDiastolicDiameter] only Reference(EchocardiogramsObservation)
+* section[ProcedureEcocardio].entry[leftVentricleDiastolicDiameter] ^short = "Otra diámetro de ventriculo izquierdo"
+
+
+
+
+
+
+
+
+
 
 
 
