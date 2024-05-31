@@ -353,6 +353,46 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 
 
+* section[PerfusionProcedureSection] ^short = "Sección de perfusión"
+* section[PerfusionProcedureSection] ^definition = "Información acerca de la perfusión"
+* section[PerfusionProcedureSection].code = #6
+* section[PerfusionProcedureSection].focus only Reference(PerfusionProcedure)
+
+* section[PerfusionProcedureSection].entry ^slicing.discriminator.type = #profile
+* section[PerfusionProcedureSection].entry ^slicing.discriminator.path = "resolve()"
+* section[PerfusionProcedureSection].entry ^slicing.rules = #open
+* section[PerfusionProcedureSection].entry 0..*
+* section[PerfusionProcedureSection].entry contains extracorporealCirculation 0..1 
+
+
+* section[PerfusionProcedureSection].entry[extracorporealCirculation] only Reference(PerfusionProcedure)
+* section[PerfusionProcedureSection].entry[extracorporealCirculation] ^short = "Procedimiento de circulación extracorpórea"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Acá se agrega la sección de la organización
 
 * section[OrganizationSection] ^short = "Organizaciones involucradas"
