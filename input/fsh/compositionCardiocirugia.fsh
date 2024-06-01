@@ -352,7 +352,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 
 
-
 * section[PerfusionProcedureSection] ^short = "Sección de perfusión"
 * section[PerfusionProcedureSection] ^definition = "Información acerca de la perfusión"
 * section[PerfusionProcedureSection].code = #6
@@ -362,34 +361,64 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PerfusionProcedureSection].entry ^slicing.discriminator.path = "resolve()"
 * section[PerfusionProcedureSection].entry ^slicing.rules = #open
 * section[PerfusionProcedureSection].entry 0..*
-* section[PerfusionProcedureSection].entry contains extracorporealCirculation 0..1 
+* section[PerfusionProcedureSection].entry contains extracorporealCirculation 0..1 and 
+                                                    perfusionTemperature 0..1 and 
+                                                    miocardicalProtection 0..1 and 
+                                                    cardioplegiaSolution 0..1 and 
+                                                    cardioplegiaTemperature 0..1 and 
+                                                    cardioplegiaInfusionMode 0..1 and 
+                                                    cardioplegiaRhythm 0..1 and 
+                                                    reasonForBallonUsage 0..1 and 
+                                                    extracorporealCirculationTime 0..1 and 
+                                                    cumulativeCrossClampTime 0..1 and 
+                                                    totalCirculatoryArrestTime 0..1 and 
+                                                    arterialCannulations 0..1 and 
+                                                    venousCannulations 0..1 and 
+                                                    circulatoryAssistances 0..1
 
 
 * section[PerfusionProcedureSection].entry[extracorporealCirculation] only Reference(PerfusionProcedure)
 * section[PerfusionProcedureSection].entry[extracorporealCirculation] ^short = "Procedimiento de circulación extracorpórea"
 
+* section[PerfusionProcedureSection].entry[perfusionTemperature] only Reference(PerfusionTemperatureObservation)
+* section[PerfusionProcedureSection].entry[perfusionTemperature] ^short = "Observación de temperatura de perfusión"
+
+* section[PerfusionProcedureSection].entry[miocardicalProtection] only Reference(PerfusionProcedure)
+* section[PerfusionProcedureSection].entry[miocardicalProtection] ^short = "Observación de protección del miocardio"
+
+* section[PerfusionProcedureSection].entry[cardioplegiaSolution] only Reference(CardioplegiaObservation)
+* section[PerfusionProcedureSection].entry[cardioplegiaSolution] ^short = "Observación de la solución"
 
 
+* section[PerfusionProcedureSection].entry[cardioplegiaTemperature] only Reference(CardioplegiaTemperatureObservation)
+* section[PerfusionProcedureSection].entry[cardioplegiaTemperature] ^short = "Observación de la temperatura de la solución"
 
+* section[PerfusionProcedureSection].entry[cardioplegiaInfusionMode] only Reference(CardioplegiaInfusionModeObservation)
+* section[PerfusionProcedureSection].entry[cardioplegiaInfusionMode] ^short = "Observación del modo de la infusión de la cardioplegía"
 
+* section[PerfusionProcedureSection].entry[cardioplegiaRhythm] only Reference(CardioplegiaRhytmObservation)
+* section[PerfusionProcedureSection].entry[cardioplegiaRhythm] ^short = "Observación del ritmo de cardioplegía"
 
+* section[PerfusionProcedureSection].entry[reasonForBallonUsage] only Reference(ReasonBallonObservation)
+* section[PerfusionProcedureSection].entry[reasonForBallonUsage] ^short = "Observación de balón de la razón de uso de balón contrapulsación"
 
+* section[PerfusionProcedureSection].entry[extracorporealCirculationTime] only Reference(ExtracorporealCirculationTimeObservation)
+* section[PerfusionProcedureSection].entry[extracorporealCirculationTime] ^short = "Observación del tiempo de la perfusión"
 
+* section[PerfusionProcedureSection].entry[cumulativeCrossClampTime] only Reference(CumulativeCrossClampTimeObservation)
+* section[PerfusionProcedureSection].entry[cumulativeCrossClampTime] ^short = "Observación del tiempo acumulado"
 
+* section[PerfusionProcedureSection].entry[totalCirculatoryArrestTime] only Reference(TotalCirculatoryArrestTimeObservation)
+* section[PerfusionProcedureSection].entry[totalCirculatoryArrestTime] ^short = "Observación del tiempo total"
 
+* section[PerfusionProcedureSection].entry[arterialCannulations] only Reference(ArterialCannulationObservation)
+* section[PerfusionProcedureSection].entry[arterialCannulations] ^short = "Observación de canulación arterial"
 
+* section[PerfusionProcedureSection].entry[venousCannulations] only Reference(VenousCannulationsObservation)
+* section[PerfusionProcedureSection].entry[venousCannulations] ^short = "Observación de canulación venosa"
 
-
-
-
-
-
-
-
-
-
-
-
+* section[PerfusionProcedureSection].entry[circulatoryAssistances] only Reference(CirculatoryObservation)
+* section[PerfusionProcedureSection].entry[circulatoryAssistances] ^short = "Observación de las asistencias circulatorias"
 
 
 
