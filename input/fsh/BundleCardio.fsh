@@ -28,7 +28,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  capacidadFuncional 1..1 and 
                  infarto 0..1 and 
                  infartoReciente 0..1 and 
-                 insuficienciaCardíacaCongestiva 0..1
+                 insuficienciaCardíacaCongestiva 0..1 and 
+                 angioplastiaPrevia 0..1
 
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -70,6 +71,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[insuficienciaCardíacaCongestiva].resource ^short = "Se indica si el paciente ha sufrido una insuficiencia cardíaca congestiva"
 
 
-
+* entry[angioplastiaPrevia] ^short = "Angioplastía previa"
+* entry[angioplastiaPrevia].resource only Questionnaire
+* entry[angioplastiaPrevia].resource ^short = "Se indica si el paciente ha tenido una angioplastía previa"
 
 
