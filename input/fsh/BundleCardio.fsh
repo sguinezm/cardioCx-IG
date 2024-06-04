@@ -24,7 +24,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry contains cardioComposition 1..1 and 
                  paciente 1..1 and 
                  tipoSangre 1..1 and 
-                 cirujano 1..1
+                 cirujano 1..1 and 
+                 capacidadFuncional 1..1 and 
+                 PreviousIMObservation 0..1 
 
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -32,19 +34,32 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[cardioComposition].resource ^short = "Descripcion DETALLADA , PRIMER RECURSO COMPOSITION"
 
 
-* entry[paciente] ^short = ""
+* entry[paciente] ^short = "Paciente"
 * entry[paciente].resource only PatientCardio
-* entry[paciente].resource ^short = ""
+* entry[paciente].resource ^short = "Paciente"
 
-* entry[tipoSangre] ^short = ""
+* entry[tipoSangre] ^short = "Observación de tipo de sangre"
 * entry[tipoSangre].resource only BloodTypeObservation
-* entry[tipoSangre].resource ^short = ""
+* entry[tipoSangre].resource ^short = "Se detalla el tipo de sangre del paciente"
 
 /**
 * entry[contactoPaciente] ^short = ""
 * entry[contactoPaciente].resource only RelatedPerson
 * entry[contactoPaciente].resource ^short = ""  **/
 
-* entry[cirujano] ^short = ""
+* entry[cirujano] ^short = "Profesionales"
 * entry[cirujano].resource only SurgeonPractitionerCardio
-* entry[cirujano].resource ^short = ""
+* entry[cirujano].resource ^short = "Se detallan los profesionales que realizarán la cirugía"
+
+* entry[capacidadFuncional] ^short = "Capacidad funcional"
+* entry[capacidadFuncional].resource only FunctionalCapacityObservation
+* entry[capacidadFuncional].resource ^short = "Se detalla la capacidad funcional del paciente"
+
+* entry[capacidadFuncional] ^short = "Historia cardiovascular del paciente"
+* entry[capacidadFuncional].resource only PreviousIMObservation
+* entry[capacidadFuncional].resource ^short = "Categorización del número de infartos al miocardio sufridos por el paciente previo a la inteversión"
+
+
+
+
+
