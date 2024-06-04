@@ -26,7 +26,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  tipoSangre 1..1 and 
                  cirujano 1..1 and 
                  capacidadFuncional 1..1 and 
-                 PreviousIMObservation 0..1 
+                 infarto 0..1 and 
+                 infartoReciente 0..1 and 
+                 insuficienciaCardíacaCongestiva 0..1
 
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -55,9 +57,17 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[capacidadFuncional].resource only FunctionalCapacityObservation
 * entry[capacidadFuncional].resource ^short = "Se detalla la capacidad funcional del paciente"
 
-* entry[capacidadFuncional] ^short = "Historia cardiovascular del paciente"
-* entry[capacidadFuncional].resource only PreviousIMObservation
-* entry[capacidadFuncional].resource ^short = "Categorización del número de infartos al miocardio sufridos por el paciente previo a la inteversión"
+* entry[infarto] ^short = "Historia cardiovascular del paciente"
+* entry[infarto].resource only PreviousIMObservation
+* entry[infarto].resource ^short = "Categorización del número de infartos al miocardio sufridos por el paciente previo a la inteversión"
+
+* entry[infartoReciente] ^short = "Historia cardiovascular reciente del paciente"
+* entry[infartoReciente].resource only MostRecentIMObservation
+* entry[infartoReciente].resource ^short = "Categorización del número de infartos al miocardio sufridos recientemente por el paciente previo a la inteversión"
+
+* entry[insuficienciaCardíacaCongestiva] ^short = "insuficiencia cardíaca congestiva"
+* entry[insuficienciaCardíacaCongestiva].resource only CongestiveHeartFailureCondition
+* entry[insuficienciaCardíacaCongestiva].resource ^short = "Se indica si el paciente ha sufrido una insuficiencia cardíaca congestiva"
 
 
 
