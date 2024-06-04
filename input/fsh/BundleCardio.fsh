@@ -23,7 +23,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
 * entry contains cardioComposition 1..1 and 
                  paciente 1..1 and 
-                 tipoSangre 1..1 
+                 tipoSangre 1..1 and 
+                 cirujano 1..1
 
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -38,3 +39,12 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[tipoSangre] ^short = ""
 * entry[tipoSangre].resource only BloodTypeObservation
 * entry[tipoSangre].resource ^short = ""
+
+/**
+* entry[contactoPaciente] ^short = ""
+* entry[contactoPaciente].resource only RelatedPerson
+* entry[contactoPaciente].resource ^short = ""  **/
+
+* entry[cirujano] ^short = ""
+* entry[cirujano].resource only SurgeonPractitionerCardio
+* entry[cirujano].resource ^short = ""
