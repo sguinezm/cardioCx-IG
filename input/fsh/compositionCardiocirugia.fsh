@@ -1,13 +1,14 @@
 Alias: $observation-bodyheight = http://hl7.org/fhir/StructureDefinition/bodyheight
 Alias: $observation-bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
- 
+
 Profile: CompositionCardiocirugia
 Parent: Composition
 
 Title: "Composition Cardiocirugia"
 Description: "Recurso que contiene las referencias identificadas por secciones a los recursos necesarios para representar la información de cirugias cardiacas."
 
-* status.value = "final"
+* status = #final
+* type = #408466002
 
 * section 1..10 MS
 * section ^slicing.discriminator.type = #pattern
