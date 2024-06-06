@@ -184,7 +184,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[ValveProcedureSection] ^short = "Sección de válvula"
 * section[ValveProcedureSection] ^definition = "Información acerca de vávula del paciente"
-* section[ValveProcedureSection].code = #1
+* section[ValveProcedureSection].code = #4
 * section[ValveProcedureSection].focus only Reference(ValveProcedure)
 
 * section[ValveProcedureSection].entry ^slicing.discriminator.type = #profile
@@ -240,7 +240,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[ProcedureEcocardio] ^short = "Sección de ecocardiograma"
 * section[ProcedureEcocardio] ^definition = "Información acerca del ecocardiograma"
-* section[ProcedureEcocardio].code = #2
+* section[ProcedureEcocardio].code = #5
 * section[ProcedureEcocardio].focus only Reference(EchocardiogramProcedure)
 
 * section[ProcedureEcocardio].entry ^slicing.discriminator.type = #profile
