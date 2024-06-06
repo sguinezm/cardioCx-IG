@@ -17,14 +17,14 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section.code 1..1 MS
 * section.code from CardioCompositionSectionCodesVS (required)
 * section contains
-    patientSection 1..1 MS and
+    patientSection 0..1 MS and
     QuestionnaireSection 0..1 MS and
-    PractitionerSection 1..1 MS and
-    ProcedureCardio 1..1 MS and
-    OrganizationSection 1..1 MS and 
-    ValveProcedureSection 1..1 MS and 
-    ProcedureEcocardio 1..1 MS and 
-    PerfusionProcedureSection 1..1 MS 
+    PractitionerSection 0..1 MS and
+    ProcedureCardio 0..1 MS and
+    OrganizationSection 0..1 MS and 
+    ValveProcedureSection 0..1 MS and 
+    ProcedureEcocardio 0..1 MS and 
+    PerfusionProcedureSection 0..1 MS 
 
 * section[patientSection] ^short = "Sección del paciente"
 * section[patientSection] ^definition = "Información acerca del paciente"
