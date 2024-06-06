@@ -51,7 +51,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[contactoPaciente].resource ^short = ""  **/
 
 * entry[cirujano] ^short = "Profesionales"
-* entry[cirujano].resource only SurgeonPractitionerCardio
+* entry[cirujano].resource only PractitionerCardio
 * entry[cirujano].resource ^short = "Se detallan los profesionales que realizarán la cirugía"
 
 * entry[capacidadFuncional] ^short = "Capacidad funcional"

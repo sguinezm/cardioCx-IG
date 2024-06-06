@@ -15,15 +15,15 @@ Description: "Registro de la cardiocirugía"
 
 
 * performer[surgeon1].actor 1..1
-* performer[surgeon1].actor only Reference(SurgeonPractitionerCardio)
+* performer[surgeon1].actor only Reference(PractitionerCardio)
 * performer[surgeon1].actor ^definition = "Definición del médico que actúa como cirujano"
 
 * performer[anesthetist].actor 1..1
-* performer[anesthetist].actor only Reference(SurgeonPractitionerCardio)
+* performer[anesthetist].actor only Reference(PractitionerCardio)
 * performer[anesthetist].actor ^definition = "Definición del médico que actúa como anestesista"
 
 * performer[perfusionist].actor 1..1
-* performer[perfusionist].actor only Reference(SurgeonPractitionerCardio)
+* performer[perfusionist].actor only Reference(PractitionerCardio)
 * performer[perfusionist].actor ^definition = "Definición del médico que actúa como perfusionista"
 
 * performed[x] only dateTime

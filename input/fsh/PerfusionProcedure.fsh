@@ -23,7 +23,7 @@ Description: "Registro del procedimiento de perfusión"
 * performer contains perfusionist 1..1
 
 * performer[perfusionist].actor 1..1
-* performer[perfusionist].actor only Reference(SurgeonPractitionerCardio)
+* performer[perfusionist].actor only Reference(PractitionerCardio)
 * performer[perfusionist].actor ^definition = "Definición del médico que actúa como perfusionista"
 /*
 * usedCode ^slicing.discriminator.type = #value

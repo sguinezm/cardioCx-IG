@@ -1,6 +1,6 @@
 Alias: $observation-bodyheight = http://hl7.org/fhir/StructureDefinition/bodyheight
 Alias: $observation-bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
-
+Alias: $loinc = http://loinc.org
 Profile: CompositionCardiocirugia
 Parent: Composition
 
@@ -8,14 +8,18 @@ Title: "Composition Cardiocirugia"
 Description: "Recurso que contiene las referencias identificadas por secciones a los recursos necesarios para representar la información de cirugias cardiacas."
 
 * status = #final
-* type = #408466002
-
+* type = #67727-8
+* type.coding.system = $loinc
+* author only Reference(PractitionerCardio)
+* date ^short = "fecha en la que se inicia e registro de la intervención"
+* author ^short = "Profesional encargado de registrar la intervención"
+* title = "titulo" 
 * section 1..10 MS
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open
-* section ^short = "Secciónes del documento."
+* section ^short = "Secciones del documento."
 * section ^definition = "Sección del documento que contiene los datos asociados a la atención clínica."
 * section.code 1..1 MS
 * section.code from CardioCompositionSectionCodesVS (required)
@@ -112,13 +116,13 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PractitionerSection].entry ^slicing.rules = #open
 * section[PractitionerSection].entry 3..5
 * section[PractitionerSection].entry contains SurgeonPractitioner 1..3
-* section[PractitionerSection].entry[SurgeonPractitioner] only Reference(SurgeonPractitionerCardio)
+* section[PractitionerSection].entry[SurgeonPractitioner] only Reference(PractitionerCardio)
 * section[PractitionerSection].entry[SurgeonPractitioner] ^short = "Referencia al recurso del cirujano en cardiocirugía."
 * section[PractitionerSection].entry contains PerfusionistPractitioner 1..1
-* section[PractitionerSection].entry[PerfusionistPractitioner] only Reference(SurgeonPractitionerCardio)
+* section[PractitionerSection].entry[PerfusionistPractitioner] only Reference(PractitionerCardio)
 * section[PractitionerSection].entry[PerfusionistPractitioner] ^short = "Referencia al recurso del cirujano en cardiocirugía para difinir el perfusionista."
 * section[PractitionerSection].entry contains AntestesistPractitioner 1..1
-* section[PractitionerSection].entry[AntestesistPractitioner] only Reference(SurgeonPractitionerCardio)
+* section[PractitionerSection].entry[AntestesistPractitioner] only Reference(PractitionerCardio)
 * section[PractitionerSection].entry[AntestesistPractitioner] ^short = "Referencia al recurso del cirujano en cardiocirugía para difinir el anestesista."
 
 
