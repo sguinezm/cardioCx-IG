@@ -1,6 +1,6 @@
 Alias: $loinc = http://loinc.org
 Alias: $us-core-vital-signs = http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
-Alias: $LL2972-9 = http://loinc.org/LL2972-9
+
 
 
 Profile: BloodTypeObservation
@@ -14,4 +14,4 @@ Title: "BloodTypeObservation"
 * code MS
 * code ^short = "Blood type"
 * value[x] only CodeableConcept
-* value[x] from $LL2972-9 (preferred)
+

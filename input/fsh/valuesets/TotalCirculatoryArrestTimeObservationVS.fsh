@@ -1,7 +1,7 @@
 ValueSet: TotalCirculatoryArrestTimeObservationVS
 Id: TotalCirculatoryArrestTimeObservationVS
-Title: "total tiempo "
-Description: "total tiempo "
+Title: "total tiempo"
+Description: "total tiempo"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active

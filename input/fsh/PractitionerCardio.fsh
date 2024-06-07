@@ -70,7 +70,7 @@ Title: "PractitionerCardio"
 * qualification ^slicing.discriminator.path = "use"
 * qualification ^slicing.description = "Especialidad y subespecialidad"
 * qualification ^slicing.rules = #open
-* qualification ^short = "Especialidad y subespecialdiad "
+* qualification ^short = "Especialidad y subespecialdiad"
 
 * qualification contains
     Esp 0..* and

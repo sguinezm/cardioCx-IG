@@ -268,7 +268,7 @@ Description: "Categorización utilizada para descibir si el paciente tiene (o no
 
  
 * #195967001 "Asthma (disorder)"
-* #13645005 " Chronic obstructive pulmonary disease (disorder)"
+* #13645005 "Chronic obstructive pulmonary disease (disorder)"
 
 
 CodeSystem: ExtracardiacArteriopathyCS
@@ -504,7 +504,7 @@ Description: "Asistencias circulatorias"
 
 * #260413007 "none"
 * #233573008  "Extracorporeal membrane oxygenation"
-* #14414005 "Peripheral "
+* #14414005 "Peripheral"
 * #26216008  "Central"
 * #74964007 "Other"
 * #362981000 "other value"
@@ -702,9 +702,9 @@ Description: "Ritmo del corazón en preoperación"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #419351001  "Sinus (morphologic abnormality) "
+* #419351001  "Sinus (morphologic abnormality)"
 * #25569003 "Ventricular tachycardia (disorder)"
-* #49436004  "Atrial fibrillation (disorder) "
+* #49436004  "Atrial fibrillation (disorder)"
 * #27885002  "Complete atrioventricular block (disorder)"
 * #15976004  "Abnormal circadian rhythm (finding)"
 
