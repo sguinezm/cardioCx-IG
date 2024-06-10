@@ -33,7 +33,10 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  cirugiasCardiacasPrevias 0..1 and 
                  fechaUltimaAngioplastia 0..1 and 
                  fechaUltimaCirugiaCardiaca 0..1 and 
-                 cirugiasPrevias 0..1
+                 cirugiasPrevias 0..1 and 
+                 altura 0..1 and 
+                 peso 0..1 and 
+                 historialFumador 0..1
 
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -94,3 +97,15 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[cirugiasPrevias] ^short = "última cirugía previa"
 * entry[cirugiasPrevias].resource only Questionnaire
 * entry[cirugiasPrevias].resource ^short = "Se indica si se ha realizado una cirugía previa"
+
+* entry[altura] ^short = "Altura de la persona"
+* entry[altura].resource only Observation
+* entry[altura].resource ^short = "Se indica la altura de la persona"
+
+* entry[peso] ^short = "Peso de la persona"
+* entry[peso].resource only Observation
+* entry[peso].resource ^short = "Se indica el peso de la persona"
+
+* entry[historialFumador] ^short = "Historial fumador de la persona"
+* entry[historialFumador].resource only Observation
+* entry[historialFumador].resource ^short = "Se indica el historial fumador de la persona"
