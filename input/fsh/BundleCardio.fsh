@@ -30,7 +30,10 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  infartoReciente 0..1 and 
                  insuficienciaCardíacaCongestiva 0..1 and 
                  angioplastiaPrevia 0..1 and 
-                 cirujiasCardiacasPrevias 0..1
+                 cirugiasCardiacasPrevias 0..1 and 
+                 fechaUltimaAngioplastia 0..1 and 
+                 fechaUltimaCirugiaCardiaca 0..1 and 
+                 cirugiasPrevias 0..1
 
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -76,6 +79,18 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[angioplastiaPrevia].resource only Questionnaire
 * entry[angioplastiaPrevia].resource ^short = "Se indica si el paciente ha tenido una angioplastía previa"
 
-* entry[cirujiasCardiacasPrevias] ^short = "Número de cirujias cardíacas previas"
-* entry[cirujiasCardiacasPrevias].resource only Questionnaire
-* entry[cirujiasCardiacasPrevias].resource ^short = "Se indica el número de cirujías cardíacas previas"
+* entry[cirugiasCardiacasPrevias] ^short = "Número de cirugias cardíacas previas"
+* entry[cirugiasCardiacasPrevias].resource only Questionnaire
+* entry[cirugiasCardiacasPrevias].resource ^short = "Se indica el número de cirugías cardíacas previas"
+
+* entry[fechaUltimaAngioplastia] ^short = "Fecha de última angioplastía"
+* entry[fechaUltimaAngioplastia].resource only Questionnaire
+* entry[fechaUltimaAngioplastia].resource ^short = "Se indica la fecha de la última angioplastía"
+
+* entry[fechaUltimaCirugiaCardiaca] ^short = "Fecha de última cirugia cardíaca"
+* entry[fechaUltimaCirugiaCardiaca].resource only Questionnaire
+* entry[fechaUltimaCirugiaCardiaca].resource ^short = "Se indica la fecha de la última cirugía cardíaca"
+
+* entry[cirugiasPrevias] ^short = "última cirugía previa"
+* entry[cirugiasPrevias].resource only Questionnaire
+* entry[cirugiasPrevias].resource ^short = "Se indica si se ha realizado una cirugía previa"
