@@ -31,7 +31,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
     ValveProcedureSection 0..1 MS and 
     ProcedureEcocardio 0..1 MS and 
     PerfusionProcedureSection 0..1 MS and 
-     OrganizationSection 0..1 MS 
+    OrganizationSection 0..1 MS 
 
 * section[PatientSection] ^short = "Sección del paciente"
 * section[PatientSection] ^definition = "Información acerca del paciente"
