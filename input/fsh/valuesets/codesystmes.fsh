@@ -12,12 +12,14 @@ Description: "Códigos para secciones de composition para cardio cirugías."
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Sección 1"
-* #2 "Sección 2"
-* #3 "Sección 3"
-* #4 "Sección 4"
-* #5 "Sección 5"
-
+* #1 "PatientSection"
+* #2 "QuestionnaireSection"
+* #3 "PractitionerSection"
+* #4 "ProcedureCardio"
+* #5 "ValveProcedureSection"
+* #6 "ProcedureEcocardio"
+* #7 "PerfusionProcedureSection"
+* #8 "OrganizationSection"
 
 CodeSystem: PreviousAngioplastyCS
 Id: PreviousAngioplastyCS

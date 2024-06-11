@@ -24,25 +24,27 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section.code 1..1 MS
 * section.code from CardioCompositionSectionCodesVS (required)
 * section contains
-    patientSection 0..1 MS and
+    PatientSection 0..1 MS and
     QuestionnaireSection 0..1 MS and
     PractitionerSection 0..1 MS and
     ProcedureCardio 0..1 MS and
-    OrganizationSection 0..1 MS and 
     ValveProcedureSection 0..1 MS and 
     ProcedureEcocardio 0..1 MS and 
-    PerfusionProcedureSection 0..1 MS 
+    PerfusionProcedureSection 0..1 MS and 
+     OrganizationSection 0..1 MS 
 
-* section[patientSection] ^short = "Sección del paciente"
-* section[patientSection] ^definition = "Información acerca del paciente"
-* section[patientSection].code = #1
-* section[patientSection].focus only Reference(PatientCardio)
+* section[PatientSection] ^short = "Sección del paciente"
+* section[PatientSection] ^definition = "Información acerca del paciente"
+* section[PatientSection].code = #1
+* section[PatientSection] 1..1
+* section[PatientSection].code.coding.display = "En esta sección se muestra información relevante acerca del paciente"
+* section[PatientSection].focus only Reference(PatientCardio)
 
-* section[patientSection].entry ^slicing.discriminator.type = #profile
-* section[patientSection].entry ^slicing.discriminator.path = "resolve()"
-* section[patientSection].entry ^slicing.rules = #open
-* section[patientSection].entry 3..*
-* section[patientSection].entry contains ageObservation 1..1 and
+* section[PatientSection].entry ^slicing.discriminator.type = #profile
+* section[PatientSection].entry ^slicing.discriminator.path = "resolve()"
+* section[PatientSection].entry ^slicing.rules = #open
+* section[PatientSection].entry 3..*
+* section[PatientSection].entry contains ageObservation 1..1 and
                                         bodyheightObservation 1..1 and
                                         bodyweightObservation 1..1 and
                                         bloodTypeObservation 0..1 and 
@@ -60,44 +62,45 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                         SmokingHistory 1..1
 
 
-* section[patientSection].entry[ageObservation] only Reference(Observation)
-* section[patientSection].entry[ageObservation] ^short = "Referencia  al recurso que contiene la observación de la edad del paciente"
-* section[patientSection].entry[bodyheightObservation] only Reference($observation-bodyheight)
-* section[patientSection].entry[bodyheightObservation] ^short = "Referencia  al recurso que contiene la observación de altura del paciente"
-* section[patientSection].entry[bodyweightObservation] only Reference($observation-bodyweight)
-* section[patientSection].entry[bodyweightObservation] ^short = "Referencia  al recurso que contiene la observación sobre el peso del paciente"
-* section[patientSection].entry[bloodTypeObservation] only Reference(BloodTypeObservation)
-* section[patientSection].entry[bloodTypeObservation] ^short = "Referencia  al recurso que contiene la observación que hace referencia al tipo de sangre del paciente"
-* section[patientSection].entry[emergencyContact] only Reference(RelatedPerson)
-* section[patientSection].entry[emergencyContact] ^short = "Se referencia a las personas que pueden ser contactadas al momento de una emergencia"
-* section[patientSection].entry[DiabetesCondition] only Reference(DiabetesCondition)
-* section[patientSection].entry[DiabetesCondition] ^short = "Condición de paciente con diabetes"
-* section[patientSection].entry[HypertensionCondition] only Reference(HypertensionCondition)
-* section[patientSection].entry[HypertensionCondition] ^short = "Condición de paciente con hipertensión"
-* section[patientSection].entry[HypercholesterolemiaCondition] only Reference(HypercholesterolemiaCondition)
-* section[patientSection].entry[HypercholesterolemiaCondition] ^short = "Condición de paciente con hipercolesterolemia"
-* section[patientSection].entry[CarotidBruitCondition] only Reference(CarotidBruitCondition)
-* section[patientSection].entry[CarotidBruitCondition] ^short = "Condición de paciente con soplos carotideos"
-* section[patientSection].entry[neurologicDisfunction] only Reference(NeurologicDisfunctionCondition)
-* section[patientSection].entry[neurologicDisfunction] ^short = "Condición de paciente con disfunción neurológica"
-* section[patientSection].entry[ChronicLungDiseaseCondition] only Reference(ChronicLungDiseaseCondition)
-* section[patientSection].entry[ChronicLungDiseaseCondition] ^short = "Condición de enfermedad pulmonar crónica"
-* section[patientSection].entry[ExtraCardiacArteriopathyCondition] only Reference(ExtraCardiacArteriopathyCondition)
-* section[patientSection].entry[ExtraCardiacArteriopathyCondition] ^short = "Condición de arteriopatía extra cardíaca"
-* section[patientSection].entry[NephropathyCondition] only Reference(NephropathyCondition)
-* section[patientSection].entry[NephropathyCondition] ^short = "Nefropatías del paciente"
-* section[patientSection].entry[TypeOfDiseaseCondition] only Reference(TypeOfDiseaseCondition)
-* section[patientSection].entry[TypeOfDiseaseCondition] ^short = "Tipo de enfermedad"
-* section[patientSection].entry[PacksPerYear] only Reference(PacksPerYearObservation)
-* section[patientSection].entry[PacksPerYear] ^short = "Observación de packs por año"
-* section[patientSection].entry[SmokingHistory] only Reference(SmokingObservation)
-* section[patientSection].entry[SmokingHistory] ^short = "Observación de historial fumador"
+* section[PatientSection].entry[ageObservation] only Reference(Observation)
+* section[PatientSection].entry[ageObservation] ^short = "Referencia  al recurso que contiene la observación de la edad del paciente"
+* section[PatientSection].entry[bodyheightObservation] only Reference($observation-bodyheight)
+* section[PatientSection].entry[bodyheightObservation] ^short = "Referencia  al recurso que contiene la observación de altura del paciente"
+* section[PatientSection].entry[bodyweightObservation] only Reference($observation-bodyweight)
+* section[PatientSection].entry[bodyweightObservation] ^short = "Referencia  al recurso que contiene la observación sobre el peso del paciente"
+* section[PatientSection].entry[bloodTypeObservation] only Reference(BloodTypeObservation)
+* section[PatientSection].entry[bloodTypeObservation] ^short = "Referencia  al recurso que contiene la observación que hace referencia al tipo de sangre del paciente"
+* section[PatientSection].entry[emergencyContact] only Reference(RelatedPerson)
+* section[PatientSection].entry[emergencyContact] ^short = "Se referencia a las personas que pueden ser contactadas al momento de una emergencia"
+* section[PatientSection].entry[DiabetesCondition] only Reference(DiabetesCondition)
+* section[PatientSection].entry[DiabetesCondition] ^short = "Condición de paciente con diabetes"
+* section[PatientSection].entry[HypertensionCondition] only Reference(HypertensionCondition)
+* section[PatientSection].entry[HypertensionCondition] ^short = "Condición de paciente con hipertensión"
+* section[PatientSection].entry[HypercholesterolemiaCondition] only Reference(HypercholesterolemiaCondition)
+* section[PatientSection].entry[HypercholesterolemiaCondition] ^short = "Condición de paciente con hipercolesterolemia"
+* section[PatientSection].entry[CarotidBruitCondition] only Reference(CarotidBruitCondition)
+* section[PatientSection].entry[CarotidBruitCondition] ^short = "Condición de paciente con soplos carotideos"
+* section[PatientSection].entry[neurologicDisfunction] only Reference(NeurologicDisfunctionCondition)
+* section[PatientSection].entry[neurologicDisfunction] ^short = "Condición de paciente con disfunción neurológica"
+* section[PatientSection].entry[ChronicLungDiseaseCondition] only Reference(ChronicLungDiseaseCondition)
+* section[PatientSection].entry[ChronicLungDiseaseCondition] ^short = "Condición de enfermedad pulmonar crónica"
+* section[PatientSection].entry[ExtraCardiacArteriopathyCondition] only Reference(ExtraCardiacArteriopathyCondition)
+* section[PatientSection].entry[ExtraCardiacArteriopathyCondition] ^short = "Condición de arteriopatía extra cardíaca"
+* section[PatientSection].entry[NephropathyCondition] only Reference(NephropathyCondition)
+* section[PatientSection].entry[NephropathyCondition] ^short = "Nefropatías del paciente"
+* section[PatientSection].entry[TypeOfDiseaseCondition] only Reference(TypeOfDiseaseCondition)
+* section[PatientSection].entry[TypeOfDiseaseCondition] ^short = "Tipo de enfermedad"
+* section[PatientSection].entry[PacksPerYear] only Reference(PacksPerYearObservation)
+* section[PatientSection].entry[PacksPerYear] ^short = "Observación de packs por año"
+* section[PatientSection].entry[SmokingHistory] only Reference(SmokingObservation)
+* section[PatientSection].entry[SmokingHistory] ^short = "Observación de historial fumador"
 
 
 
 * section[QuestionnaireSection] ^short = "Cuestionario realizado al paciente."
 * section[QuestionnaireSection] ^definition = "Antecedentes de intervenciones previas para realizar el procedimiento al paciente."
 * section[QuestionnaireSection].code = #2
+* section[QuestionnaireSection].code.coding.display = "En esta sección se muestra información relevante acerca del paciente al momento de realizar preguntas"
 * section[QuestionnaireSection].focus only Reference(Procedure)
 * section[QuestionnaireSection].entry ^slicing.discriminator.type = #profile
 * section[QuestionnaireSection].entry ^slicing.discriminator.path = "resolve()"
@@ -110,6 +113,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PractitionerSection] ^short = "Profesionales involucrados."
 * section[PractitionerSection] ^definition = "Sección en la que se definen los profesionales involucrados en el procedimiento."
 * section[PractitionerSection].code = #3
+* section[PractitionerSection].code.coding.display = "En esta sección se muestra información relevante acerca de los profesionales a cargo del procedimiento"
 * section[PractitionerSection].focus only Reference(Practitioner)
 * section[PractitionerSection].entry ^slicing.discriminator.type = #profile
 * section[PractitionerSection].entry ^slicing.discriminator.path = "resolve()"
@@ -130,6 +134,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[ProcedureCardio] ^short = "Historial cardíaco"
 * section[ProcedureCardio] ^definition = "Sección en la que se describe el historial cardiaco del paciente."
+* section[ProcedureCardio].code = #4
+* section[ProcedureCardio].code.coding.display = "En esta sección se muestra información relevante acerca del procedimiento cardíaco"
 * section[ProcedureCardio].focus only Reference(Observation)
 * section[ProcedureCardio].entry ^slicing.discriminator.type = #profile
 * section[ProcedureCardio].entry ^slicing.discriminator.path = "resolve()"
@@ -191,7 +197,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[ValveProcedureSection] ^short = "Sección de válvula"
 * section[ValveProcedureSection] ^definition = "Información acerca de vávula del paciente"
-* section[ValveProcedureSection].code = #4
+* section[ValveProcedureSection].code = #5
+* section[ValveProcedureSection].code.coding.display = "En esta sección se muestra información relevante acerca de la válvula del paciente"
 * section[ValveProcedureSection].focus only Reference(ValveProcedure)
 
 * section[ValveProcedureSection].entry ^slicing.discriminator.type = #profile
@@ -247,7 +254,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[ProcedureEcocardio] ^short = "Sección de ecocardiograma"
 * section[ProcedureEcocardio] ^definition = "Información acerca del ecocardiograma"
-* section[ProcedureEcocardio].code = #5
+* section[ProcedureEcocardio].code = #6
+* section[ProcedureEcocardio].code.coding.display = "En esta sección se muestra información relevante acerca del procedimiento de ecocardiograma"
 * section[ProcedureEcocardio].focus only Reference(EchocardiogramProcedure)
 
 * section[ProcedureEcocardio].entry ^slicing.discriminator.type = #profile
@@ -361,7 +369,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[PerfusionProcedureSection] ^short = "Sección de perfusión"
 * section[PerfusionProcedureSection] ^definition = "Información acerca de la perfusión"
-* section[PerfusionProcedureSection].code = #6
+* section[PerfusionProcedureSection].code = #7
+* section[PerfusionProcedureSection].code.coding.display = "En esta sección se muestra información relevante acerca de la perfusión"
 * section[PerfusionProcedureSection].focus only Reference(PerfusionProcedure)
 
 * section[PerfusionProcedureSection].entry ^slicing.discriminator.type = #profile
@@ -433,7 +442,9 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * section[OrganizationSection] ^short = "Organizaciones involucradas"
 * section[OrganizationSection] ^definition = "Sección en la que se informa qué instituciones están involucradas en el procedimiento (referente, referidor)."
-
+* section[OrganizationSection].code = #1
+* section[OrganizationSection] 1..1
+* section[OrganizationSection].code.coding.display = "En esta sección se muestra información relevante acerca de la organización"
 
 
 
