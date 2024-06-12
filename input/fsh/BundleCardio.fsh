@@ -42,7 +42,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  hipercolesterolemia 0..1 and 
                  ruidoCarotideo 0..1 and 
                  disfuncionNeurologica 0..1 and 
-                 ultimaCreatinina 0..1 
+                 ultimaCreatinina 0..1 and 
+                 packsAnual 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -138,3 +139,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[ultimaCreatinina] ^short = "Última creatinina"
 * entry[ultimaCreatinina].resource only LastPreoperativeCreatinineObservation
 * entry[ultimaCreatinina].resource ^short = "Se indica la última creatinina del paciente"
+
+* entry[packsAnual] ^short = "Packs de cigarros al año"
+* entry[packsAnual].resource only PacksPerYearObservation
+* entry[packsAnual].resource ^short = "Se indican los packs de cigarros al año"
