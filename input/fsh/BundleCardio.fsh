@@ -39,7 +39,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  historialFumador 0..1 and 
                  tratamientoDiabetes 0..1 and 
                  hipertension 0..1 and 
-                 hipercolesterolemia 0..1
+                 hipercolesterolemia 0..1 and 
+                 ruidoCarotideo 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -123,3 +124,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[hipercolesterolemia] ^short = "Hipercolesterolemia"
 * entry[hipercolesterolemia].resource only HypercholesterolemiaCondition
 * entry[hipercolesterolemia].resource ^short = "Se indica si el paciente padece de hipercolesterolemia"
+
+* entry[ruidoCarotideo] ^short = "Ruido carotídeo"
+* entry[ruidoCarotideo].resource only HypercholesterolemiaCondition
+* entry[ruidoCarotideo].resource ^short = "Se indica si el paciente tiene ruido carotídeo"
