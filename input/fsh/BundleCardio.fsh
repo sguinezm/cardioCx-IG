@@ -126,5 +126,5 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[hipercolesterolemia].resource ^short = "Se indica si el paciente padece de hipercolesterolemia"
 
 * entry[ruidoCarotideo] ^short = "Ruido carotídeo"
-* entry[ruidoCarotideo].resource only HypercholesterolemiaCondition
+* entry[ruidoCarotideo].resource only CarotidBruitCondition
 * entry[ruidoCarotideo].resource ^short = "Se indica si el paciente tiene ruido carotídeo"
