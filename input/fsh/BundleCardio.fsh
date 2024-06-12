@@ -44,7 +44,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  disfuncionNeurologica 0..1 and 
                  ultimaCreatinina 0..1 and 
                  packsAnual 0..1 and 
-                 enfermedadesPulmonares 0..1
+                 enfermedadesPulmonares 0..1 and 
+                 ritmoCardiacoPreoperatorio 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -148,3 +149,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[enfermedadesPulmonares] ^short = "Enfermedades pulmonares"
 * entry[enfermedadesPulmonares].resource only ChronicLungDiseaseCondition
 * entry[enfermedadesPulmonares].resource ^short = "Se indica si el paciente ha tenido alguna enfermedad pulmonar"
+
+* entry[ritmoCardiacoPreoperatorio] ^short = "Ritmo cardíaco preoperatorio"
+* entry[ritmoCardiacoPreoperatorio].resource only PreoperativeHeartRythmObservation
+* entry[ritmoCardiacoPreoperatorio].resource ^short = "Se indica el ritmo cardíaco preoperatorio del paciente"
