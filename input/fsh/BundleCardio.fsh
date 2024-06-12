@@ -43,7 +43,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  ruidoCarotideo 0..1 and 
                  disfuncionNeurologica 0..1 and 
                  ultimaCreatinina 0..1 and 
-                 packsAnual 0..1
+                 packsAnual 0..1 and 
+                 enfermedadesPulmonares 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -143,3 +144,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[packsAnual] ^short = "Packs de cigarros al año"
 * entry[packsAnual].resource only PacksPerYearObservation
 * entry[packsAnual].resource ^short = "Se indican los packs de cigarros al año"
+
+* entry[enfermedadesPulmonares] ^short = "Enfermedades pulmonares"
+* entry[enfermedadesPulmonares].resource only ChronicLungDiseaseCondition
+* entry[enfermedadesPulmonares].resource ^short = "Se indica si el paciente ha tenido alguna enfermedad pulmonar"
