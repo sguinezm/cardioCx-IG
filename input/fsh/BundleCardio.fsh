@@ -37,7 +37,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  altura 0..1 and 
                  peso 0..1 and 
                  historialFumador 0..1 and 
-                 tratamientoDiabetes 0..1
+                 tratamientoDiabetes 0..1 and 
+                 hipertension 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -113,3 +114,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[tratamientoDiabetes] ^short = "Tratamiento de diabetes del paciente"
 * entry[tratamientoDiabetes].resource only DiabetesCondition
 * entry[tratamientoDiabetes].resource ^short = "Se indica el paciente tiene un tratamiento de pacientes"
+
+* entry[hipertension] ^short = "Hipertensión"
+* entry[hipertension].resource only HypertensionCondition
+* entry[hipertension].resource ^short = "Se indica si el paciente padece de hipertensión"
