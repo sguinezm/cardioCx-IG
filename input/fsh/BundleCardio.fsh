@@ -45,7 +45,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  ultimaCreatinina 0..1 and 
                  packsAnual 0..1 and 
                  enfermedadesPulmonares 0..1 and 
-                 ritmoCardiacoPreoperatorio 0..1
+                 ritmoCardiacoPreoperatorio 0..1 and 
+                 condicionExtracardiaca 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -153,3 +154,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[ritmoCardiacoPreoperatorio] ^short = "Ritmo cardíaco preoperatorio"
 * entry[ritmoCardiacoPreoperatorio].resource only PreoperativeHeartRythmObservation
 * entry[ritmoCardiacoPreoperatorio].resource ^short = "Se indica el ritmo cardíaco preoperatorio del paciente"
+
+* entry[condicionExtracardiaca] ^short = "Condición extracardíaca"
+* entry[condicionExtracardiaca].resource only ExtraCardiacArteriopathyCondition
+* entry[condicionExtracardiaca].resource ^short = "Se indica si el paciente tiene una condición extracardíaca"
