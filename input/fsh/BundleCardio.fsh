@@ -40,7 +40,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  tratamientoDiabetes 0..1 and 
                  hipertension 0..1 and 
                  hipercolesterolemia 0..1 and 
-                 ruidoCarotideo 0..1
+                 ruidoCarotideo 0..1 and 
+                 disfuncionNeurologica 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -128,3 +129,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[ruidoCarotideo] ^short = "Ruido carotídeo"
 * entry[ruidoCarotideo].resource only CarotidBruitCondition
 * entry[ruidoCarotideo].resource ^short = "Se indica si el paciente tiene ruido carotídeo"
+
+* entry[disfuncionNeurologica] ^short = "Disfunción Neurológica"
+* entry[disfuncionNeurologica].resource only NeurologicDisfunctionCondition
+* entry[disfuncionNeurologica].resource ^short = "Se indica si el paciente padece de alguna disfunción neurológica"
