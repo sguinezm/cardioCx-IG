@@ -79,11 +79,11 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[capacidadFuncional].resource ^short = "Se detalla la capacidad funcional del paciente"
 
 * entry[infarto] ^short = "Historia cardiovascular del paciente"
-* entry[infarto].resource only PreviousIMObservation
+* entry[infarto].resource only PreviousMIObservation
 * entry[infarto].resource ^short = "Categorización del número de infartos al miocardio sufridos por el paciente previo a la inteversión"
 
 * entry[infartoReciente] ^short = "Historia cardiovascular reciente del paciente"
-* entry[infartoReciente].resource only MostRecentIMObservation
+* entry[infartoReciente].resource only MostRecentMIObservation
 * entry[infartoReciente].resource ^short = "Categorización del número de infartos al miocardio sufridos recientemente por el paciente previo a la inteversión"
 
 * entry[insuficienciaCardíacaCongestiva] ^short = "insuficiencia cardíaca congestiva"

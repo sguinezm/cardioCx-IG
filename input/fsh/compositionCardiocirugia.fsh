@@ -130,8 +130,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry 4..5  
 * section[ProcedureCardio].entry contains AnginaObservation 1..1 and
                                                     FunctionalCapacityObservation 1..1 and
-                                                    PreviousIMObservation 1..1 and
-                                                    MostRecentIMObservation 1..1 and
+                                                    PreviousMIObservation 1..1 and
+                                                    MostRecentMIObservation 1..1 and
                                                     CongestiveHeartFailureCondition 0..1 and 
                                                     LastCatheterizationObservation 0..1 and 
                                                     DiseasedCoronarySegmentObservation 0..1 and 
@@ -152,10 +152,10 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry[AnginaObservation] ^short = "Angina de pecho reportada por el paciente"
 * section[ProcedureCardio].entry[FunctionalCapacityObservation] only Reference(FunctionalCapacityObservation)
 * section[ProcedureCardio].entry[FunctionalCapacityObservation] ^short = "Capacidad funcional del paciente"
-* section[ProcedureCardio].entry[PreviousIMObservation] only Reference(PreviousIMObservation)
-* section[ProcedureCardio].entry[PreviousIMObservation] ^short = "Número de infartos al miocardio previos"
-* section[ProcedureCardio].entry[MostRecentIMObservation] only Reference(MostRecentIMObservation)
-* section[ProcedureCardio].entry[MostRecentIMObservation] ^short = "Días transcurridos desde el último infarto al miocardio"
+* section[ProcedureCardio].entry[PreviousMIObservation] only Reference(PreviousMIObservation)
+* section[ProcedureCardio].entry[PreviousMIObservation] ^short = "Número de infartos al miocardio previos"
+* section[ProcedureCardio].entry[MostRecentMIObservation] only Reference(MostRecentMIObservation)
+* section[ProcedureCardio].entry[MostRecentMIObservation] ^short = "Días transcurridos desde el último infarto al miocardio"
 * section[ProcedureCardio].entry[CongestiveHeartFailureCondition] only Reference(CongestiveHeartFailureCondition)
 * section[ProcedureCardio].entry[CongestiveHeartFailureCondition] ^short = "Se indica que el paciente presenta falla cardíaca congestiva"
 * section[ProcedureCardio].entry[LastCatheterizationObservation] only Reference(LastCatheterizationObservation)

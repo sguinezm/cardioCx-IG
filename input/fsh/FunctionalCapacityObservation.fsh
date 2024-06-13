@@ -26,24 +26,24 @@ Alias: $loinc = http://loinc.org
 Alias: $us-core-vital-signs = http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
 
 
-Profile: PreviousIMObservation
+Profile: PreviousMIObservation
 Parent: Observation
 Description: "Número de infartos al miocardio previos"
 
-Title: "PreviousIMObservation"
+Title: "PreviousMIObservation"
 
 * value[x] only CodeableConcept
-* value[x] from PreviousIMVS (preferred)
+* value[x] from PreviousMIVS (preferred)
 
 
-Profile: MostRecentIMObservation
+Profile: MostRecentMIObservation
 Parent: Observation
 Description: "Días transcurridos desde el infarto al miocardio más reciente"
 
-Title: "MostRecentIMObservation"
+Title: "MostRecentMIObservation"
 
 * value[x] only CodeableConcept
-* value[x] from MostRecentIMVS (preferred)
+* value[x] from MostRecentMIVS (preferred)
 
 Profile: CongestiveHeartFailureCondition
 Parent: Observation

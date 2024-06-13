@@ -179,8 +179,8 @@ Description: "Dolor reportado por el paciente relacionado con una angina, en una
 * #420913000 "Clasificación de la Asociación Cardiológica de Nueva York - Clase III (hallazgo)"
 * #422293003 "Clasificación de la Asociación Cardiológica de Nueva York - Clase IV (hallazgo)"
 
-CodeSystem: PreviousIMCS
-Id: PreviousIMCS
+CodeSystem: PreviousMICS
+Id: PreviousMICS
 Title: "Número de infartos al miocardio previos"
 Description: "categorización del número de infartos al miocardio previos."
 * ^experimental = false
@@ -198,8 +198,8 @@ Description: "categorización del número de infartos al miocardio previos."
 * #"unknown" "Desconocido"
 
 
-CodeSystem: MostRecentIMCS
-Id: MostRecentIMCS
+CodeSystem: MostRecentMICS
+Id: MostRecentMICS
 Title: "Infarto al miocardio más reciente"
 Description: "Categorización utilizada para describir cuándo fue el IM más reciente."
 * ^experimental = false

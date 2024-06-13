@@ -13,8 +13,8 @@ Description: "Códigos para categorizar la capacidad funcional con el índice NY
 
 * include codes from system FunctionalCapacityCS
 
-ValueSet: PreviousIMVS
-Id: PreviousIMVS
+ValueSet: PreviousMIVS
+Id: PreviousMIVS
 Title: "Infartos al miocradio previos"
 Description: "Códigos para categorizar el número de infartos al miocardio previos sufridos por el paciente."
 * ^experimental = false
@@ -26,11 +26,11 @@ Description: "Códigos para categorizar el número de infartos al miocardio prev
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system PreviousIMCS
+* include codes from system PreviousMICS
 
 
-ValueSet: MostRecentIMVS
-Id: MostRecentIMVS
+ValueSet: MostRecentMIVS
+Id: MostRecentMIVS
 Title: "Infarto al miocardio más reciente"
 Description: "Códigos para categorizar los días transcurridos desde el infarto al miocardio más reciente"
 * ^experimental = false
@@ -42,5 +42,5 @@ Description: "Códigos para categorizar los días transcurridos desde el infarto
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system MostRecentIMCS
+* include codes from system MostRecentMICS
 
