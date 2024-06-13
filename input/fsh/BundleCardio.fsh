@@ -49,7 +49,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  condicionExtracardiaca 0..1 and 
                  nefropatia 0..1 and 
                  angina 0..1 and 
-                 tipoMuerte 0..1 
+                 tipoMuerte 0..1 and 
+                 ultimaCateterizacion 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -173,3 +174,10 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[tipoMuerte] ^short = "Tipo de muerte"
 * entry[tipoMuerte].resource only TypeOfDiseaseCondition
 * entry[tipoMuerte].resource ^short = "Se indica el tipo de muerte"   
+
+* entry[ultimaCateterizacion] ^short = "ultima Cateterizacion"
+* entry[ultimaCateterizacion].resource only LastCatheterizationObservation
+* entry[ultimaCateterizacion].resource ^short = "ultima Cateterizacion"   
+
+
+
