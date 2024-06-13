@@ -48,7 +48,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  ritmoCardiacoPreoperatorio 0..1 and 
                  condicionExtracardiaca 0..1 and 
                  nefropatia 0..1 and 
-                 angina 0..1
+                 angina 0..1 and 
+                 tipoMuerte 0..1 
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -168,3 +169,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[angina] ^short = "Angina"
 * entry[angina].resource only AnginaObservation
 * entry[angina].resource ^short = "Se indica la observación de angina en el paciente"   
+
+* entry[tipoMuerte] ^short = "Tipo de muerte"
+* entry[tipoMuerte].resource only TypeOfDiseaseCondition
+* entry[tipoMuerte].resource ^short = "Se indica el tipo de muerte"   
