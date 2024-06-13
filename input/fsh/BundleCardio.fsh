@@ -46,7 +46,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  packsAnual 0..1 and 
                  enfermedadesPulmonares 0..1 and 
                  ritmoCardiacoPreoperatorio 0..1 and 
-                 condicionExtracardiaca 0..1
+                 condicionExtracardiaca 0..1 and 
+                 nefropatia 0..1 and 
+                 angina 0..1
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -158,3 +160,11 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[condicionExtracardiaca] ^short = "Condición extracardíaca"
 * entry[condicionExtracardiaca].resource only ExtraCardiacArteriopathyCondition
 * entry[condicionExtracardiaca].resource ^short = "Se indica si el paciente tiene una condición extracardíaca"
+
+* entry[nefropatia] ^short = "Nefropatía"
+* entry[nefropatia].resource only NephropathyCondition
+* entry[nefropatia].resource ^short = "Se indica si el paciente padece de nefropatía"   
+
+* entry[angina] ^short = "Angina"
+* entry[angina].resource only AnginaObservation
+* entry[angina].resource ^short = "Se indica la observación de angina en el paciente"   
