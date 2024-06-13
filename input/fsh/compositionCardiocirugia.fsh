@@ -132,7 +132,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                     FunctionalCapacityObservation 1..1 and
                                                     PreviousMIObservation 1..1 and
                                                     MostRecentMIObservation 1..1 and
-                                                    CongestiveHeartFailureCondition 0..1 and 
+                                                    CongestiveHeartFailureObservation 0..1 and 
                                                     LastCatheterizationObservation 0..1 and 
                                                     DiseasedCoronarySegmentObservation 0..1 and 
                                                     EjectionFractionObservation 0..1 and 
@@ -156,8 +156,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry[PreviousMIObservation] ^short = "Número de infartos al miocardio previos"
 * section[ProcedureCardio].entry[MostRecentMIObservation] only Reference(MostRecentMIObservation)
 * section[ProcedureCardio].entry[MostRecentMIObservation] ^short = "Días transcurridos desde el último infarto al miocardio"
-* section[ProcedureCardio].entry[CongestiveHeartFailureCondition] only Reference(CongestiveHeartFailureCondition)
-* section[ProcedureCardio].entry[CongestiveHeartFailureCondition] ^short = "Se indica que el paciente presenta falla cardíaca congestiva"
+* section[ProcedureCardio].entry[CongestiveHeartFailureObservation] only Reference(CongestiveHeartFailureObservation)
+* section[ProcedureCardio].entry[CongestiveHeartFailureObservation] ^short = "Se indica que el paciente presenta falla cardíaca congestiva"
 * section[ProcedureCardio].entry[LastCatheterizationObservation] only Reference(LastCatheterizationObservation)
 * section[ProcedureCardio].entry[LastCatheterizationObservation] ^short = "Se indica que la fecha en la que el paciente tuvo su última cateterización"
 * section[ProcedureCardio].entry[DiseasedCoronarySegmentObservation] only Reference(DiseasedCoronarySegmentObservation)

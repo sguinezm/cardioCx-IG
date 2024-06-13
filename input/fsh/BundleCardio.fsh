@@ -87,7 +87,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[infartoReciente].resource ^short = "Categorización del número de infartos al miocardio sufridos recientemente por el paciente previo a la inteversión"
 
 * entry[insuficienciaCardíacaCongestiva] ^short = "insuficiencia cardíaca congestiva"
-* entry[insuficienciaCardíacaCongestiva].resource only CongestiveHeartFailureCondition
+* entry[insuficienciaCardíacaCongestiva].resource only CongestiveHeartFailureObservation
 * entry[insuficienciaCardíacaCongestiva].resource ^short = "Se indica si el paciente ha sufrido una insuficiencia cardíaca congestiva"
 
 

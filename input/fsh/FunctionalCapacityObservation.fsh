@@ -45,12 +45,13 @@ Title: "MostRecentMIObservation"
 * value[x] only CodeableConcept
 * value[x] from MostRecentMIVS (preferred)
 
-Profile: CongestiveHeartFailureCondition
+Profile: CongestiveHeartFailureObservation
 Parent: Observation
 Description: "Se indica que el paciente presenta la condición de falla cardíaca congestiva"
 
-Title: "CongestiveHeartFailureCondition"
+Title: "CongestiveHeartFailureObservation"
 
+* value[x] only boolean
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
