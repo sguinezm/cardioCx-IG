@@ -1,4 +1,4 @@
-Alias: $loinc = http://loinc.org
+Alias: $snomed = http://snomed.info/sct
 Alias: $us-core-vital-signs = http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
 
 
@@ -17,11 +17,11 @@ Title: "AnginaObservation"
 
 
 * code.coding[angina].code 1..1
-* code.coding[angina].code = $loinc#194828000
+* code.coding[angina].code = $snomed#194828000
 * code.coding[angina].code ^definition = "Angina"
 
 * code.coding[grado].code 1..1
-* code.coding[grado].code = $loinc#103421006
+* code.coding[grado].code = $snomed#103421006
 * code.coding[grado].code ^definition = "Grado"
 
 
