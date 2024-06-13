@@ -154,7 +154,7 @@ Description: "Dolor reportado por el paciente relacionado con una angina, en una
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "CCS 0"
+* #272519000 "CCS 0"
 * #61490001 "CCS 1"
 * #41334000 "CCS 2"
 * #85284003 "CCS 3"
