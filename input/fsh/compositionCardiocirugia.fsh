@@ -30,8 +30,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
     ProcedureCardio 0..1 MS and
     ValveProcedureSection 0..1 MS and 
     ProcedureEcocardio 0..1 MS and 
-    PerfusionProcedureSection 0..1 MS and 
-    OrganizationSection 0..1 MS 
+    PerfusionProcedureSection 0..1 MS
 
 * section[PatientSection] ^short = "Sección del paciente"
 * section[PatientSection] ^definition = "Información acerca del paciente"
@@ -114,21 +113,9 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PractitionerSection] ^definition = "Sección en la que se definen los profesionales involucrados en el procedimiento."
 * section[PractitionerSection].code = #3
 * section[PractitionerSection].code.coding.display = "En esta sección se muestra información relevante acerca de los profesionales a cargo del procedimiento"
-* section[PractitionerSection].focus only Reference(Practitioner)
-* section[PractitionerSection].entry ^slicing.discriminator.type = #profile
-* section[PractitionerSection].entry ^slicing.discriminator.path = "resolve()"
-* section[PractitionerSection].entry ^slicing.rules = #open
+* section[PractitionerSection].focus only Reference(ProcedureCardio)
+* section[PractitionerSection].entry only Reference(PractitionerRoleCardio)
 * section[PractitionerSection].entry 3..5
-* section[PractitionerSection].entry contains SurgeonPractitioner 1..3
-* section[PractitionerSection].entry[SurgeonPractitioner] only Reference(PractitionerCardio)
-* section[PractitionerSection].entry[SurgeonPractitioner] ^short = "Referencia al recurso del cirujano en cardiocirugía."
-* section[PractitionerSection].entry contains PerfusionistPractitioner 1..1
-* section[PractitionerSection].entry[PerfusionistPractitioner] only Reference(PractitionerCardio)
-* section[PractitionerSection].entry[PerfusionistPractitioner] ^short = "Referencia al recurso del cirujano en cardiocirugía para difinir el perfusionista."
-* section[PractitionerSection].entry contains AntestesistPractitioner 1..1
-* section[PractitionerSection].entry[AntestesistPractitioner] only Reference(PractitionerCardio)
-* section[PractitionerSection].entry[AntestesistPractitioner] ^short = "Referencia al recurso del cirujano en cardiocirugía para difinir el anestesista."
-
 
 
 
@@ -136,7 +123,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio] ^definition = "Sección en la que se describe el historial cardiaco del paciente."
 * section[ProcedureCardio].code = #4
 * section[ProcedureCardio].code.coding.display = "En esta sección se muestra información relevante acerca del procedimiento cardíaco"
-* section[ProcedureCardio].focus only Reference(Observation)
+* section[ProcedureCardio].focus only Reference(Procedure)
 * section[ProcedureCardio].entry ^slicing.discriminator.type = #profile
 * section[ProcedureCardio].entry ^slicing.discriminator.path = "resolve()"
 * section[ProcedureCardio].entry ^slicing.rules = #open
@@ -156,8 +143,11 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                     PAWPObservation 0..1 and 
                                                     NumberOfDistalArterialAnastomoses 0..1 and 
                                                     NumberOfDistalVenousAnastomoses 0..1 and 
-                                                    ArteriesUsedAsConduitsObservation 0..1 
- 
+                                                    ArteriesUsedAsConduitsObservation 0..1 and 
+                                                    organization 0..1
+
+* section[ProcedureCardio].entry[organization] only Reference(Organization)
+* section[ProcedureCardio].entry[organization] ^short = "Se hace referencia a la organización"
 * section[ProcedureCardio].entry[AnginaObservation] only Reference(AnginaObservation)
 * section[ProcedureCardio].entry[AnginaObservation] ^short = "Angina de pecho reportada por el paciente"
 * section[ProcedureCardio].entry[FunctionalCapacityObservation] only Reference(FunctionalCapacityObservation)
@@ -436,15 +426,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PerfusionProcedureSection].entry[circulatoryAssistances] only Reference(CirculatoryObservation)
 * section[PerfusionProcedureSection].entry[circulatoryAssistances] ^short = "Observación de las asistencias circulatorias"
 
-
-
-//Acá se agrega la sección de la organización
-
-* section[OrganizationSection] ^short = "Organizaciones involucradas"
-* section[OrganizationSection] ^definition = "Sección en la que se informa qué instituciones están involucradas en el procedimiento (referente, referidor)."
-* section[OrganizationSection].code = #8
-* section[OrganizationSection] 1..1
-* section[OrganizationSection].code.coding.display = "En esta sección se muestra información relevante acerca de la organización"
 
 
 

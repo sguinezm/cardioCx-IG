@@ -19,7 +19,7 @@ Description: "Códigos para secciones de composition para cardio cirugías."
 * #5 "ValveProcedureSection"
 * #6 "ProcedureEcocardio"
 * #7 "PerfusionProcedureSection"
-* #8 "OrganizationSection"
+
 
 CodeSystem: PreviousAngioplastyCS
 Id: PreviousAngioplastyCS
@@ -821,3 +821,26 @@ Description: "CodeSystem para los procedimientos sobre la Aorta."
 * #7 "aortic_patch_graft"
 * #8 "valsalva_sinus_repair"
 * #9 "aortoplastic_reduction"
+
+
+CodeSystem: PractitionerRoleCardioCS
+Id: PractitionerRoleCardioCS
+Title: "CodeSystem para los roles"
+Description: "CodeSystem para los roles"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "surgeon 1"
+* #2 "surgeon 2"
+* #3 "surgeon 3"
+* #4 "anesthetist"
+* #5 "perfusionist"
+
+
+
