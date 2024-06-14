@@ -91,25 +91,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[insuficienciaCardíacaCongestiva].resource ^short = "Se indica si el paciente ha sufrido una insuficiencia cardíaca congestiva"
 
 
-* entry[angioplastiaPrevia] ^short = "Angioplastía previa"
-* entry[angioplastiaPrevia].resource only Questionnaire
-* entry[angioplastiaPrevia].resource ^short = "Se indica si el paciente ha tenido una angioplastía previa"
 
-* entry[cirugiasCardiacasPrevias] ^short = "Número de cirugias cardíacas previas"
-* entry[cirugiasCardiacasPrevias].resource only Questionnaire
-* entry[cirugiasCardiacasPrevias].resource ^short = "Se indica el número de cirugías cardíacas previas"
-
-* entry[fechaUltimaAngioplastia] ^short = "Fecha de última angioplastía"
-* entry[fechaUltimaAngioplastia].resource only Questionnaire
-* entry[fechaUltimaAngioplastia].resource ^short = "Se indica la fecha de la última angioplastía"
-
-* entry[fechaUltimaCirugiaCardiaca] ^short = "Fecha de última cirugia cardíaca"
-* entry[fechaUltimaCirugiaCardiaca].resource only Questionnaire
-* entry[fechaUltimaCirugiaCardiaca].resource ^short = "Se indica la fecha de la última cirugía cardíaca"
-
-* entry[cirugiasPrevias] ^short = "última cirugía previa"
-* entry[cirugiasPrevias].resource only Questionnaire
-* entry[cirugiasPrevias].resource ^short = "Se indica si se ha realizado una cirugía previa"
 
 * entry[altura] ^short = "Altura de la persona"
 * entry[altura].resource only Observation
