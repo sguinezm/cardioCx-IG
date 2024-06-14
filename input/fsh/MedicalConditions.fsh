@@ -125,7 +125,7 @@ Title: "ExtraCardiacArteriopathyCondition"
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding 4..5
+* code.coding 4..4
 * code.coding contains arteriopathy 1..1 and
                         extra 1..1 and
                         cardiac 1..1 and

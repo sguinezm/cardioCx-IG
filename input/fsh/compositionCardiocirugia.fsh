@@ -1,6 +1,5 @@
 Alias: $observation-bodyheight = http://hl7.org/fhir/StructureDefinition/bodyheight
 Alias: $observation-bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
-Alias: $loinc = http://loinc.org
 Profile: CompositionCardiocirugia
 Parent: Composition
 
@@ -9,7 +8,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 
 * status = #final
 * type = #67727-8
-* type.coding.system = $loinc
+* type.coding.system = $snomed
 * author only Reference(PractitionerCardio)
 * date ^short = "fecha en la que se inicia e registro de la intervención"
 * author ^short = "Profesional encargado de registrar la intervención"
