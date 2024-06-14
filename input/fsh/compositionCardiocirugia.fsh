@@ -104,7 +104,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[QuestionnaireSection].entry ^slicing.rules = #open
 * section[QuestionnaireSection].entry 1..1
 * section[QuestionnaireSection].entry contains Questionnaire 1..1
-* section[QuestionnaireSection].entry[Questionnaire] only Reference(Questionnaire)
+* section[QuestionnaireSection].entry[Questionnaire] only Reference(ProcedureQuestionnaire)
 * section[QuestionnaireSection].entry[Questionnaire] ^short = "Referencia al recurso que contiene la información de antecedentes."
 
 * section[PractitionerSection] ^short = "Profesionales involucrados."

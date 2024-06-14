@@ -1,5 +1,5 @@
-Profile: Questionnaire
-Parent: QuestionnaireResponse
+Profile: ProcedureQuestionnaire
+Parent: Questionnaire
 Description: "Cuestionario utilizado para conocer las intervenciones clinicas previas del paciente, relevantes para el procedimiento de cardio cirugía."
 
 * item ^slicing.discriminator.type = #value
