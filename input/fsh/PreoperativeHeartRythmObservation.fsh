@@ -12,7 +12,7 @@ Title: "PreoperativeHeartRythmObservation"
 * code from PreoperativeHeartRythmObservationVS
 
 
-* value[x] only Quantity
-* value[x] 1..1 MS 
+* value[x] only CodeableConcept
 
-* focus 1..1
+
+* focus 0..1
