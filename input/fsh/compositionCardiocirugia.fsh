@@ -36,7 +36,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PatientSection] ^definition = "Información acerca del paciente"
 * section[PatientSection].code = #1
 * section[PatientSection] 1..1
-* section[PatientSection].code.coding.display = "En esta sección se muestra información relevante acerca del paciente"
 * section[PatientSection].focus only Reference(PatientCardio)
 
 * section[PatientSection].entry ^slicing.discriminator.type = #profile
@@ -99,7 +98,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[QuestionnaireSection] ^short = "Cuestionario realizado al paciente."
 * section[QuestionnaireSection] ^definition = "Antecedentes de intervenciones previas para realizar el procedimiento al paciente."
 * section[QuestionnaireSection].code = #2
-* section[QuestionnaireSection].code.coding.display = "En esta sección se muestra información relevante acerca del paciente al momento de realizar preguntas"
 * section[QuestionnaireSection].focus only Reference(Procedure)
 * section[QuestionnaireSection].entry ^slicing.discriminator.type = #profile
 * section[QuestionnaireSection].entry ^slicing.discriminator.path = "resolve()"
@@ -112,7 +110,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PractitionerSection] ^short = "Profesionales involucrados."
 * section[PractitionerSection] ^definition = "Sección en la que se definen los profesionales involucrados en el procedimiento."
 * section[PractitionerSection].code = #3
-* section[PractitionerSection].code.coding.display = "En esta sección se muestra información relevante acerca de los profesionales a cargo del procedimiento"
 * section[PractitionerSection].focus only Reference(ProcedureCardio)
 * section[PractitionerSection].entry only Reference(PractitionerRoleCardio)
 * section[PractitionerSection].entry 3..5
@@ -122,7 +119,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio] ^short = "Historial cardíaco"
 * section[ProcedureCardio] ^definition = "Sección en la que se describe el historial cardiaco del paciente."
 * section[ProcedureCardio].code = #4
-* section[ProcedureCardio].code.coding.display = "En esta sección se muestra información relevante acerca del procedimiento cardíaco"
 * section[ProcedureCardio].focus only Reference(Procedure)
 * section[ProcedureCardio].entry ^slicing.discriminator.type = #profile
 * section[ProcedureCardio].entry ^slicing.discriminator.path = "resolve()"
@@ -188,7 +184,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ValveProcedureSection] ^short = "Sección de válvula"
 * section[ValveProcedureSection] ^definition = "Información acerca de vávula del paciente"
 * section[ValveProcedureSection].code = #5
-* section[ValveProcedureSection].code.coding.display = "En esta sección se muestra información relevante acerca de la válvula del paciente"
 * section[ValveProcedureSection].focus only Reference(ValveProcedure)
 
 * section[ValveProcedureSection].entry ^slicing.discriminator.type = #profile
@@ -245,7 +240,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureEcocardio] ^short = "Sección de ecocardiograma"
 * section[ProcedureEcocardio] ^definition = "Información acerca del ecocardiograma"
 * section[ProcedureEcocardio].code = #6
-* section[ProcedureEcocardio].code.coding.display = "En esta sección se muestra información relevante acerca del procedimiento de ecocardiograma"
 * section[ProcedureEcocardio].focus only Reference(EchocardiogramProcedure)
 
 * section[ProcedureEcocardio].entry ^slicing.discriminator.type = #profile
@@ -360,7 +354,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PerfusionProcedureSection] ^short = "Sección de perfusión"
 * section[PerfusionProcedureSection] ^definition = "Información acerca de la perfusión"
 * section[PerfusionProcedureSection].code = #7
-* section[PerfusionProcedureSection].code.coding.display = "En esta sección se muestra información relevante acerca de la perfusión"
 * section[PerfusionProcedureSection].focus only Reference(PerfusionProcedure)
 
 * section[PerfusionProcedureSection].entry ^slicing.discriminator.type = #profile

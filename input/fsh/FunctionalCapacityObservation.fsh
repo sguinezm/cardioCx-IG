@@ -1,3 +1,4 @@
+Alias: $snomed = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $us-core-vital-signs = http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
 
@@ -31,7 +32,7 @@ Parent: Observation
 Description: "Número de infartos al miocardio previos"
 
 Title: "PreviousMIObservation"
-
+* code.coding = $snomed#22298006
 * value[x] only CodeableConcept
 * value[x] from PreviousMIVS (preferred)
 
@@ -41,7 +42,7 @@ Parent: Observation
 Description: "Días transcurridos desde el infarto al miocardio más reciente"
 
 Title: "MostRecentMIObservation"
-
+* code.coding = $snomed#428752002
 * value[x] only CodeableConcept
 * value[x] from MostRecentMIVS (preferred)
 
