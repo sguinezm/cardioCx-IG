@@ -12,7 +12,7 @@ Title: "SmokingObservation"
 
 
 * value[x] from SmokingObservationVS
-* value[x] only Quantity
+* value[x] only CodeableConcept
 * value[x] 1..1 MS 
 
-* focus 1..1
+* focus 0..1
