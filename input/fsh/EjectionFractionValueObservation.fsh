@@ -30,8 +30,6 @@ Title: "EjectionFractionValueObservation"
 * value[x].value 1..1  
 */
 * code = $snomed#70822001
-* code.coding.system = $snomed
-* code.coding.display = "Cardiac ejection fraction"
 * code ^definition = "Cardiac ejection fraction"
 
 * value[x] ^slicing.discriminator.type = #type
