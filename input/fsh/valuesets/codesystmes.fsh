@@ -372,7 +372,7 @@ Description: "Presencia de enfermedad en arteria coronaria principal izquierda"
 CodeSystem: EjectionFractionCS
 Id: EjectionFractionCS
 Title: "Fracción de eyección"
-Description: "Fracción de eyección"
+Description: "Fracción de eyección del paciente"
 * ^experimental = false
 * ^caseSensitive = true
 * ^status = #active
