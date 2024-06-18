@@ -102,7 +102,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[peso].resource ^short = "Se indica el peso de la persona"
 
 * entry[historialFumador] ^short = "Historial fumador de la persona"
-* entry[historialFumador].resource only SmokingObservation
+* entry[historialFumador].resource only SmokingCondition
 * entry[historialFumador].resource ^short = "Se indica el historial fumador de la persona"
 
 * entry[tratamientoDiabetes] ^short = "Tratamiento de diabetes del paciente"

@@ -1,5 +1,5 @@
-ValueSet: SmokingObservationVS
-Id: SmokingObservationVS
+ValueSet: SmokingConditionVS
+Id: SmokingConditionVS
 Title: "Historial fumador"
 Description: "Historial Fumador"
 * ^experimental = false
@@ -11,4 +11,4 @@ Description: "Historial Fumador"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system SmokingObservationCS
+* include codes from system SmokingConditionCS

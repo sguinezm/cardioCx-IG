@@ -89,7 +89,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PatientSection].entry[TypeOfDiseaseCondition] ^short = "Tipo de enfermedad"
 * section[PatientSection].entry[PacksPerYear] only Reference(PacksPerYearObservation)
 * section[PatientSection].entry[PacksPerYear] ^short = "Observación de packs por año"
-* section[PatientSection].entry[SmokingHistory] only Reference(SmokingObservation)
+* section[PatientSection].entry[SmokingHistory] only Reference(SmokingCondition)
 * section[PatientSection].entry[SmokingHistory] ^short = "Observación de historial fumador"
 
 

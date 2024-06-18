@@ -219,8 +219,8 @@ Description: "Categorización utilizada para describir cuándo fue el IM más re
 * #"22-90 days before operation" "22-90 días antes de la operación"
 * #">90 days before operation" ">90 días antes de la operación"
 
-CodeSystem: SmokingObservationCS
-Id: SmokingObservationCS
+CodeSystem: SmokingConditionCS
+Id: SmokingConditionCS
 Title: "Condición de fumador"
 Description: "Categorización utilizada para describir la condición de fumador del paciente"
 * ^experimental = false
