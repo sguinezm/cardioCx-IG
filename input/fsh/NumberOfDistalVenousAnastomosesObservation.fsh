@@ -1,7 +1,7 @@
 Alias: $snomed = http://snomed.info/sct
 
 
-Profile: NumberOfDistalVenousAnastomoses
+Profile: NumberOfDistalVenousAnastomosesObservation
 Parent: Observation
 Description: "Número de arterias venosas distal"
 

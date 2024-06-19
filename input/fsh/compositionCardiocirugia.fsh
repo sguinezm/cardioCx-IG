@@ -171,7 +171,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ProcedureCardio].entry[PAWPObservation] ^short = "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP)"
 * section[ProcedureCardio].entry[NumberOfDistalArterialAnastomoses] only Reference(NumberOfDistalArterialAnastomosesObservation)
 * section[ProcedureCardio].entry[NumberOfDistalArterialAnastomoses] ^short = "Observación de número de arterias distal"
-* section[ProcedureCardio].entry[NumberOfDistalVenousAnastomoses] only Reference(NumberOfDistalVenousAnastomoses)
+* section[ProcedureCardio].entry[NumberOfDistalVenousAnastomoses] only Reference(NumberOfDistalVenousAnastomosesObservation)
 * section[ProcedureCardio].entry[NumberOfDistalVenousAnastomoses] ^short = "Observación de número de arterias venosas"
 * section[ProcedureCardio].entry[ArteriesUsedAsConduitsObservation] only Reference(ArteriesUsedAsConduitsObservation)
 * section[ProcedureCardio].entry[ArteriesUsedAsConduitsObservation] ^short = "Observación de arterias usadas como conductos"
