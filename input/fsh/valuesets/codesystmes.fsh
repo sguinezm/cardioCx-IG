@@ -382,12 +382,11 @@ Description: "Fracción de eyección del paciente"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #262005006 "Not measured"
 * #20572008  "Good"
-* #6736007   "Moderate severity"
-* #272519000 "Absence findings"
-* #863932003 "Left ventricular ejection fraction decreased"
-
+* #6736007   "Moderate" 
+* #255351007 "Poor" // Representa a poor 
+* #24484000  "severe" // Representa a very poor 
+* #272519000 "Absence findings" // Representa a not measure
 
 CodeSystem: ValveInsuficiencyCS
 Id: ValveInsuficiencyCS
