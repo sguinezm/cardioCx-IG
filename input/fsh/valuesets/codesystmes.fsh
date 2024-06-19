@@ -382,12 +382,11 @@ Description: "Fracción de eyección del paciente"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #262005006 "Not measured"
 * #20572008  "Good"
-* #6736007   "Moderate severity"
-* #272519000 "Absence findings"
-* #863932003 "Left ventricular ejection fraction decreased"
-
+* #6736007   "Moderate" 
+* #255351007 "Poor" // Representa a poor 
+* #24484000  "severe" // Representa a very poor 
+* #272519000 "Absence findings" // Representa a not measure
 
 CodeSystem: ValveInsuficiencyCS
 Id: ValveInsuficiencyCS
@@ -842,22 +841,6 @@ Description: "CodeSystem para los roles"
 * #3 "surgeon 3"
 * #4 "anesthetist"
 * #5 "perfusionist"
-
-
-CodeSystem: MainReasonSurgeryCS
-Id: MainReasonSurgeryCS
-Title: "CodeSystem para la razón principal de la operación"
-Description: "CodeSystem para la razón principal de la operación"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1 "principal_reason_of_urgency"
 
 
 

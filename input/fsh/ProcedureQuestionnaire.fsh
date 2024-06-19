@@ -39,7 +39,7 @@ Description: "Cuestionario utilizado para conocer las intervenciones clinicas pr
 * item[previousSurgeries].answer.value[x] from PreviousSurgeriesVS  
 
 * item[heartCatheterization].linkId = "heart_catheterization"
-* item[heartCatheterization].answer 1..3
+* item[heartCatheterization].answer 1..1
 * item[heartCatheterization].answer.value[x] only Coding
 * item[heartCatheterization].answer.value[x] from HeartCatheterizationVS  
 

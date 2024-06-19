@@ -13,6 +13,5 @@ Description: "Razón principal de operación"
 * . ^short = "MainReasonSurgeryExt"
 * . 0..1
 * . ^definition = "Valores que acepta razón de operación"
-* value[x] 0..1
-* value[x] only CodeableConcept
-* value[x] from MainReasonSurgeryVS
+* value[x] 1..1
+* value[x] only string
