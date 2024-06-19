@@ -44,10 +44,14 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
+pages:
+  index.md:
+  #     title: Example Home
+  caso_uso.md:
+  usuarios.md:
+  transacciones.md:
+  artifacts.html:
+
 #   examples.xml:
 #     title: Examples Overview
 #     simpleExamples.xml:
@@ -77,7 +81,12 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Caso de Uso:
+    Descripción: caso_uso.html
+    Usuarios involucrados: usuarios.html
+  Especificaciones técnicas:
+    Transacciones: transacciones.html
+  Artefactos: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
