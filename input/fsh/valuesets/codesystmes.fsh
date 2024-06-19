@@ -873,7 +873,7 @@ Description: "CodeSystem para la urgencia de la cirugía"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #408466002 "cardiac surgery"
-
-
-
+* #1 "elective"
+* #2 "urgent"
+* #3 "emergency"
+* #4 "salvage"
