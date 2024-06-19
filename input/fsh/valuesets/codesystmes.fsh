@@ -858,7 +858,7 @@ Description: "CodeSystem para los coronary surgeries"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "surgeon 1"
-* #2 "surgeon 2"
+* #408466002 "cardiac surgery"
+
 
 
