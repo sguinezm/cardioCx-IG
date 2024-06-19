@@ -843,8 +843,6 @@ Description: "CodeSystem para los roles"
 * #5 "perfusionist"
 
 
-
-
 CodeSystem: CoronarySurgeriesCS
 Id: CoronarySurgeriesCS
 Title: "CodeSystem para los coronary surgeries"
@@ -858,7 +856,24 @@ Description: "CodeSystem para los coronary surgeries"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "surgeon 1"
-* #2 "surgeon 2"
+* #408466002 "cardiac surgery"
+
+
+
+CodeSystem: UrgencyOfSurgeryCS
+Id: UrgencyOfSurgeryCS
+Title: "CodeSystem para la urgencia de la cirugía"
+Description: "CodeSystem para la urgencia de la cirugía"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #408466002 "cardiac surgery"
+
 
 
