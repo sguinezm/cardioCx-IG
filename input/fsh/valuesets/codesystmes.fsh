@@ -844,4 +844,21 @@ Description: "CodeSystem para los roles"
 * #5 "perfusionist"
 
 
+CodeSystem: MainReasonSurgeryCS
+Id: MainReasonSurgeryCS
+Title: "CodeSystem para la razón principal de la operación"
+Description: "CodeSystem para la razón principal de la operación"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "principal_reason_of_urgency"
+
+
+
 
