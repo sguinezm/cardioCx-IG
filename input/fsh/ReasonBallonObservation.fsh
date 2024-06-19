@@ -22,7 +22,7 @@ Title: "ReasonBallonObservation"
 * code.coding[reasonBallon].code = $snomed#16965008  
 * code.coding[reasonBallon].code ^definition = "venous cannulations"
 * value[x] from ReasonForBallonUsageVS
-
+* value[x] only CodeableConcept
 
 
 
