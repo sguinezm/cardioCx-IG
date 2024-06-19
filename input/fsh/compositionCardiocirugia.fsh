@@ -12,7 +12,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * author only Reference(PractitionerCardio)
 * date ^short = "fecha en la que se inicia e registro de la intervención"
 * author ^short = "Profesional encargado de registrar la intervención"
-* title = "titulo" 
+* title  = "Composition Cardiocirugia" 
 * section 1..10 MS
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
@@ -201,7 +201,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                 endocarditisInfecciosa 0..1 and 
                                                 nativeValvePathology 0..1 
 
-* section[ValveProcedureSection].entry[stenosis] only Reference(StenosisCondition)
+* section[ValveProcedureSection].entry[stenosis] only Reference(StenosisObservation)
 * section[ValveProcedureSection].entry[stenosis] ^short = "Indica la presencia de stenosis"
 
 * section[ValveProcedureSection].entry[valve] only Reference(ValveProcedure)

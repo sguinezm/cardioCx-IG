@@ -65,7 +65,7 @@ and secundaryCodeTwo 0..1
 * reasonReference 0..*
 * reasonReference contains stenosis 0..1
 
-* reasonReference[stenosis] only Reference(StenosisCondition)
+* reasonReference[stenosis] only Reference(StenosisObservation)
 
 
 * usedReference ^slicing.discriminator.type = #profile
