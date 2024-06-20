@@ -856,9 +856,14 @@ Description: "CodeSystem para los coronary surgeries"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #408466002 "cardiac surgery"
-
-
+* #1 "no_arteries_were_used"
+* #2 "right_radial"
+* #3 "right_GEPA"
+* #4 "left_AMI"
+* #5 "right_AMI"
+* #6 "left_radial"
+* #7 "other"
+* #8 "other_value"
 
 CodeSystem: UrgencyOfSurgeryCS
 Id: UrgencyOfSurgeryCS
