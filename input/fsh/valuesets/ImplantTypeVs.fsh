@@ -13,7 +13,7 @@ Description: "Tipos de implantes"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* $snomed#262001002  "None"
+* $snomed#262001002   "None Used"
 * $snomed#261018001  "Mechanical" 
 * $snomed#12893009  "Biologic"
 * $snomed#15879007  "Autograft"
