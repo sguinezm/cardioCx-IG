@@ -66,6 +66,10 @@ Title: "EchocardiogramsObservation"
 * component[rightCavities].code = $snomed#73834008
 * component[rightCavities].code 1..1
 * component[rightCavities].code ^definition = "Estado de la cavidad derecha"
+* component[rightCavities].value[x] only CodeableConcept
+* component[rightCavities].value[x] from RightCavitiesVS
+
+
 
 * component[endocarditis].code = $snomed#56819008
 * component[endocarditis].code 1..1
