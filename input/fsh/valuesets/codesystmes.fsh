@@ -902,3 +902,27 @@ Description: "CodeSystem para la cavidad derecha"
 
 
 
+
+CodeSystem: DiagnosticsObservationCS
+Id: DiagnosticsObservationCS
+Title: "Observación de diagnósticos"
+Description: "CodeSystem para el diagnóstico"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #60234000  "aortic insufficiency"
+* #48724000  "mitral_insufficiency"
+* #60573004  "aortic stenosis"
+* #79619009  "mitral stenosis"
+* #74964007 "Other"
+* #362981000 "other value"
+
+
+
+
