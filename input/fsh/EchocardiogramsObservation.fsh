@@ -102,7 +102,7 @@ Title: "EchocardiogramsObservation"
 * component[cardiacTumor].code = $snomed#715403006 
 * component[cardiacTumor].code 1..1
 * component[cardiacTumor].code ^definition = "Se indica si hay tumor cardíaco"
-* component[cardiacTumor].value[x] only boolean
+* component[cardiacTumor].value[x] only integer
 * component[cardiacTumor].value[x].value 1..1 
 
 * component[leftVentricleDiastolicDiameter].code = $loinc#59078-6 
