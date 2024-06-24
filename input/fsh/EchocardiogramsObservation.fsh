@@ -203,7 +203,6 @@ Title: "EchocardiogramsObservation"
 * component[mitralValveArea].code ^definition = "Área de valvula mitral"
 
 
-
 * component[tricuspideValvesInsuficiency].code = $loinc#18115-6
 * component[tricuspideValvesInsuficiency].code 1..1
 * component[tricuspideValvesInsuficiency] ^short = "Insuficiencia de valvula Tricuspide"
