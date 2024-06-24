@@ -13,23 +13,22 @@ Title: "EchocardiogramsObservation"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
-* component 1..26
+* component 1..25
 * component contains             
                     PSAP  0..1 and 
-                    leftAtrium 1..1 and 
-                    aorticRoot 1..1 and 
-                    rightCavities 1..1 and 
-                    endocarditis 1..1 and 
-                    valve 1..1 and 
-                    vegetable 1..1 and 
-                    vegetableValue 1..1 and
-                    abscess 1..1 and 
-                    prosthesisDetachment 1..1 and
-                    cardiacTumor 1..1 and 
+                    leftAtrium 0..1 and 
+                    aorticRoot 0..1 and 
+                    rightCavities 0..1 and 
+                    endocarditis 0..1 and 
+                    valve 0..1 and 
+                    vegetable 0..1 and 
+                    abscess 0..1 and 
+                    prosthesisDetachment 0..1 and
+                    cardiacTumor 0..1 and 
                     leftVentricleDiastolicDiameter 0..1 and 
                     leftVentricleSystolicDiameter 0..1 and 
                     leftVentricleEjectionFraction 0..1 and 
-                    aorticValvesMainGradient 1..1 and 
+                    aorticValvesMainGradient 0..1 and 
                     aorticValvesMediumGradient 0..1 and 
                     aorticValvesMaximumSpeed 0..1 and 
                     aorticValvesArea 0..1 and 
@@ -37,9 +36,9 @@ Title: "EchocardiogramsObservation"
                     mitralValveMainGradient 0..1 and
                     mitralValveMediumGradient 1..1 and 
                     mitralValveMaximumSpeed 0..1 and
-                    mitralValveArea 1..1 and
-                    mitralValveInsufficiency 1..1 and 
-                    tricuspideValvesInsuficiency 1..1 
+                    mitralValveArea 0..1 and
+                    mitralValveInsufficiency 0..1 and 
+                    tricuspideValvesInsuficiency 0..1 
                     
 
 * component[PSAP] MS                                                
@@ -83,16 +82,10 @@ Title: "EchocardiogramsObservation"
 
 * component[vegetable].code = $snomed#37163200
 * component[vegetable].code 1..1
-* component[vegetable].code ^definition = "Se indica si está en estado vegetal"
-* component[vegetable].value[x] only boolean
+* component[vegetable].code ^definition = "Se indica si está en estado vegetal, si no está no se debe agregar el recurso"
+* component[vegetable].value[x] only integer
 * component[vegetable].value[x].value 1..1 
 
-
-* component[vegetableValue].code = $snomed#246205007
-* component[vegetableValue].code 1..1
-* component[vegetableValue].code ^definition = "Se indica cuanto lleva en estado vegetal"
-* component[vegetableValue].value[x] only integer
-* component[vegetableValue].value[x].value 1..1 
 
 * component[abscess].code = $snomed#128477000 
 * component[abscess].code 1..1

@@ -920,8 +920,8 @@ Description: "CodeSystem para el diagnóstico"
 * #48724000  "mitral_insufficiency"
 * #60573004  "aortic stenosis"
 * #79619009  "mitral stenosis"
-* #74964007 "Other"
-* #362981000 "other value"
+* #74964007   "Other"
+* #362981000  "other value"
 
 
 
