@@ -884,21 +884,6 @@ Description: "CodeSystem para la urgencia de la cirugía"
 * #4 "salvage"
 
 
-CodeSystem: RightCavitiesCS
-Id: RightCavitiesCS
-Title: "Cavidad derecha"
-Description: "CodeSystem para la cavidad derecha"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #17621005  "Normal"
-* #413996005 "dilated"
 
 
 

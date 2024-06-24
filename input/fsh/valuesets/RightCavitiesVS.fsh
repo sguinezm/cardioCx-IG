@@ -1,3 +1,4 @@
+Alias: $snomed = http://snomed.info/sct
 ValueSet: RightCavitiesVS
 Id: RightCavitiesVS
 Title: "Cavidad derecha"
@@ -11,4 +12,6 @@ Description: "Cavidad derecha"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system RightCavitiesCS
+* $snomed#17621005   
+* $snomed#413996005 
+ 
