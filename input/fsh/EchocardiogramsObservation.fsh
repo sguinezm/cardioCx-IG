@@ -139,7 +139,7 @@ Title: "EchocardiogramsObservation"
 * component[aorticValvesMainGradient] ^short = "Válvula principal de valvula aorta"
 * component[aorticValvesMainGradient].code ^definition = "Válvula principal de valvula aorta"
 
-* component[aorticValvesMediumGradient].code = $loinc#80011-0
+* component[aorticValvesMediumGradient].code = $loinc#LP7026-0
 * component[aorticValvesMediumGradient].code 1..1
 * component[aorticValvesMediumGradient] ^short = "Válvula media de valvula aorta"
 * component[aorticValvesMediumGradient].code ^definition = "Válvula media de valvula aorta"
@@ -176,7 +176,7 @@ Title: "EchocardiogramsObservation"
 * component[mitralValveMainGradient].value[x].value 1..1 
 
 
-* component[mitralValveMediumGradient].code = $snomed#45331000087106 
+* component[mitralValveMediumGradient].code = $snomed#20250-7
 * component[mitralValveMediumGradient].code 1..1
 * component[mitralValveMediumGradient] ^short = "Gradiente media de valvula Mitral"
 * component[mitralValveMediumGradient].code ^definition = "Gradiente media de valvula Mitral"
