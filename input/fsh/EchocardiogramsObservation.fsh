@@ -143,7 +143,7 @@ Title: "EchocardiogramsObservation"
 * component[aorticValvesMediumGradient].code 1..1
 * component[aorticValvesMediumGradient] ^short = "Válvula media de valvula aorta"
 * component[aorticValvesMediumGradient].code ^definition = "Válvula media de valvula aorta"
-* component[aorticValvesMediumGradient].value[x] only Quantity 
+* component[aorticValvesMediumGradient].value[x] only integer 
 * component[aorticValvesMediumGradient].value[x].value 1..1 
 
 
@@ -166,6 +166,7 @@ Title: "EchocardiogramsObservation"
 * component[aorticValvesInsufficiency].code 1..1
 * component[aorticValvesInsufficiency] ^short = "Insuficiencia de valvula aorta"
 * component[aorticValvesInsufficiency].code ^definition = "Insuficiencia de valvula aorta"
+* value[x] from AorticValvesInsufficiencyVS
 
 
 * component[mitralValveMainGradient].code = $loinc#18059-6
@@ -194,6 +195,7 @@ Title: "EchocardiogramsObservation"
 * component[mitralValveInsufficiency].code 1..1
 * component[mitralValveInsufficiency] ^short = "Insuficiencia de valvula mitral"
 * component[mitralValveInsufficiency].code ^definition = "Insuficiencia de valvula mitral"
+* value[x] from MitralValveInsufficiencyVS
 
 
 
@@ -201,6 +203,7 @@ Title: "EchocardiogramsObservation"
 * component[tricuspideValvesInsuficiency].code 1..1
 * component[tricuspideValvesInsuficiency] ^short = "Insuficiencia de valvula Tricuspide"
 * component[tricuspideValvesInsuficiency].code ^definition = "Insuficiencia de valvula Tricuspide"
+* value[x] from TricuspideValvesInsuficiencyVS
 
 
 /**value[x] only CodeableConcept  

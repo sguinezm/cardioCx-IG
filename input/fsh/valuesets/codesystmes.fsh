@@ -885,9 +885,6 @@ Description: "CodeSystem para la urgencia de la cirugía"
 
 
 
-
-
-
 CodeSystem: DiagnosticsObservationCS
 Id: DiagnosticsObservationCS
 Title: "Observación de diagnósticos"
@@ -908,6 +905,63 @@ Description: "CodeSystem para el diagnóstico"
 * #74964007   "Other"
 * #362981000  "other value"
 
+
+CodeSystem: AorticValvesInsufficiencyCS
+Id: AorticValvesInsufficiencyCS
+Title: "Valores de insuficiencia"
+Description: "Valores de insuficiencia"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #0  "0"
+* #1  "1"
+* #2  "2"
+* #3  "3"
+* #4  "4"
+
+CodeSystem: MitralValveInsufficiencyCS
+Id: MitralValveInsufficiencyCS
+Title: "Valores de insuficiencia"
+Description: "Valores de insuficiencia"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #0  "0"
+* #1  "1"
+* #2  "2"
+* #3  "3"
+* #4  "4"
+
+CodeSystem: TricuspideValvesInsuficiencyCS
+Id: TricuspideValvesInsuficiencyCS
+Title: "Valores de insuficiencia"
+Description: "Valores de insuficiencia"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #0  "0"
+* #1  "1"
+* #2  "2"
+* #3  "3"
+* #4  "4"
 
 
 
