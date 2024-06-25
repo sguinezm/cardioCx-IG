@@ -509,7 +509,7 @@ Description: "Asistencias circulatorias"
 * #14414005 "Peripheral"
 * #26216008  "Central"
 * #74964007 "Other"
-* #362981000 "other value"
+* #362981000 "Other value"
 
 CodeSystem: VenousCannulationsCS
 Id: VenousCannulationsCS
@@ -525,11 +525,11 @@ Description: "Canulación venosa"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
-* #73829009 "right_atrium"
-* #787588007 "bicava "
-* #83419000 "femoral"
+* #73829009 "Right atrium"
+* #787588007 "Bicava "
+* #83419000 "Femoral"
 * #74964007 "Other"
-* #362981000 "other value"
+* #362981000 "Other value"
 
 
 
@@ -547,12 +547,12 @@ Description: "Canulación arterial"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
-* #1 "ascending_aorta"
+* #1 "Ascending aorta"
 * #2 "TABC"
-* #3 "femoral"
-* #4 "subde"
+* #3 "Femoral"
+* #4 "Subde"
 * #5 "Other"
-* #6 "other value"
+* #6 "Other value"
 
 CodeSystem: NativeValvePathologyCS
 Id: NativeValvePathologyCS
@@ -723,13 +723,13 @@ Description: "arterias usadas como conductos"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "no_arteries_were_used"
-* #2 "right_radial"
-* #3 "right_GEPA"
-* #4 "left_AMI"
-* #5 "left_radial"
-* #6 "other"
-* #7 "other_value"
+* #1 "No arteries_were_used"
+* #2 "Right radial"
+* #3 "Right GEPA"
+* #4 "Left AMI"
+* #5 "Left radial"
+* #6 "Other"
+* #7 "Other value"
 
 CodeSystem: OtherCardiacProcedureDetailsCS
 Id: OtherCardiacProcedureDetailsCS
@@ -744,21 +744,21 @@ Description: "CodeSystem para otros procedimientos cardiacos."
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "none"
-* #2 "left_ventricular_aneurysm_repair"
-* #3 "ventricular_septal_defect_repair"
-* #4 "interauricular_defect"
-* #5 "batista"
-* #6 "congenital"
-* #7 "transmiocardial_laser_revascularisation"
-* #8 "cardiac_trauma"
-* #9 "cardiac_transplant"
-* #10 "permanent_pacemarker"
-* #11 "circulatory_assist_device_implant"
-* #12 "auricular_fibrillation_treatment"
-* #13 "cardiac_tumor"
-* #14 "other"
-* #15 "other_value"
+* #1 "None"
+* #2 "Left ventricular aneurysm repair"
+* #3 "Ventricular septal defect repair"
+* #4 "Interauricular defect"
+* #5 "Batista"
+* #6 "Congenital"
+* #7 "Transmiocardial laser revascularisation"
+* #8 "Cardiac trauma"
+* #9 "Cardiac transplant"
+* #10 "Permanent pacemarker"
+* #11 "Circulatory assist device implant"
+* #12 "Auricular fibrillation treatment"
+* #13 "Cardiac tumor"
+* #14 "Other"
+* #15 "Other value"
 
 CodeSystem: OtherNonCardiacProcedureDetailsCS
 Id: OtherNonCardiacProcedureDetailsCS
@@ -773,12 +773,12 @@ Description: "CodeSystem para otros procedimientos no cardiacos."
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "none"
-* #2 "aorta"
-* #3 "carotid_endarterectomy"
-* #4 "other_toracic"
-* #5 "other_vascular"
-* #6 "other_value"
+* #1 "None"
+* #2 "Aorta"
+* #3 "Carotid endarterectomy"
+* #4 "Other toracic"
+* #5 "Other vascular"
+* #6 "Other value"
 
 CodeSystem: AortaSegmentsCS
 Id: AortaSegmentsCS
@@ -793,11 +793,11 @@ Description: "CodeSystem para los segmentos de la Aorta."
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "root"
-* #2 "ascending"
-* #3 "descending"
-* #4 "abdominal"
-* #5 "arch"
+* #1 "Root"
+* #2 "Ascending"
+* #3 "Descending"
+* #4 "Abdominal"
+* #5 "Arch"
 
 CodeSystem: AorticProceduresCS
 Id: AorticProceduresCS
@@ -812,15 +812,15 @@ Description: "CodeSystem para los procedimientos sobre la Aorta."
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "interposition_tube_graft"
-* #2 "tube_graft_and_separate_AVR"
-* #3 "root_replacement_graft"
-* #4 "root_replacement_preservation"
-* #5 "root_replacement_homograft"
-* #6 "ross_procedure"
-* #7 "aortic_patch_graft"
-* #8 "valsalva_sinus_repair"
-* #9 "aortoplastic_reduction"
+* #1 "Interposition tube graft"
+* #2 "Tube graft and separate AVR"
+* #3 "Root replacement graft"
+* #4 "Root replacement preservation"
+* #5 "Root replacement homograft"
+* #6 "Ross procedure"
+* #7 "Aortic patch graft"
+* #8 "Valsalva sinus repair"
+* #9 "Aortoplastic reduction"
 
 
 CodeSystem: PractitionerRoleCardioCS
@@ -836,11 +836,11 @@ Description: "CodeSystem para los roles"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "surgeon 1"
-* #2 "surgeon 2"
-* #3 "surgeon 3"
-* #4 "anesthetist"
-* #5 "perfusionist"
+* #1 "Surgeon 1"
+* #2 "Surgeon 2"
+* #3 "Surgeon 3"
+* #4 "Anesthetist"
+* #5 "Perfusionist"
 
 
 CodeSystem: CoronarySurgeriesCS
@@ -856,14 +856,14 @@ Description: "CodeSystem para los coronary surgeries"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "no_arteries_were_used"
-* #2 "right_radial"
-* #3 "right_GEPA"
-* #4 "left_AMI"
-* #5 "right_AMI"
-* #6 "left_radial"
-* #7 "other"
-* #8 "other_value"
+* #1 "No arteries were used"
+* #2 "Right radial"
+* #3 "Right GEPA"
+* #4 "Left AMI"
+* #5 "Right AMI"
+* #6 "Left radial"
+* #7 "Other"
+* #8 "Other value"
 
 CodeSystem: UrgencyOfSurgeryCS
 Id: UrgencyOfSurgeryCS
@@ -878,10 +878,10 @@ Description: "CodeSystem para la urgencia de la cirugía"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "elective"
-* #2 "urgent"
-* #3 "emergency"
-* #4 "salvage"
+* #1 "Elective"
+* #2 "Urgent"
+* #3 "Emergency"
+* #4 "Salvage"
 
 
 
@@ -898,12 +898,12 @@ Description: "CodeSystem para el diagnóstico"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #60234000  "aortic insufficiency"
-* #48724000  "mitral_insufficiency"
-* #60573004  "aortic stenosis"
-* #79619009  "mitral stenosis"
+* #60234000  "Aortic insufficiency"
+* #48724000  "Mitral insufficiency"
+* #60573004  "Aortic stenosis"
+* #79619009  "Mitral stenosis"
 * #74964007   "Other"
-* #362981000  "other value"
+* #362981000  "Other value"
 
 
 CodeSystem: AorticValvesInsufficiencyCS
