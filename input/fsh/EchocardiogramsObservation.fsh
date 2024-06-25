@@ -138,6 +138,7 @@ Title: "EchocardiogramsObservation"
 * component[aorticValvesMainGradient].code 1..1
 * component[aorticValvesMainGradient] ^short = "Válvula principal de valvula aorta"
 * component[aorticValvesMainGradient].code ^definition = "Válvula principal de valvula aorta"
+* component[aorticValvesMainGradient].value[x] only integer 
 
 * component[aorticValvesMediumGradient].code = $loinc#LP7026-0
 * component[aorticValvesMediumGradient].code 1..1
@@ -166,6 +167,7 @@ Title: "EchocardiogramsObservation"
 * component[aorticValvesInsufficiency].code 1..1
 * component[aorticValvesInsufficiency] ^short = "Insuficiencia de valvula aorta"
 * component[aorticValvesInsufficiency].code ^definition = "Insuficiencia de valvula aorta"
+* component[aorticValvesInsufficiency].value[x] only Quantity 
 * value[x] from AorticValvesInsufficiencyVS
 
 
@@ -181,6 +183,7 @@ Title: "EchocardiogramsObservation"
 * component[mitralValveMediumGradient].code 1..1
 * component[mitralValveMediumGradient] ^short = "Gradiente media de valvula Mitral"
 * component[mitralValveMediumGradient].code ^definition = "Gradiente media de valvula Mitral"
+* component[mitralValveMediumGradient].value[x] only Quantity 
 
 
 * component[mitralValveMaximumSpeed].code = $loinc#80070-6
@@ -195,18 +198,21 @@ Title: "EchocardiogramsObservation"
 * component[mitralValveInsufficiency].code 1..1
 * component[mitralValveInsufficiency] ^short = "Insuficiencia de valvula mitral"
 * component[mitralValveInsufficiency].code ^definition = "Insuficiencia de valvula mitral"
+* component[mitralValveInsufficiency].value[x] only Quantity 
 * value[x] from MitralValveInsufficiencyVS
 
 * component[mitralValveArea].code = $loinc#LP6584-9
 * component[mitralValveArea].code 1..1
 * component[mitralValveArea] ^short = "Área de valvula mitral"
 * component[mitralValveArea].code ^definition = "Área de valvula mitral"
+* component[mitralValveArea].value[x] only Quantity 
 
 
 * component[tricuspideValvesInsuficiency].code = $loinc#18115-6
 * component[tricuspideValvesInsuficiency].code 1..1
 * component[tricuspideValvesInsuficiency] ^short = "Insuficiencia de valvula Tricuspide"
 * component[tricuspideValvesInsuficiency].code ^definition = "Insuficiencia de valvula Tricuspide"
+* component[tricuspideValvesInsuficiency].value[x] only Quantity 
 * value[x] from TricuspideValvesInsuficiencyVS
 
 
