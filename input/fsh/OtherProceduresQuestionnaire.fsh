@@ -13,7 +13,7 @@ Description: "Cuestionario utilizado para conocer otros procedimiento o no proce
         endoscopicVein 0..1
 
 * item[otherCardiacProcedureDetails].linkId = "other_cardiac_procedure_details"
-* item[otherCardiacProcedureDetails].answer 1..1
+* item[otherCardiacProcedureDetails].answer 0..1
 * item[otherCardiacProcedureDetails].answer.value[x] only Coding
 * item[otherCardiacProcedureDetails].answer.value[x] from OtherCardiacProcedureDetailsVS
 
