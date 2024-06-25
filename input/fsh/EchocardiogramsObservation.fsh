@@ -218,11 +218,5 @@ Title: "EchocardiogramsObservation"
 
 
 
-
-/**value[x] only CodeableConcept  
-*value[x].coding 0..5*/
-
-
-
 * focus only Reference(ValveProcedure)
-* focus 1..1
+
