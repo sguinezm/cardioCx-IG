@@ -49,8 +49,6 @@ Title: "EchocardiogramsObservation"
 * component[PSAP].value[x] only integer
 * component[PSAP].value[x] 1..1 
 
-
-
 * component[leftAtrium].code = $snomed#50408007 
 * component[leftAtrium].code 1..1
 * component[leftAtrium] ^short = "Se indica el estado de la arteria izquierda"
@@ -90,7 +88,6 @@ Title: "EchocardiogramsObservation"
 * component[vegetable].code ^definition = "Se indica si está en estado vegetal, si no está no se debe agregar el recurso"
 * component[vegetable].value[x] only integer
 * component[vegetable].value[x].value 1..1 
-
 
 * component[abscess].code = $snomed#128477000 
 * component[abscess].code 1..1
@@ -147,14 +144,12 @@ Title: "EchocardiogramsObservation"
 * component[aorticValvesMediumGradient].value[x] only integer 
 * component[aorticValvesMediumGradient].value[x].value 1..1 
 
-
 * component[aorticValvesMaximumSpeed].code = $loinc#20183-0
 * component[aorticValvesMaximumSpeed].code 1..1
 * component[aorticValvesMaximumSpeed] ^short = "Máxima velocidad de valvula aorta"
 * component[aorticValvesMaximumSpeed].code ^definition = "Máxima velocidad de valvula aorta"
 * component[aorticValvesMaximumSpeed].value[x] only Quantity 
 * component[aorticValvesMaximumSpeed].value[x].value 1..1 
-
 
 * component[aorticValvesArea].code = $loinc#17984-6
 * component[aorticValvesArea].code 1..1
@@ -168,8 +163,7 @@ Title: "EchocardiogramsObservation"
 * component[aorticValvesInsufficiency] ^short = "Insuficiencia de valvula aorta"
 * component[aorticValvesInsufficiency].code ^definition = "Insuficiencia de valvula aorta"
 * component[aorticValvesInsufficiency].value[x] only CodeableConcept
-* component[aorticValvesInsufficiency]. value[x] from AorticValvesInsufficiencyVS
-
+* component[aorticValvesInsufficiency].value[x] from AorticValvesInsufficiencyVS
 
 * component[mitralValveMainGradient].code = $loinc#18059-6
 * component[mitralValveMainGradient].code 1..1
@@ -178,13 +172,11 @@ Title: "EchocardiogramsObservation"
 * component[mitralValveMainGradient].value[x] only Quantity 
 * component[mitralValveMainGradient].value[x].value 1..1 
 
-
 * component[mitralValveMediumGradient].code = $snomed#20250-7
 * component[mitralValveMediumGradient].code 1..1
 * component[mitralValveMediumGradient] ^short = "Gradiente media de valvula Mitral"
 * component[mitralValveMediumGradient].code ^definition = "Gradiente media de valvula Mitral"
 * component[mitralValveMediumGradient].value[x] only Quantity 
-
 
 * component[mitralValveMaximumSpeed].code = $loinc#80070-6
 * component[mitralValveMaximumSpeed].code 1..1
@@ -205,7 +197,6 @@ Title: "EchocardiogramsObservation"
 * component[mitralValveArea] ^short = "Área de valvula mitral"
 * component[mitralValveArea].code ^definition = "Área de valvula mitral"
 * component[mitralValveArea].value[x] only Quantity 
-
 
 * component[tricuspideValvesInsuficiency].code = $loinc#18115-6
 * component[tricuspideValvesInsuficiency].code 1..1
