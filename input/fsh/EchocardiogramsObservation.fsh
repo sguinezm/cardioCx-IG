@@ -81,6 +81,8 @@ Title: "EchocardiogramsObservation"
 * component[valve].code 1..1
 * component[valve] ^short = "Tipo de válvula"
 * component[valve].code ^definition = "Tipo de válvula"
+* component[valve].value[x] only CodeableConcept
+* component[valve].value[x] from ValvesVS
 
 * component[vegetable].code = $snomed#37163200
 * component[vegetable].code 1..1
