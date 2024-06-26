@@ -13,7 +13,7 @@ Title: "EchocardiogramsObservation"
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
-* component 1..26
+* component 1..25
 * component contains             
                     PSAP  0..1 and 
                     leftAtrium 0..1 and 
@@ -38,8 +38,7 @@ Title: "EchocardiogramsObservation"
                     mitralValveMaximumSpeed 0..1 and
                     mitralValveArea 0..1 and
                     mitralValveInsufficiency 0..1 and 
-                    tricuspideValvesInsuficiency 0..1 and 
-                    diagnostic 0..1
+                    tricuspideValvesInsuficiency 0..1 
                     
 
 * component[PSAP] MS      
@@ -209,12 +208,6 @@ Title: "EchocardiogramsObservation"
 * component[tricuspideValvesInsuficiency].value[x] from TricuspideValvesInsuficiencyVS
 
 
-* component[diagnostic].code = $snomed#261004008
-* component[diagnostic].code 1..1
-* component[diagnostic] ^short = "Diagnóstico"
-* component[diagnostic].code ^definition = "Diagnóstico"
-* component[diagnostic].value[x] only CodeableConcept
-* component[diagnostic].value[x] from DiagnosticsObservationVS
 
 
 

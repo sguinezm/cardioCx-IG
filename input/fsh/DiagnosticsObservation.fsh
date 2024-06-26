@@ -12,7 +12,7 @@ Title: "DiagnosticsObservation"
 * code ^definition = "Observación de diagnóstico"
 * value[x] only CodeableConcept 
 * value[x] from DiagnosticsObservationVS  
-* focus only Reference(ValveProcedure)
+
 
 
 
