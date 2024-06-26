@@ -1,5 +1,5 @@
-ValueSet: DiagnosticsObservationVS
-Id: DiagnosticsObservationVS
+ValueSet: DiagnosticsResultVS
+Id: DiagnosticsResultVS
 Title: "Observación de diagnósticos"
 Description: "Observación de diagnósticos"
 * ^experimental = false
@@ -11,4 +11,4 @@ Description: "Observación de diagnósticos"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system DiagnosticsObservationCS
+* include codes from system DiagnosticsResultCS

@@ -14,5 +14,6 @@ Description: "Registro del procedimiento de ecocardiograma"
 * code.coding[ecocardiograma].system = $snomed
 * code.coding[ecocardiograma].code = $snomed#40701008
 * code.coding[ecocardiograma].display = "Echocardiography"
+* outcome from DiagnosticsResultVS (required)
 
 

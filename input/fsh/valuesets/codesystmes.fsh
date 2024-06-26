@@ -885,8 +885,8 @@ Description: "CodeSystem para la urgencia de la cirugía"
 
 
 
-CodeSystem: DiagnosticsObservationCS
-Id: DiagnosticsObservationCS
+CodeSystem: DiagnosticsResultCS
+Id: DiagnosticsResultCS
 Title: "Observación de diagnósticos"
 Description: "CodeSystem para el diagnóstico"
 * ^experimental = false
