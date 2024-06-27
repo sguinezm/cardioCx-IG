@@ -883,7 +883,25 @@ Description: "CodeSystem para la urgencia de la cirugía"
 * #3 "Emergency"
 * #4 "Salvage"
 
+CodeSystem: ProcedureTypeCS
+Id: ProcedureTypeCS
+Title: "CodeSystem para tipo de procedimiento"
+Description: "CodeSystem para tipo de procedimiento"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-16"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
+* #232717009 "CABG"
+* #17401000 "valve"
+* #773996000 "TAVI"
+* #243781005 "ECMO"
+* #32413006 "Cardiac Transplant" 
+* #360064003 "Ventricular Assistance"
 
 CodeSystem: DiagnosticsResultCS
 Id: DiagnosticsResultCS
