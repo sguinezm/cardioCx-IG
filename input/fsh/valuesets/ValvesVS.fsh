@@ -1,3 +1,5 @@
+Alias: $snomed = http://snomed.info/sct
+
 ValueSet: ValvesVS
 Id: ValvesVS
 Title: "Códigos para las intervenciones previas."
@@ -11,4 +13,9 @@ Description: "Códigos para las intervenciones previas."
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system ValvesCS
+
+
+* $snomed#34202007 "Válvula aórtica"
+* $snomed#91134007 "Válvula mitral"
+* $snomed#46030003 "Válvula tricúspide"
+* $snomed#39057004 "Válvula pulmonar"

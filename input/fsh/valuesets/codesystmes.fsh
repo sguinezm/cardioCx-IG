@@ -84,24 +84,6 @@ Description: "Códigos para definir el número de cirugías cardíacas previas"
 * #5 "Five"
 
 
-CodeSystem: ValvesCS
-Id: ValvesCS
-Title: "Válvulas usadas en el procedimiento de cardiocirugía"
-Description: "Válvulas usadas en el procedimiento de cardiocirugía"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #34202007 "Válvula aórtica"
-* #91134007 "Válvula mitral"
-* #46030003 "Válvula tricúspide"
-* #39057004 "Válvula pulmonar"
-
 CodeSystem: HeartCatheterizationCS
 Id: HeartCatheterizationCS
 Title: "Cateterizaciones cardíacas"
@@ -903,25 +885,6 @@ Description: "CodeSystem para tipo de procedimiento"
 * #32413006 "Cardiac Transplant" 
 * #360064003 "Ventricular Assistance"
 
-CodeSystem: DiagnosticsResultCS
-Id: DiagnosticsResultCS
-Title: "Observación de diagnósticos"
-Description: "CodeSystem para el diagnóstico"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #60234000  "Aortic insufficiency"
-* #48724000  "Mitral insufficiency"
-* #60573004  "Aortic stenosis"
-* #79619009  "Mitral stenosis"
-* #74964007   "Other"
-* #362981000  "Other value"
 
 
 CodeSystem: AorticValvesInsufficiencyCS
