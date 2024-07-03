@@ -84,7 +84,7 @@ Title: "EchocardiogramsObservation"
 * component[valve].value[x] only CodeableConcept
 * component[valve].value[x] from ValvesVS
 
-* component[vegetable].code = $snomed#37163200
+* component[vegetable].code = $snomed#22836000
 * component[vegetable].code 1..1
 * component[vegetable] ^short = "Se indica si está en estado vegetal, si no está no se debe agregar el recurso"
 * component[vegetable].code ^definition = "Se indica si está en estado vegetal, si no está no se debe agregar el recurso"
@@ -174,9 +174,9 @@ Title: "EchocardiogramsObservation"
 * component[mitralValveMainGradient].value[x] only Quantity 
 * component[mitralValveMainGradient].value[x].value 1..1 
 
-* component[mitralValveMediumGradient].code = $snomed#20250-7
+* component[mitralValveMediumGradient].code = $loinc#20250-7
 * component[mitralValveMediumGradient].code 1..1
-* component[mitralValveMediumGradient] ^short = "Gradiente media de valvula Mitral"
+* component[mitralValveMediumGradient] ^short = "Gradiente medias de valvula Mitral"
 * component[mitralValveMediumGradient].code ^definition = "Gradiente media de valvula Mitral"
 * component[mitralValveMediumGradient].value[x] only Quantity 
 

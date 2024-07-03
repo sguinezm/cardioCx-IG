@@ -26,5 +26,8 @@ Title: "EjectionFractionObservation"
 * value[x] 1..1
 * value[x] from EjectionFractionVS
 
-* focus only Reference(ProcedureCardio)
+* subject 1..1
+* subject only Reference(PatientCardio)
+
 * focus 1..1
+* focus only Reference(ProcedureCardio)

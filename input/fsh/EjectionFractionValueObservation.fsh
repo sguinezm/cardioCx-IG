@@ -65,13 +65,13 @@ Description: "Observation EjectionFraction: ejemplo cuando se hizo la observaci√
 
 * valueQuantity.value = 10
 
-* focus = Reference("https://fhirserve.cl/R4/Procedure/1")
+* focus = Reference(https://fhirserve.cl/R4/Procedure/1)
 
 
 Instance: EjemploEjectionFractionNoObservation
 InstanceOf: EjectionFractionValueObservation
 Usage: #example
-Title: "Observation EjectionFraction "
+Title: "Observation EjectionFraction"
 Description: "Observation EjectionFraction: ejemplo cuando no se hizo la observaci√≥n."
 
 * code = $snomed#70822001
@@ -79,4 +79,4 @@ Description: "Observation EjectionFraction: ejemplo cuando no se hizo la observa
 
 * valueCodeableConcept = $snomed#47492008
 
-* focus = Reference("https://fhirserve.cl/R4/Procedure/1")
+* focus = Reference(https://fhirserve.cl/R4/Procedure/1)

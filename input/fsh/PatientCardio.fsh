@@ -20,7 +20,7 @@ Description: "An example of a patient with a license to krill."
 // ------------------ Elementos obligatorios desde la Core ---------------- 
 * identifier.type.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
 * identifier.type.extension.valueCodeableConcept = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais#152 "Chile"
-* identifier.type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador#01 "Run"
+* identifier.type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador#01 "Rol Único Nacional o RUN"
 * identifier.system = "http://www.cardio.com/identifiers/patient"
 * identifier.value = "131234133"
 * name

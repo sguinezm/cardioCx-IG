@@ -53,16 +53,5 @@ Description: "Se indica que el paciente presenta la condición de falla cardíac
 Title: "CongestiveHeartFailureObservation"
 
 * value[x] only boolean
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "code"
-* code.coding ^slicing.rules = #open
-* code.coding 2..2
-* code.coding contains CongestiveHeartFailure 1..1 and
-                        historyOf 1..1
-
-* code.coding[CongestiveHeartFailure].code 1..1
-* code.coding[CongestiveHeartFailure].code = $loinc#42343007
-* code.coding[CongestiveHeartFailure].code ^definition = "Insuficiencia cardíaca congestiva (trastorno)"
-* code.coding[historyOf].code 1..1
-* code.coding[historyOf].code = $loinc#246090004
-* code.coding[historyOf].code ^definition = "Antecedente de (atributo)"
+* code = $snomed#88805009
+* code ^short = "Código snomed que representa a el fallo congestivo del corazón"
