@@ -356,9 +356,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PerfusionProcedureSection].entry ^slicing.discriminator.path = "resolve()"
 * section[PerfusionProcedureSection].entry ^slicing.rules = #open
 * section[PerfusionProcedureSection].entry 0..*
-* section[PerfusionProcedureSection].entry contains extracorporealCirculation 0..1 and 
-                                                    perfusionTemperature 0..1 and 
-                                                    miocardicalProtection 0..1 and 
+* section[PerfusionProcedureSection].entry contains perfusionTemperature 0..1 and 
                                                     cardioplegiaSolution 0..1 and 
                                                     cardioplegiaTemperature 0..1 and 
                                                     cardioplegiaInfusionMode 0..1 and 
@@ -372,14 +370,9 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                                     circulatoryAssistances 0..1
 
 
-* section[PerfusionProcedureSection].entry[extracorporealCirculation] only Reference(PerfusionProcedure)
-* section[PerfusionProcedureSection].entry[extracorporealCirculation] ^short = "Procedimiento de circulación extracorpórea"
-
 * section[PerfusionProcedureSection].entry[perfusionTemperature] only Reference(PerfusionTemperatureObservation)
 * section[PerfusionProcedureSection].entry[perfusionTemperature] ^short = "Observación de temperatura de perfusión"
 
-* section[PerfusionProcedureSection].entry[miocardicalProtection] only Reference(PerfusionProcedure)
-* section[PerfusionProcedureSection].entry[miocardicalProtection] ^short = "Observación de protección del miocardio"
 
 * section[PerfusionProcedureSection].entry[cardioplegiaSolution] only Reference(CardioplegiaObservation)
 * section[PerfusionProcedureSection].entry[cardioplegiaSolution] ^short = "Observación de la solución"

@@ -26,4 +26,5 @@ Title: "PerfusionTemperatureObservation"
 * code.coding.code ^definition = "Tissue perfusion temperature"
 
 * value[x] only CodeableConcept
+* focus only Reference(PerfusionProcedure)
 * value[x] from PerfusionTemperatureVS (required)

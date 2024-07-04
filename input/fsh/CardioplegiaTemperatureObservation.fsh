@@ -5,7 +5,7 @@ Profile: CardioplegiaTemperatureObservation
 Parent: Observation
 Description: "Observación de la temperatura de cardioplegía en perfusión"
 
-Title: "CardioplegiaObservation"
+Title: "Cardioplegia temperature"
 
 
 * code =  $snomed#404684003
