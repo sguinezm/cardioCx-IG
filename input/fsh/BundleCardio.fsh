@@ -33,7 +33,10 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  ruidoCarotideo 0..1 and 
                  ultimaCreatinina 0..1 and 
                  enfermedadesPulmonares 0..1 and 
-                 ritmoCardiacoPreoperatorio 0..1 
+                 ritmoCardiacoPreoperatorio 0..1 and 
+                 condicionExtracardiaca 0..1 and 
+                 nefropatia 0..1 and 
+                 tipoMuerte 0..1
 
                  /**
                  cirujano 1..1 and 
@@ -48,16 +51,12 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  cirugiasPrevias 0..1 and 
                  historialFumador 0..1 and 
              
-                
                  disfuncionNeurologica 0..1 and 
                   
                  packsAnual 0..1 and 
-            
-                and 
-                 condicionExtracardiaca 0..1 and 
-                 nefropatia 0..1 and 
+                 and 
                  angina 0..1 and 
-                 tipoMuerte 0..1 and 
+                 and 
                  ultimaCateterizacion 0..1 */
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -66,7 +65,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
 * entry[paciente] ^short = "Paciente"
 * entry[paciente].resource only PatientCardio
-* entry[paciente].resource ^short = "Paciente"
+* entry[paciente].resource ^short = "Descripcion del Paciente"
 
 
 * entry[tipoSangre] ^short = "Observación de tipo de sangre"
@@ -111,6 +110,19 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[ritmoCardiacoPreoperatorio].resource only PreoperativeHeartRythmObservation
 * entry[ritmoCardiacoPreoperatorio].resource ^short = "Se indica el ritmo cardíaco preoperatorio del paciente"
 
+* entry[condicionExtracardiaca] ^short = "Condición extracardíaca"
+* entry[condicionExtracardiaca].resource only ExtraCardiacArteriopathyCondition
+* entry[condicionExtracardiaca].resource ^short = "Se indica si el paciente tiene una condición extracardíaca"
+
+* entry[nefropatia] ^short = "Nefropatía"
+* entry[nefropatia].resource only NephropathyCondition
+* entry[nefropatia].resource ^short = "Se indica si el paciente padece de nefropatía" 
+
+
+* entry[tipoMuerte] ^short = "Tipo de muerte"
+* entry[tipoMuerte].resource only TypeOfDiseaseCondition
+* entry[tipoMuerte].resource ^short = "Se indica el tipo de muerte"  
+
 /*
 * entry[cirujano] ^short = "Profesionales"
 * entry[cirujano].resource only PractitionerCardio
@@ -132,26 +144,13 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[insuficienciaCardíacaCongestiva].resource only CongestiveHeartFailureObservation
 * entry[insuficienciaCardíacaCongestiva].resource ^short = "Se indica si el paciente ha sufrido una insuficiencia cardíaca congestiva"
 
-
-
-
-
-
-
 * entry[historialFumador] ^short = "Historial fumador de la persona"
 * entry[historialFumador].resource only SmokingCondition
 * entry[historialFumador].resource ^short = "Se indica el historial fumador de la persona"
 
-
-
-
-
-
-
 * entry[disfuncionNeurologica] ^short = "Disfunción Neurológica"
 * entry[disfuncionNeurologica].resource only NeurologicDisfunctionCondition
 * entry[disfuncionNeurologica].resource ^short = "Se indica si el paciente padece de alguna disfunción neurológica"
-
 
 
 * entry[packsAnual] ^short = "Packs de cigarros al año"
@@ -159,24 +158,12 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[packsAnual].resource ^short = "Se indican los packs de cigarros al año"
 
 
-
-
-
-* entry[condicionExtracardiaca] ^short = "Condición extracardíaca"
-* entry[condicionExtracardiaca].resource only ExtraCardiacArteriopathyCondition
-* entry[condicionExtracardiaca].resource ^short = "Se indica si el paciente tiene una condición extracardíaca"
-
-* entry[nefropatia] ^short = "Nefropatía"
-* entry[nefropatia].resource only NephropathyCondition
-* entry[nefropatia].resource ^short = "Se indica si el paciente padece de nefropatía"   
+  
 
 * entry[angina] ^short = "Angina"
 * entry[angina].resource only AnginaObservation
 * entry[angina].resource ^short = "Se indica la observación de angina en el paciente"   
-
-* entry[tipoMuerte] ^short = "Tipo de muerte"
-* entry[tipoMuerte].resource only TypeOfDiseaseCondition
-* entry[tipoMuerte].resource ^short = "Se indica el tipo de muerte"   
+ 
 
 * entry[ultimaCateterizacion] ^short = "ultima Cateterizacion"
 * entry[ultimaCateterizacion].resource only LastCatheterizationObservation
