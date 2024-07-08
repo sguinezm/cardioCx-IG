@@ -709,10 +709,10 @@ Description: "arterias usadas como conductos"
 * #2 "Right radial"
 * #3 "Right GEPA"
 * #4 "Left AMI"
-* #5 "right AMI"
+* #5 "Right AMI"
 * #6 "Left radial"
 * #7 "Other"
-* #8 "Other value"
+
 
 
 CodeSystem: OtherCardiacProcedureDetailsCS
