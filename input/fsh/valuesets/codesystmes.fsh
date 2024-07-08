@@ -705,13 +705,18 @@ Description: "arterias usadas como conductos"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "No arteries_were_used"
+* #1 "No arteries were used"
 * #2 "Right radial"
 * #3 "Right GEPA"
 * #4 "Left AMI"
+* #5 "right AMI"
 * #5 "Left radial"
 * #6 "Other"
 * #7 "Other value"
+
+
+
+
 
 CodeSystem: OtherCardiacProcedureDetailsCS
 Id: OtherCardiacProcedureDetailsCS
