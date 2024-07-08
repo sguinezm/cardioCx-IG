@@ -367,7 +367,7 @@ Description: "Fracción de eyección del paciente"
 * #20572008  "Good"
 * #6736007   "Moderate" 
 * #255351007 "Poor" 
-* #24484000  "severe" // Representa a very poor 
+* #24484000  "Severe" // Representa a very poor 
 * #272519000 "Absence findings" // Representa a not measure
 
 CodeSystem: ValveInsuficiencyCS
