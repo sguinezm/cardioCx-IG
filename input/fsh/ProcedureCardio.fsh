@@ -42,6 +42,6 @@ Description: "Registro de la cardiocirugía"
 * bodySite[valve] from ValvesVS
 * code 1..1
 * code from ProcedureTypeVS 
-* code.coding 1..7
+* code.coding 1..6
 * extension contains UrgencyLevelCardioCx named urgency_level 1..1 and 
         SupportingInfoCx named supportingInfo 0..*
