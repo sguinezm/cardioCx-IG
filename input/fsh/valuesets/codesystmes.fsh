@@ -201,23 +201,6 @@ Description: "Categorización utilizada para describir cuándo fue el IM más re
 * #"22-90 days before operation" "22-90 días antes de la operación"
 * #">90 days before operation" ">90 días antes de la operación"
 
-CodeSystem: SmokingConditionCS
-Id: SmokingConditionCS
-Title: "Condición de fumador"
-Description: "Categorización utilizada para describir la condición de fumador del paciente"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #8392000 "No fumador"
-* #8517006 "Ex fumador"
-* #77176002 "Fumador"
-
 
 CodeSystem: DiabetesConditionCS
 Id: DiabetesConditionCS
@@ -350,44 +333,6 @@ Description: "Presencia de enfermedad en arteria coronaria principal izquierda"
 * #1 "No LMS disease|LMS disease <= 50% diameter stenosis"
 * #2 "LMS disease > 50% diameter stenosis"
 * #3 "Not Investigated"
-
-CodeSystem: EjectionFractionCS
-Id: EjectionFractionCS
-Title: "Fracción de eyección"
-Description: "Fracción de eyección del paciente"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #20572008  "Good"
-* #6736007   "Moderate" 
-* #255351007 "Poor" 
-* #24484000  "Severe" // Representa a very poor 
-* #272519000 "Absence findings" // Representa a not measure
-
-CodeSystem: ValveInsuficiencyCS
-Id: ValveInsuficiencyCS
-Title: "Insuficiencia de válvula"
-Description: "Insuficiencia de válvula"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #272519000 "None"
-* #86137003  "Trivial"
-* #255604002  "Mild"
-* #6736007  "Moderate"
-* #24484000  "Severe"
 
 
 CodeSystem: ValvesNameCS

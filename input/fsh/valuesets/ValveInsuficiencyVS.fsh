@@ -1,3 +1,4 @@
+Alias: $snomed = http://snomed.info/sct
 ValueSet: ValveInsuficiencyVS
 Id: ValveInsuficiencyVS
 Title: "Códigos para indicar si existe insuficiencia de válvula."
@@ -11,4 +12,9 @@ Description: "Códigos para indicar si existe insuficiencia de válvula."
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system ValveInsuficiencyCS
+* $snomed#272519000 "None"
+* $snomed#86137003  "Trivial"
+* $snomed#255604002  "Mild"
+* $snomed#6736007  "Moderate"
+* $snomed#24484000  "Severe"
+

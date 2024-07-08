@@ -1,3 +1,5 @@
+Alias: $snomed = http://snomed.info/sct
+
 ValueSet: SmokingConditionVS
 Id: SmokingConditionVS
 Title: "Historial fumador"
@@ -11,4 +13,7 @@ Description: "Historial Fumador"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system SmokingConditionCS
+* $snomed#8392000 "No fumador"
+* $snomed#8517006 "Ex fumador"
+* $snomed#77176002 "Fumador"
+
