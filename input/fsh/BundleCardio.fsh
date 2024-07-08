@@ -36,7 +36,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  ritmoCardiacoPreoperatorio 0..1 and 
                  condicionExtracardiaca 0..1 and 
                  nefropatia 0..1 and 
-                 tipoMuerte 0..1
+                 tipoMuerte 0..1 and
+                 questionarioProcedimiento 0..1 and 
+                 questionarioOtroProcedimiento 0..1
 
                  /**
                  cirujano 1..1 and 
@@ -122,6 +124,14 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[tipoMuerte] ^short = "Tipo de muerte"
 * entry[tipoMuerte].resource only TypeOfDiseaseCondition
 * entry[tipoMuerte].resource ^short = "Se indica el tipo de muerte"  
+
+* entry[questionarioProcedimiento] ^short = "Preguntas del procedimiento"
+* entry[questionarioProcedimiento].resource only ProcedureQuestionnaire
+* entry[questionarioProcedimiento].resource ^short = "Se realizan preguntas del procedimiento al paciente"  
+
+* entry[questionarioOtroProcedimiento] ^short = "Preguntas de otros procedimientos"
+* entry[questionarioOtroProcedimiento].resource only OtherProceduresQuestionnaire
+* entry[questionarioOtroProcedimiento].resource ^short = "Se realizan preguntas del procedimiento al paciente" 
 
 /*
 * entry[cirujano] ^short = "Profesionales"
