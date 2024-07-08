@@ -22,9 +22,13 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry 8..8 MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
 * entry contains cardioComposition 1..1 and 
-                 paciente 1..1  /**  and 
-              
-                 tipoSangre 1..1 and 
+                 paciente 1..1    and 
+                 tipoSangre 1..1 and
+                 altura 0..1 and 
+                 peso 0..1 and 
+                 tratamientoDiabetes 0..1 and 
+                 hipertension 0..1
+                 /**
                  cirujano 1..1 and 
                  capacidadFuncional 1..1 and 
                  infarto 0..1 and 
@@ -35,11 +39,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  fechaUltimaAngioplastia 0..1 and 
                  fechaUltimaCirugiaCardiaca 0..1 and 
                  cirugiasPrevias 0..1 and 
-                 altura 0..1 and 
-                 peso 0..1 and 
                  historialFumador 0..1 and 
-                 tratamientoDiabetes 0..1 and 
-                 hipertension 0..1 and 
                  hipercolesterolemia 0..1 and 
                  ruidoCarotideo 0..1 and 
                  disfuncionNeurologica 0..1 and 
@@ -57,17 +57,34 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[cardioComposition].resource only CompositionCardiocirugia
 * entry[cardioComposition].resource ^short = "Descripcion DETALLADA , PRIMER RECURSO COMPOSITION"
 
-
 * entry[paciente] ^short = "Paciente"
 * entry[paciente].resource only PatientCardio
 * entry[paciente].resource ^short = "Paciente"
 
-/*
+
 * entry[tipoSangre] ^short = "Observación de tipo de sangre"
 * entry[tipoSangre].resource only BloodTypeObservation
 * entry[tipoSangre].resource ^short = "Se detalla el tipo de sangre del paciente"
 
+* entry[altura] ^short = "Altura de la persona"
+* entry[altura].resource only Observation
+* entry[altura].resource ^short = "Se indica la altura de la persona"
 
+
+* entry[peso] ^short = "Peso de la persona"
+* entry[peso].resource only Observation
+* entry[peso].resource ^short = "Se indica el peso de la persona"
+
+
+* entry[tratamientoDiabetes] ^short = "Tratamiento de diabetes del paciente"
+* entry[tratamientoDiabetes].resource only DiabetesCondition
+* entry[tratamientoDiabetes].resource ^short = "Se indica el paciente tiene un tratamiento de pacientes"
+
+* entry[hipertension] ^short = "Hipertensión"
+* entry[hipertension].resource only HypertensionCondition
+* entry[hipertension].resource ^short = "Se indica si el paciente padece de hipertensión"
+
+/*
 * entry[cirujano] ^short = "Profesionales"
 * entry[cirujano].resource only PractitionerCardio
 * entry[cirujano].resource ^short = "Se detallan los profesionales que realizarán la cirugía"
@@ -91,25 +108,14 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
 
 
-* entry[altura] ^short = "Altura de la persona"
-* entry[altura].resource only Observation
-* entry[altura].resource ^short = "Se indica la altura de la persona"
 
-* entry[peso] ^short = "Peso de la persona"
-* entry[peso].resource only Observation
-* entry[peso].resource ^short = "Se indica el peso de la persona"
+
 
 * entry[historialFumador] ^short = "Historial fumador de la persona"
 * entry[historialFumador].resource only SmokingCondition
 * entry[historialFumador].resource ^short = "Se indica el historial fumador de la persona"
 
-* entry[tratamientoDiabetes] ^short = "Tratamiento de diabetes del paciente"
-* entry[tratamientoDiabetes].resource only DiabetesCondition
-* entry[tratamientoDiabetes].resource ^short = "Se indica el paciente tiene un tratamiento de pacientes"
 
-* entry[hipertension] ^short = "Hipertensión"
-* entry[hipertension].resource only HypertensionCondition
-* entry[hipertension].resource ^short = "Se indica si el paciente padece de hipertensión"
 
 * entry[hipercolesterolemia] ^short = "Hipercolesterolemia"
 * entry[hipercolesterolemia].resource only HypercholesterolemiaCondition
