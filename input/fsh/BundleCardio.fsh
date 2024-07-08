@@ -38,7 +38,10 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  nefropatia 0..1 and 
                  tipoMuerte 0..1 and
                  questionarioProcedimiento 0..1 and 
-                 questionarioOtroProcedimiento 0..1
+                 questionarioOtroProcedimiento 0..1 and 
+                 rolProfesional 0..1 and 
+                 profesionalCardio 0..1 and 
+                 rolSegundoProfesional 0..1 
 
                  /**
                  cirujano 1..1 and 
@@ -132,6 +135,18 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[questionarioOtroProcedimiento] ^short = "Preguntas de otros procedimientos"
 * entry[questionarioOtroProcedimiento].resource only OtherProceduresQuestionnaire
 * entry[questionarioOtroProcedimiento].resource ^short = "Se realizan preguntas del procedimiento al paciente" 
+
+* entry[rolProfesional] ^short = "Rol de profesional"
+* entry[rolProfesional].resource only PractitionerRoleCardio
+* entry[rolProfesional].resource ^short = "Rol de profesional" 
+
+* entry[profesionalCardio] ^short = "Profesional"
+* entry[profesionalCardio].resource only PractitionerRoleCardio
+* entry[profesionalCardio].resource ^short = "Detalles del profesional" 
+
+* entry[rolSegundoProfesional] ^short = "Rol de segundo profesional"
+* entry[rolSegundoProfesional].resource only PractitionerRoleCardio
+* entry[rolSegundoProfesional].resource ^short = "Rol de segundo profesional" 
 
 /*
 * entry[cirujano] ^short = "Profesionales"
