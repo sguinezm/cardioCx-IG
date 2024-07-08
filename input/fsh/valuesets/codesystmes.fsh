@@ -862,10 +862,9 @@ Description: "CodeSystem para la urgencia de la cirugía"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Elective"
-* #2 "Urgent"
-* #3 "Emergency"
-* #4 "Salvage"
+* #1 "Emergency"
+* #2 "Elective"
+
 
 CodeSystem: ProcedureTypeCS
 Id: ProcedureTypeCS

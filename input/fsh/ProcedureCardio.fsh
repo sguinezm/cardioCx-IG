@@ -44,4 +44,4 @@ Description: "Registro de la cardiocirugía"
 * code from ProcedureTypeVS 
 * code.coding 1..6
 * extension contains UrgencyLevelCardioCx named urgency_level 1..1 and 
-        SupportingInfoCx named supportingInfo 0..*
+        UrgencyOfSurgeryExt named urgency_surgery 1..1 and MainReasonSurgeryExt named main_reason_surgery 1..1
