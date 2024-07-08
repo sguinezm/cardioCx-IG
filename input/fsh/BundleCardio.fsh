@@ -1,4 +1,5 @@
-
+Alias: $observation-bodyheight = http://hl7.org/fhir/StructureDefinition/bodyheight
+Alias: $observation-bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
 Profile: BundleCardio
 Parent: Bundle
 Id: BundleCardio
@@ -28,7 +29,12 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  peso 0..1 and 
                  tratamientoDiabetes 0..1 and 
                  hipertension 0..1 and 
-                 hipercolesterolemia 0..1 
+                 hipercolesterolemia 0..1 and 
+                 ruidoCarotideo 0..1 and 
+                 ultimaCreatinina 0..1 and 
+                 enfermedadesPulmonares 0..1 and 
+                 ritmoCardiacoPreoperatorio 0..1 
+
                  /**
                  cirujano 1..1 and 
                  capacidadFuncional 1..1 and 
@@ -42,12 +48,12 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  cirugiasPrevias 0..1 and 
                  historialFumador 0..1 and 
              
-                 ruidoCarotideo 0..1 and 
+                
                  disfuncionNeurologica 0..1 and 
-                 ultimaCreatinina 0..1 and 
+                  
                  packsAnual 0..1 and 
-                 enfermedadesPulmonares 0..1 and 
-                 ritmoCardiacoPreoperatorio 0..1 and 
+            
+                and 
                  condicionExtracardiaca 0..1 and 
                  nefropatia 0..1 and 
                  angina 0..1 and 
@@ -68,12 +74,12 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[tipoSangre].resource ^short = "Se detalla el tipo de sangre del paciente"
 
 * entry[altura] ^short = "Altura de la persona"
-* entry[altura].resource only Observation
+* entry[altura].resource only observation-bodyheight
 * entry[altura].resource ^short = "Se indica la altura de la persona"
 
 
 * entry[peso] ^short = "Peso de la persona"
-* entry[peso].resource only Observation
+* entry[peso].resource only observation-bodyweight
 * entry[peso].resource ^short = "Se indica el peso de la persona"
 
 
@@ -88,6 +94,22 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[hipercolesterolemia] ^short = "Hipercolesterolemia"
 * entry[hipercolesterolemia].resource only HypercholesterolemiaCondition
 * entry[hipercolesterolemia].resource ^short = "Se indica si el paciente padece de hipercolesterolemia"
+
+* entry[ruidoCarotideo] ^short = "Ruido carotídeo"
+* entry[ruidoCarotideo].resource only CarotidBruitCondition
+* entry[ruidoCarotideo].resource ^short = "Se indica si el paciente tiene ruido carotídeo"
+
+* entry[ultimaCreatinina] ^short = "Última creatinina"
+* entry[ultimaCreatinina].resource only LastPreoperativeCreatinineObservation
+* entry[ultimaCreatinina].resource ^short = "Se indica la última creatinina del paciente"
+
+* entry[enfermedadesPulmonares] ^short = "Enfermedades pulmonares"
+* entry[enfermedadesPulmonares].resource only ChronicLungDiseaseCondition
+* entry[enfermedadesPulmonares].resource ^short = "Se indica si el paciente ha tenido alguna enfermedad pulmonar"
+
+* entry[ritmoCardiacoPreoperatorio] ^short = "Ritmo cardíaco preoperatorio"
+* entry[ritmoCardiacoPreoperatorio].resource only PreoperativeHeartRythmObservation
+* entry[ritmoCardiacoPreoperatorio].resource ^short = "Se indica el ritmo cardíaco preoperatorio del paciente"
 
 /*
 * entry[cirujano] ^short = "Profesionales"
@@ -124,29 +146,21 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
 
 
-* entry[ruidoCarotideo] ^short = "Ruido carotídeo"
-* entry[ruidoCarotideo].resource only CarotidBruitCondition
-* entry[ruidoCarotideo].resource ^short = "Se indica si el paciente tiene ruido carotídeo"
+
 
 * entry[disfuncionNeurologica] ^short = "Disfunción Neurológica"
 * entry[disfuncionNeurologica].resource only NeurologicDisfunctionCondition
 * entry[disfuncionNeurologica].resource ^short = "Se indica si el paciente padece de alguna disfunción neurológica"
 
-* entry[ultimaCreatinina] ^short = "Última creatinina"
-* entry[ultimaCreatinina].resource only LastPreoperativeCreatinineObservation
-* entry[ultimaCreatinina].resource ^short = "Se indica la última creatinina del paciente"
+
 
 * entry[packsAnual] ^short = "Packs de cigarros al año"
 * entry[packsAnual].resource only PacksPerYearObservation
 * entry[packsAnual].resource ^short = "Se indican los packs de cigarros al año"
 
-* entry[enfermedadesPulmonares] ^short = "Enfermedades pulmonares"
-* entry[enfermedadesPulmonares].resource only ChronicLungDiseaseCondition
-* entry[enfermedadesPulmonares].resource ^short = "Se indica si el paciente ha tenido alguna enfermedad pulmonar"
 
-* entry[ritmoCardiacoPreoperatorio] ^short = "Ritmo cardíaco preoperatorio"
-* entry[ritmoCardiacoPreoperatorio].resource only PreoperativeHeartRythmObservation
-* entry[ritmoCardiacoPreoperatorio].resource ^short = "Se indica el ritmo cardíaco preoperatorio del paciente"
+
+
 
 * entry[condicionExtracardiaca] ^short = "Condición extracardíaca"
 * entry[condicionExtracardiaca].resource only ExtraCardiacArteriopathyCondition
