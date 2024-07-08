@@ -27,7 +27,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  altura 0..1 and 
                  peso 0..1 and 
                  tratamientoDiabetes 0..1 and 
-                 hipertension 0..1
+                 hipertension 0..1 and 
+                 hipercolesterolemia 0..1 
                  /**
                  cirujano 1..1 and 
                  capacidadFuncional 1..1 and 
@@ -40,7 +41,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  fechaUltimaCirugiaCardiaca 0..1 and 
                  cirugiasPrevias 0..1 and 
                  historialFumador 0..1 and 
-                 hipercolesterolemia 0..1 and 
+             
                  ruidoCarotideo 0..1 and 
                  disfuncionNeurologica 0..1 and 
                  ultimaCreatinina 0..1 and 
@@ -84,6 +85,10 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[hipertension].resource only HypertensionCondition
 * entry[hipertension].resource ^short = "Se indica si el paciente padece de hipertensión"
 
+* entry[hipercolesterolemia] ^short = "Hipercolesterolemia"
+* entry[hipercolesterolemia].resource only HypercholesterolemiaCondition
+* entry[hipercolesterolemia].resource ^short = "Se indica si el paciente padece de hipercolesterolemia"
+
 /*
 * entry[cirujano] ^short = "Profesionales"
 * entry[cirujano].resource only PractitionerCardio
@@ -117,9 +122,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
 
 
-* entry[hipercolesterolemia] ^short = "Hipercolesterolemia"
-* entry[hipercolesterolemia].resource only HypercholesterolemiaCondition
-* entry[hipercolesterolemia].resource ^short = "Se indica si el paciente padece de hipercolesterolemia"
+
 
 * entry[ruidoCarotideo] ^short = "Ruido carotídeo"
 * entry[ruidoCarotideo].resource only CarotidBruitCondition

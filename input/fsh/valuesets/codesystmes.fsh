@@ -710,12 +710,9 @@ Description: "arterias usadas como conductos"
 * #3 "Right GEPA"
 * #4 "Left AMI"
 * #5 "right AMI"
-* #5 "Left radial"
-* #6 "Other"
-* #7 "Other value"
-
-
-
+* #6 "Left radial"
+* #7 "Other"
+* #8 "Other value"
 
 
 CodeSystem: OtherCardiacProcedureDetailsCS
