@@ -5,7 +5,7 @@ Profile: NativeValvePathologyObservation
 Parent: Observation
 Description: "Presencia de alguna patología de válvula nativa"
 
-Title: "EndocarditisInfecciosaObservation"
+Title: "NativeValvePathology"
 
 
 * code.coding 1..1
