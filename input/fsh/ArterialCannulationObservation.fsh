@@ -5,7 +5,7 @@ Profile: ArterialCannulationObservation
 Parent: Observation
 Description: "Indica si se realiza una canulación venosa"
 
-Title: "CirculatoryObservation"
+Title: "ArterialCannulation"
 
 
 * code.coding ^slicing.discriminator.type = #value
