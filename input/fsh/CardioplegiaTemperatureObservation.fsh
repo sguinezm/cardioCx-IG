@@ -9,7 +9,6 @@ Title: "Cardioplegia temperature"
 
 
 * code =  $snomed#404684003
-* code.coding.system = $snomed
 * code ^definition = "Temperatura de cardioplegía en perfusión" 
 * value[x] only CodeableConcept 
 * value[x] from CardioplegiaTemperatureVS   

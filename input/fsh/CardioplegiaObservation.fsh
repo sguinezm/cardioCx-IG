@@ -8,7 +8,6 @@ Description: "Observación de cardioplegía en perfusión"
 Title: "CardioplegiaSolution"
 
 * code =  $snomed#404684003 
-* code.coding.system = $snomed
 * code ^definition = "Cardioplegía en perfusión"
 * value[x] only CodeableConcept 
 * value[x] from CardioplegiaSolutionVS   

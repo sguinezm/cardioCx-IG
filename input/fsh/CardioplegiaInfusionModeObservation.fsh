@@ -9,7 +9,6 @@ Title: "CardioplegiaInfusionModeObservation"
 
 
 * code =  $snomed#701595007
-* code.coding.system = $snomed
 * code ^definition = "Observación del modo de infución de cardioplegía en perfusión"
 * value[x] only CodeableConcept 
 * value[x] from CardioplegiaInfusionModeVS   

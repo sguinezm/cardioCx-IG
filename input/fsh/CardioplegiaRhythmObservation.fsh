@@ -9,7 +9,6 @@ Title: "CardioplegiaRhytmObservation"
 
 
 * code =  $snomed#404684003
-* code.coding.system = $snomed
 * code ^definition = "Ritmo de cardioplegía en perfusión"
 * value[x] only CodeableConcept 
 * value[x] from CardioplegiaRhytmVS   
