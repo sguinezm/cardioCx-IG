@@ -13,5 +13,5 @@ Description: "Observación del ritmo de  cardioplegía en perfusión"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * $snomed#385432009 "Not Applicable"
-* $snomed#7087005 "Intermitente" 
-* $snomed#255238004 "continuo"
+* $snomed#7087005 "Intermittent" 
+* $snomed#255238004  "Continuous"
