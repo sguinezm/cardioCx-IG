@@ -1,3 +1,4 @@
+Alias: $snomed = http://snomed.info/sct
 ValueSet: ReasonForBallonUsageVS
 Id: ReasonForBallonUsageVS
 Title: "Razón de uso balón"
@@ -11,4 +12,9 @@ Description: "Razón de uso balón"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system ReasonForBallonUsageCS
+* $snomed#385432009 "Not applicable"
+* $snomed#422773005  "Haemodynamic instability" 
+* $snomed#11101003  "PTCA support"
+* $snomed#63697000  "CPB wean"
+* $snomed#4557003  "Unstable Angina"
+* $snomed#262073000  "Prophylactic"

@@ -123,24 +123,6 @@ Description: "Códigos para definir el nivel de urgencia con la que se le realiz
 * #4 "salvage"
 
 
-CodeSystem: AnginaObservationCS
-Id: AnginaObservationCS
-Title: "Escala de dolor de angina"
-Description: "Dolor reportado por el paciente relacionado con una angina, en una escala."
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #272519000 "CCS 0"
-* #61490001 "CCS 1"
-* #41334000 "CCS 2"
-* #85284003 "CCS 3"
-* #89323001 "CCS 4"
 
 
 CodeSystem: FunctionalCapacityCS
@@ -417,49 +399,6 @@ Description: "Razón por la cual la válvula es reoperada."
 
 
 
-CodeSystem: CirculatoryAssistancesCS
-Id: CirculatoryAssistancesCS
-Title: "Asistencias circulatorias"
-Description: "Asistencias circulatorias"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-22"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-
-* #260413007 "none"
-* #233573008  "Extracorporeal membrane oxygenation"
-* #14414005 "Peripheral"
-* #26216008  "Central"
-* #74964007 "Other"
-* #362981000 "Other value"
-
-CodeSystem: VenousCannulationsCS
-Id: VenousCannulationsCS
-Title: "Canulación venosa"
-Description: "Canulación venosa"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-22"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-
-* #73829009 "Right atrium"
-* #787588007 "Bicava "
-* #83419000 "Femoral"
-* #74964007 "Other"
-* #362981000 "Other value"
-
-
-
 CodeSystem: ArterialCannulationsCS
 Id: ArterialCannulationsCS
 Title: "Canulación arterial"
@@ -505,26 +444,8 @@ Description: "Valores aceptados para la presencia de alguna patología de válvu
 
 
 
-CodeSystem: ReasonForBallonUsageCS
-Id: ReasonForBallonUsageCS
-Title: "Razón para utilizar balón"
-Description: "Razón para utilizar balón"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2024-04-16"
-* ^contact.name = "Jaime González"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "jjgondiaz@gmail.com"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
-* #385432009 "Not applicable"
-* #422773005  "Haemodynamic instability" 
-* #11101003  "PTCA support"
-* #63697000  "CPB wean"
-* #4557003  "Unstable Angina"
-* #262073000  "Prophylactic"
 
 
 CodeSystem: ExtracorporealCirculationCS

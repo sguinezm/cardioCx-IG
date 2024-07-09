@@ -1,3 +1,4 @@
+Alias: $snomed = http://snomed.info/sct
 ValueSet: VenousCannulationsVS
 Id:  VenousCannulationsVS
 Title: "Códigos para la canulación venosa"
@@ -11,4 +12,9 @@ Description: "Códigos para la canulación venosa"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system VenousCannulationsCS
+
+* $snomed#73829009 "Right atrium"
+* $snomed#787588007 "Bicava "
+* $snomed#83419000 "Femoral"
+* $snomed#74964007 "Other"
+* $snomed#362981000 "Other value"
