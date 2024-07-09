@@ -1,3 +1,4 @@
+Alias: $snomed = http://snomed.info/sct
 ValueSet: CardioplegiaInfusionModeVS
 Id:  CardioplegiaInfusionModeVS
 Title: "Observación del modo de infución de cardioplegía en perfusión"
@@ -11,4 +12,6 @@ Description: "Observación del modo de infución de cardioplegía en perfusión"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system CardioplegiaInfusionModeCS
+* $snomed#385432009 "Not Applicable"
+* $snomed#103362004 "Antegrade" 
+* $snomed#103363009 "Retrograde"

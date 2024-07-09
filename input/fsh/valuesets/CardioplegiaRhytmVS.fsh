@@ -1,3 +1,4 @@
+Alias: $snomed = http://snomed.info/sct
 ValueSet: CardioplegiaRhytmVS
 Id:  CardioplegiaRhytmVS
 Title: "Observación del ritmo de  cardioplegía en perfusión"
@@ -11,4 +12,6 @@ Description: "Observación del ritmo de  cardioplegía en perfusión"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system CardioplegiaRhytmCS
+* $snomed#385432009 "Not Applicable"
+* $snomed#7087005 "Intermitente" 
+* $snomed#255238004 "continuo"
