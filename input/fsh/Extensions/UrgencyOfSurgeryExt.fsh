@@ -14,5 +14,5 @@ Description: "Razón principal de operación"
 * . 0..1
 * . ^definition = "Valores que acepta razón de operación"
 * value[x] 1..1
-* value[x] only string
+* value[x] only CodeableConcept
 * value[x] from UrgencyOfSurgeryVS
