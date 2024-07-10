@@ -117,10 +117,11 @@ Description: "Códigos para definir el nivel de urgencia con la que se le realiz
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "elective"
-* #2 "urgent"
-* #3 "emergency"
-* #4 "salvage"
+* #1 "Emergency"
+* #2 "Elective"
+//* #2 "urgent"
+
+//* #4 "salvage"
 
 
 
@@ -689,8 +690,11 @@ Description: "CodeSystem para la urgencia de la cirugía"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Emergency"
-* #2 "Elective"
+* #1 "Elective"
+* #2 "Urgent"
+* #3 "Emergency"
+* #4 "Salvage"
+
 
 
 CodeSystem: ProcedureTypeCS
