@@ -12,6 +12,6 @@ Description: "Razón principal de operación"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * . ^short = "MainReasonSurgeryExt"
 * . 0..1
-* . ^definition = "Valores que acepta razón de operación"
+* . ^definition = "Valores que acepta razón de operaciones"
 * value[x] 1..1
 * value[x] only string
