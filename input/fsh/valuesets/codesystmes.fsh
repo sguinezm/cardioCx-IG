@@ -119,12 +119,6 @@ Description: "Códigos para definir el nivel de urgencia con la que se le realiz
 
 * #1 "Emergency"
 * #2 "Elective"
-//* #2 "urgent"
-
-//* #4 "salvage"
-
-
-
 
 CodeSystem: FunctionalCapacityCS
 Id: FunctionalCapacityCS
