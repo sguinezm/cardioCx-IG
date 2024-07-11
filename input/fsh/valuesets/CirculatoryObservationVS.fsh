@@ -14,9 +14,8 @@ Description: "Códigos para la perfusión"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * $snomed#260413007 "None"
-* $snomed#233573008  "Extracorporeal membrane oxygenation"
 * $snomed#14414005 "Peripheral"
 * $snomed#26216008  "Central"
 * $snomed#74964007 "Other"
-* $snomed#362981000 "Other value"
+
 

@@ -21,7 +21,11 @@ Title: "CirculatoryObservation"
 * code.coding[circulatoryAssistance].system = $snomed
 * code.coding[circulatoryAssistance].code = $snomed#233573008 
 * code.coding[circulatoryAssistance].code ^definition = "Circulatory Assistances"
+
+* value[x] only CodeableConcept
 * value[x] from CirculatoryObservationVS
+* value[x].text 0..1 MS 
+* value[x].text ^short = "Indicar valor cuando el concepto del valueset utilizado es other value"
 
 
 
