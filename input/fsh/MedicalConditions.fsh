@@ -15,10 +15,10 @@ Title: "DiabetesCondition"
                         treatment 0..1
 
 * code.coding[diabetes].code 1..1
-* code.coding[diabetes].code = $loinc#73211009
+* code.coding[diabetes].code = $snomed#73211009
 * code.coding[diabetes].code ^definition = "Diabetes mellitus (disorder)"
 * code.coding[none].code 0..1
-* code.coding[none].code = $loinc#260413007
+* code.coding[none].code = $snomed#260413007
 * code.coding[none].code ^definition = "None (qualifier value)"
 * code.coding[treatment].code 1..1
 * code.coding[treatment].code only code
@@ -41,13 +41,13 @@ Title: "HypertensionCondition"
                         unknown 0..1
 
 * code.coding[hypertension].code 1..1
-* code.coding[hypertension].code = $loinc#38341003
+* code.coding[hypertension].code = $snomed#38341003
 * code.coding[hypertension].code ^definition = "Hypertensive disorder, systemic arterial (disorder)"
 * code.coding[absence].code 0..1
-* code.coding[absence].code = $loinc#272519000
+* code.coding[absence].code = $snomed#272519000
 * code.coding[absence].code ^definition = "Absence findings (qualifier value) "
 * code.coding[unknown].code 0..1
-* code.coding[unknown].code = $loinc#261665006
+* code.coding[unknown].code = $snomed#261665006
 * code.coding[unknown].code ^definition = "Unknown (qualifier value)"
 
 Profile: HypercholesterolemiaCondition
