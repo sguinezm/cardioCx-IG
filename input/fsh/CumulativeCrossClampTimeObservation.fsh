@@ -15,6 +15,7 @@ Title: "CumulativeCrossClampTimeObservation"
 * code.coding contains cumulativeCrossClampTimeObservation 1..1 
                       
 * code.coding[cumulativeCrossClampTimeObservation].code 1..1
+* code.coding[cumulativeCrossClampTimeObservation].system = $loinc 
 * code.coding[cumulativeCrossClampTimeObservation].code = $loinc#44776-3 
 * code.coding[cumulativeCrossClampTimeObservation].code ^definition = "Time of procedure"
 
