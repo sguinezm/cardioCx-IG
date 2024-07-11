@@ -1,4 +1,4 @@
-Alias: $snomed = http://snomed.info/sct
+Alias: $loinc = http://loinc.org
 
 
 Profile: CumulativeCrossClampTimeObservation
@@ -14,13 +14,11 @@ Title: "CumulativeCrossClampTimeObservation"
 * code.coding 1..1
 * code.coding contains cumulativeCrossClampTimeObservation 1..1 
                       
-
-
 * code.coding[cumulativeCrossClampTimeObservation].code 1..1
-* code.coding[cumulativeCrossClampTimeObservation].system = $snomed
+* code.coding[cumulativeCrossClampTimeObservation].code = $loinc#44776-3 
 * code.coding[cumulativeCrossClampTimeObservation].code ^definition = "Time of procedure"
-* value[x] from CumulativeCrossClampTimeVS
-* value[x] only Quantity
+
+* value[x] only integer
 
 * focus only Reference(PerfusionProcedure)
 

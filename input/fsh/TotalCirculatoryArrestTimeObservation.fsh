@@ -5,22 +5,22 @@ Profile: TotalCirculatoryArrestTimeObservation
 Parent: Observation
 Description: "Tiempo de procedimiento"
 
-Title: "CumulativeCrossClampTimeObservation"
+Title: "TotalCirculatoryArrestTimeObservation"
 
 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
 * code.coding 1..1
-* code.coding contains cumulativeCrossClampTimeObservation 1..1 
+* code.coding contains TotalCirculatoryArrestTimeObservation 1..1 
                       
 
 
-* code.coding[cumulativeCrossClampTimeObservation].code 1..1
-* code.coding[cumulativeCrossClampTimeObservation].system = $snomed
-* code.coding[cumulativeCrossClampTimeObservation].code ^definition = "Time of procedure"
+* code.coding[TotalCirculatoryArrestTimeObservation].code 1..1
+* code.coding[TotalCirculatoryArrestTimeObservation].code = $snomed#698828003 
+* code.coding[TotalCirculatoryArrestTimeObservation].code ^short = "Time of procedure"
 * value[x] from TotalCirculatoryArrestTimeObservationVS
-* value[x] only Quantity
+* value[x] only integer
 
 * focus only Reference(PerfusionProcedure)
 
