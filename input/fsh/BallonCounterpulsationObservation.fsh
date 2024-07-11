@@ -8,12 +8,10 @@ Description: "Observación de balón en perfusión"
 Title: "BallonCounterpulsationObservation"
 
 
-* code =  $snomed#701595007
+* code =  $snomed#16965008
 * code ^definition = "Observación de balón en perfusión"
 * value[x] only CodeableConcept 
 * value[x] from BallonCounterpulsationVS   
-
-
 
 
 * focus only Reference(PerfusionProcedure)

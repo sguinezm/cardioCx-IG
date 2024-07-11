@@ -9,7 +9,7 @@ Description: "Observación en la se que define el tipo de sangre del paciente co
 
 Title: "BloodTypeObservation"
 
-* code only CodeableConcept
+
 * code = $loinc#882-1
 * code MS
 * code ^short = "Blood type"

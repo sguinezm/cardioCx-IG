@@ -41,7 +41,7 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PatientSection].entry ^slicing.discriminator.path = "resolve()"
 * section[PatientSection].entry ^slicing.rules = #open
 * section[PatientSection].entry 3..*
-* section[PatientSection].entry contains ageObservation 1..1 and
+* section[PatientSection].entry contains 
                                         bodyheightObservation 1..1 and
                                         bodyweightObservation 1..1 and
                                         bloodTypeObservation 0..1 and 
@@ -59,8 +59,6 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
                                         SmokingHistory 1..1
 
 
-* section[PatientSection].entry[ageObservation] only Reference(Observation)
-* section[PatientSection].entry[ageObservation] ^short = "Referencia  al recurso que contiene la observación de la edad del paciente"
 * section[PatientSection].entry[bodyheightObservation] only Reference($observation-bodyheight)
 * section[PatientSection].entry[bodyheightObservation] ^short = "Referencia  al recurso que contiene la observación de altura del paciente"
 * section[PatientSection].entry[bodyweightObservation] only Reference($observation-bodyweight)

@@ -413,7 +413,7 @@ Description: "Canulación arterial"
 * #3 "Femoral"
 * #4 "Subde"
 * #5 "Other"
-* #6 "Other value"
+
 
 CodeSystem: NativeValvePathologyCS
 Id: NativeValvePathologyCS

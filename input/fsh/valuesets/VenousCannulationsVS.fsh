@@ -17,4 +17,4 @@ Description: "Códigos para la canulación venosa"
 * $snomed#787588007 "Bicava "
 * $snomed#83419000 "Femoral"
 * $snomed#74964007 "Other"
-* $snomed#362981000 "Other value"
+

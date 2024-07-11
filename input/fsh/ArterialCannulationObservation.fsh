@@ -20,7 +20,10 @@ Title: "ArterialCannulation"
 * code.coding[arterialCannulation].system = $snomed
 * code.coding[arterialCannulation].code = $snomed#233549000
 * code.coding[arterialCannulation].code ^definition = "arterial cannulation"
+* value[x] only CodeableConcept 
 * value[x] from ArterialCannulationsVS
+* value[x].text 0..1 MS 
+* value[x].text ^short = "Indicar valor cuando el concepto del valueset utilizado es other value"
 
 
 

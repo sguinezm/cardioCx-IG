@@ -13,7 +13,7 @@ Description: "Códigos para la perfusión"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* $snomed#260413007 "none"
+* $snomed#260413007 "None"
 * $snomed#233573008  "Extracorporeal membrane oxygenation"
 * $snomed#14414005 "Peripheral"
 * $snomed#26216008  "Central"

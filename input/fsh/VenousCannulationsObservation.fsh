@@ -21,8 +21,12 @@ Title: "VenousCannulationsObservation"
 * code.coding[venousCannulations].system = $snomed
 * code.coding[venousCannulations].code = $snomed#392231009 
 * code.coding[venousCannulations].code ^definition = "venous cannulations"
-* value[x] from VenousCannulationsVS
 
+
+* value[x] only CodeableConcept
+* value[x] from VenousCannulationsVS
+* value[x].text 0..1 MS 
+* value[x].text ^short = "Indicar valor cuando el concepto del valueset utilizado es other value"
 
 
 
