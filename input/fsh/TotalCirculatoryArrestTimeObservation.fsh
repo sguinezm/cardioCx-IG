@@ -20,7 +20,6 @@ Title: "TotalCirculatoryArrestTimeObservation"
 * code.coding[TotalCirculatoryArrestTimeObservation].system = $snomed 
 * code.coding[TotalCirculatoryArrestTimeObservation].code = $snomed#698828003 
 * code.coding[TotalCirculatoryArrestTimeObservation].code ^short = "Time of procedure"
-* value[x] from TotalCirculatoryArrestTimeObservationVS
 * value[x] only integer
 
 * focus only Reference(PerfusionProcedure)

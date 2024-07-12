@@ -265,11 +265,11 @@ Description: "Categorización del tipo de enfermedad"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #371632003 "coma (trastorno)"
-* #230690007 "accidente cerebrovascular (trastorno)"
-* #36179005 "síndrome de déficit neurológico isquémico reversible (trastorno)"
-* #266257000 "ataque isquémico transitorio (trastorno)"
-* #415582006 "estenosis (anomalía morfológica)"
+* #371632003 "coma"
+* #230690007 "Cerebrovascular accident"
+* #36179005 "Reversible ischemic neurologic deficit syndrome"
+* #266257000 "Transient ischemic attack (disorder)"
+* #415582006 "Stenosis"
 
 CodeSystem: NumberDiseasedCoronarySegmentsCS
 Id: NumberDiseasedCoronarySegmentsCS
