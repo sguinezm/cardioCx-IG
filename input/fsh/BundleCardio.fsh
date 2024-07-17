@@ -40,9 +40,11 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  questionarioProcedimiento 0..1 and 
                  questionarioOtroProcedimiento 0..1 and 
                  rolProfesional 0..1 and 
-                 profesionalCardio 0..1 and 
-                 rolSegundoProfesional 0..1 
-
+                 profesionalCardio 1..1 and 
+                 rolSegundoProfesional 0..1 and 
+                 rolTercerProfesional 0..1 and
+                 rolPerfusionista 0..1 and 
+                 rolAnestesista 0..1
                  /**
                  cirujano 1..1 and 
                  capacidadFuncional 1..1 and 
@@ -142,11 +144,28 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
 * entry[profesionalCardio] ^short = "Profesional"
 * entry[profesionalCardio].resource only PractitionerRoleCardio
-* entry[profesionalCardio].resource ^short = "Detalles del profesional" 
+* entry[profesionalCardio].resource ^short = "Rol primer profesional" 
 
 * entry[rolSegundoProfesional] ^short = "Rol de segundo profesional"
 * entry[rolSegundoProfesional].resource only PractitionerRoleCardio
 * entry[rolSegundoProfesional].resource ^short = "Rol de segundo profesional" 
+
+* entry[rolTercerProfesional] ^short = "Rol de tercer profesional"
+* entry[rolTercerProfesional].resource only PractitionerRoleCardio
+* entry[rolTercerProfesional].resource ^short = "Rol de tercer profesional" 
+
+* entry[rolPerfusionista] ^short = "Perfusionista"
+* entry[rolPerfusionista].resource only PractitionerRoleCardio
+* entry[rolPerfusionista].resource ^short = "Perfusionista" 
+
+
+* entry[rolAnestesista] ^short = "Anestesista"
+* entry[rolAnestesista].resource only PractitionerRoleCardio
+* entry[rolAnestesista].resource ^short = "Anestesista" 
+
+
+
+ 
 
 /*
 * entry[cirujano] ^short = "Profesionales"
