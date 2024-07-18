@@ -39,20 +39,19 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  tipoMuerte 0..1 and
                  questionarioProcedimiento 0..1 and 
                  questionarioOtroProcedimiento 0..1 and 
-                 rolProfesional 0..1 and 
-                 profesionalCardio 1..1 and 
-                 rolSegundoProfesional 0..1 and 
-                 rolTercerProfesional 0..1 and
-                 rolPerfusionista 0..1 and 
-                 rolAnestesista 0..1 and 
-                 procedimientoCardio 0..1
-                 /**
-                 cirujano 1..1 and 
-                 capacidadFuncional 1..1 and 
+                 rolProfesional 3..5 and 
+                 procedimientoCardio 0..1 and 
+                 angina 0..1 and 
+                 capacidadFuncional 0..1 and 
                  infarto 0..1 and 
                  infartoReciente 0..1 and 
                  insuficienciaCardíacaCongestiva 0..1 and 
-                 angioplastiaPrevia 0..1 and 
+                 ultimaCateterizacion 0..1 and 
+                 segmentosMuertos 0..1
+                 /**
+              
+        
+            
                  cirugiasCardiacasPrevias 0..1 and 
                  fechaUltimaAngioplastia 0..1 and 
                  fechaUltimaCirugiaCardiaca 0..1 and 
@@ -62,10 +61,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  disfuncionNeurologica 0..1 and 
                   
                  packsAnual 0..1 and 
-                 and 
-                 angina 0..1 and 
-                 and 
-                 ultimaCateterizacion 0..1 */
+                
+                */
     
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -143,37 +140,14 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[rolProfesional].resource only PractitionerRoleCardio
 * entry[rolProfesional].resource ^short = "Se indica el Rol de profesional" 
 
-* entry[profesionalCardio] ^short = "Profesional"
-* entry[profesionalCardio].resource only PractitionerRoleCardio
-* entry[profesionalCardio].resource ^short = "Se indica el rol del primer profesional" 
-
-* entry[rolSegundoProfesional] ^short = "Rol de segundo profesional"
-* entry[rolSegundoProfesional].resource only PractitionerRoleCardio
-* entry[rolSegundoProfesional].resource ^short = "Se indica el rol del segundo profesional" 
-
-* entry[rolTercerProfesional] ^short = "Rol de tercer profesional"
-* entry[rolTercerProfesional].resource only PractitionerRoleCardio
-* entry[rolTercerProfesional].resource ^short = "Se indica el rol del tercer profesional" 
-
-* entry[rolPerfusionista] ^short = "Perfusionista"
-* entry[rolPerfusionista].resource only PractitionerRoleCardio
-* entry[rolPerfusionista].resource ^short = "Se indica el rol del Perfusionista" 
-
-
-* entry[rolAnestesista] ^short = "Anestesista"
-* entry[rolAnestesista].resource only PractitionerRoleCardio
-* entry[rolAnestesista].resource ^short = "Se indica el rol del Anestesista" 
-
 * entry[procedimientoCardio] ^short = "Procedimiento cardio"
 * entry[procedimientoCardio].resource only ProcedureCardio
 * entry[procedimientoCardio].resource ^short = "Se indica el Procedimiento cardio" 
 
  
-
-/*
-* entry[cirujano] ^short = "Profesionales"
-* entry[cirujano].resource only PractitionerCardio
-* entry[cirujano].resource ^short = "Se detallan los profesionales que realizarán la cirugía"
+* entry[angina] ^short = "Angina"
+* entry[angina].resource only AnginaObservation
+* entry[angina].resource ^short = "Se indica la observación de angina en el paciente"   
 
 * entry[capacidadFuncional] ^short = "Capacidad funcional"
 * entry[capacidadFuncional].resource only FunctionalCapacityObservation
@@ -191,6 +165,35 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[insuficienciaCardíacaCongestiva].resource only CongestiveHeartFailureObservation
 * entry[insuficienciaCardíacaCongestiva].resource ^short = "Se indica si el paciente ha sufrido una insuficiencia cardíaca congestiva"
 
+
+* entry[ultimaCateterizacion] ^short = "ultima Cateterizacion"
+* entry[ultimaCateterizacion].resource only LastCatheterizationObservation
+* entry[ultimaCateterizacion].resource ^short = "ultima Cateterizacion"  
+
+
+* entry[segmentosMuertos] ^short = "Segmentos coronarios muertos"
+* entry[segmentosMuertos].resource only DiseasedCoronarySegmentObservation
+* entry[segmentosMuertos].resource ^short = "Se indica si tuvo segmentos coronarios muertos"  
+
+
+
+
+
+
+
+
+/*
+* entry[cirujano] ^short = "Profesionales"
+* entry[cirujano].resource only PractitionerCardio
+* entry[cirujano].resource ^short = "Se detallan los profesionales que realizarán la cirugía"
+
+
+
+
+
+
+
+
 * entry[historialFumador] ^short = "Historial fumador de la persona"
 * entry[historialFumador].resource only SmokingCondition
 * entry[historialFumador].resource ^short = "Se indica el historial fumador de la persona"
@@ -207,14 +210,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
   
 
-* entry[angina] ^short = "Angina"
-* entry[angina].resource only AnginaObservation
-* entry[angina].resource ^short = "Se indica la observación de angina en el paciente"   
  
-
-* entry[ultimaCateterizacion] ^short = "ultima Cateterizacion"
-* entry[ultimaCateterizacion].resource only LastCatheterizationObservation
-* entry[ultimaCateterizacion].resource ^short = "ultima Cateterizacion"   
+ 
 
 
 
