@@ -44,7 +44,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  rolSegundoProfesional 0..1 and 
                  rolTercerProfesional 0..1 and
                  rolPerfusionista 0..1 and 
-                 rolAnestesista 0..1
+                 rolAnestesista 0..1 and 
+                 procedimientoCardio 0..1
                  /**
                  cirujano 1..1 and 
                  capacidadFuncional 1..1 and 
@@ -140,30 +141,32 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
 * entry[rolProfesional] ^short = "Rol de profesional"
 * entry[rolProfesional].resource only PractitionerRoleCardio
-* entry[rolProfesional].resource ^short = "Rol de profesional" 
+* entry[rolProfesional].resource ^short = "Se indica el Rol de profesional" 
 
 * entry[profesionalCardio] ^short = "Profesional"
 * entry[profesionalCardio].resource only PractitionerRoleCardio
-* entry[profesionalCardio].resource ^short = "Rol primer profesional" 
+* entry[profesionalCardio].resource ^short = "Se indica el rol del primer profesional" 
 
 * entry[rolSegundoProfesional] ^short = "Rol de segundo profesional"
 * entry[rolSegundoProfesional].resource only PractitionerRoleCardio
-* entry[rolSegundoProfesional].resource ^short = "Rol de segundo profesional" 
+* entry[rolSegundoProfesional].resource ^short = "Se indica el rol del segundo profesional" 
 
 * entry[rolTercerProfesional] ^short = "Rol de tercer profesional"
 * entry[rolTercerProfesional].resource only PractitionerRoleCardio
-* entry[rolTercerProfesional].resource ^short = "Rol de tercer profesional" 
+* entry[rolTercerProfesional].resource ^short = "Se indica el rol del tercer profesional" 
 
 * entry[rolPerfusionista] ^short = "Perfusionista"
 * entry[rolPerfusionista].resource only PractitionerRoleCardio
-* entry[rolPerfusionista].resource ^short = "Perfusionista" 
+* entry[rolPerfusionista].resource ^short = "Se indica el rol del Perfusionista" 
 
 
 * entry[rolAnestesista] ^short = "Anestesista"
 * entry[rolAnestesista].resource only PractitionerRoleCardio
-* entry[rolAnestesista].resource ^short = "Anestesista" 
+* entry[rolAnestesista].resource ^short = "Se indica el rol del Anestesista" 
 
-
+* entry[procedimientoCardio] ^short = "Procedimiento cardio"
+* entry[procedimientoCardio].resource only ProcedureCardio
+* entry[procedimientoCardio].resource ^short = "Se indica el Procedimiento cardio" 
 
  
 
