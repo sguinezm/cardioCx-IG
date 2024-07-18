@@ -50,23 +50,10 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  segmentosMuertos 0..1 and 
                  fraccionEyeccion 0..1 and 
                  fraccionEyeccionValor 0..1 and 
-                 presionSistolica 0..1
-                 /**
-              
-        
-            
-                 cirugiasCardiacasPrevias 0..1 and 
-                 fechaUltimaAngioplastia 0..1 and 
-                 fechaUltimaCirugiaCardiaca 0..1 and 
-                 cirugiasPrevias 0..1 and 
-                 historialFumador 0..1 and 
-             
-                 disfuncionNeurologica 0..1 and 
-                  
-                 packsAnual 0..1 and 
-                
-                */
-    
+                 presionSistolica 0..1 and 
+                 gradienteAVG 0..1
+          
+               
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
 * entry[cardioComposition].resource ^short = "Descripcion DETALLADA , PRIMER RECURSO COMPOSITION"
@@ -189,5 +176,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
 * entry[presionSistolica] ^short = "Presión sistólica"
 * entry[presionSistolica].resource only SystolicPressureObservation
-* entry[presionSistolica].resource ^short = "Se indica la presión sistólica  
+* entry[presionSistolica].resource ^short = "Se indica la presión sistólica"
 
+* entry[gradienteAVG] ^short = "Gradiente AVG"
+* entry[gradienteAVG].resource only AVGradient
+* entry[gradienteAVG].resource ^short = "Se indica gradiente AVG"
