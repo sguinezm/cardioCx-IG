@@ -47,7 +47,10 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  infartoReciente 0..1 and 
                  insuficienciaCardíacaCongestiva 0..1 and 
                  ultimaCateterizacion 0..1 and 
-                 segmentosMuertos 0..1
+                 segmentosMuertos 0..1 and 
+                 fraccionEyeccion 0..1 and 
+                 fraccionEyeccionValor 0..1 and 
+                 presionSistolica 0..1
                  /**
               
         
@@ -176,43 +179,15 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[segmentosMuertos].resource ^short = "Se indica si tuvo segmentos coronarios muertos"  
 
 
+* entry[fraccionEyeccion] ^short = "Fracción de eyección"
+* entry[fraccionEyeccion].resource only EjectionFractionObservation
+* entry[fraccionEyeccion].resource ^short = "Se indica la fracción de eyección"  
 
+* entry[fraccionEyeccionValor] ^short = "Valor de fracción de eyección"
+* entry[fraccionEyeccionValor].resource only EjectionFractionValueObservation
+* entry[fraccionEyeccionValor].resource ^short = "Se indica el valor de la fracción de eyección"  
 
+* entry[presionSistolica] ^short = "Presión sistólica"
+* entry[presionSistolica].resource only SystolicPressureObservation
+* entry[presionSistolica].resource ^short = "Se indica la presión sistólica  
 
-
-
-
-/*
-* entry[cirujano] ^short = "Profesionales"
-* entry[cirujano].resource only PractitionerCardio
-* entry[cirujano].resource ^short = "Se detallan los profesionales que realizarán la cirugía"
-
-
-
-
-
-
-
-
-* entry[historialFumador] ^short = "Historial fumador de la persona"
-* entry[historialFumador].resource only SmokingCondition
-* entry[historialFumador].resource ^short = "Se indica el historial fumador de la persona"
-
-* entry[disfuncionNeurologica] ^short = "Disfunción Neurológica"
-* entry[disfuncionNeurologica].resource only NeurologicDisfunctionCondition
-* entry[disfuncionNeurologica].resource ^short = "Se indica si el paciente padece de alguna disfunción neurológica"
-
-
-* entry[packsAnual] ^short = "Packs de cigarros al año"
-* entry[packsAnual].resource only PacksPerYearObservation
-* entry[packsAnual].resource ^short = "Se indican los packs de cigarros al año"
-
-
-  
-
- 
- 
-
-
-
-*/
