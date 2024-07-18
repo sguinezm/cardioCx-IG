@@ -168,7 +168,7 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 
 * entry[ultimaCateterizacion] ^short = "ultima Cateterizacion"
 * entry[ultimaCateterizacion].resource only LastCatheterizationObservation
-* entry[ultimaCateterizacion].resource ^short = "ultima Cateterizacion"  
+* entry[ultimaCateterizacion].resource ^short = "Se indica la última Cateterizacion"  
 
 
 * entry[segmentosMuertos] ^short = "Segmentos coronarios muertos"
