@@ -51,7 +51,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  fraccionEyeccion 0..1 and 
                  fraccionEyeccionValor 0..1 and 
                  presionSistolica 0..1 and 
-                 gradienteAVG 0..1
+                 gradienteAVG 0..1 and 
+                 LVED 0..1 and 
+                 PWAP 0..1
           
                
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -181,3 +183,11 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[gradienteAVG] ^short = "Gradiente AVG"
 * entry[gradienteAVG].resource only AVGradient
 * entry[gradienteAVG].resource ^short = "Se indica gradiente AVG"
+
+* entry[LVED] ^short = "Presión de fin de diástole del ventrículo izquierdo"
+* entry[LVED].resource only AVGradient
+* entry[LVED].resource ^short = "Observación de la presión de fin de diástole del ventrículo izquierdo"
+
+* entry[PWAP] ^short = "presión de la aurícula izquierda (LA)"
+* entry[PWAP].resource only PAWPObservation
+* entry[PWAP].resource ^short = "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP)"
