@@ -3,7 +3,7 @@ Alias: $loinc = http://loinc.org
 
 Profile: PAWPObservation
 Parent: Observation
-Description: "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP) "
+Description: "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP)"
 
 Title: "PAWPObservation"
 

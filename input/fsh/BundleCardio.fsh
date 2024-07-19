@@ -53,8 +53,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  presionSistolica 0..1 and 
                  gradienteAVG 0..1 and 
                  LVED 0..1 and 
-                 PWAP 0..1
-          
+                 PWAP 0..1 and 
+                 numeroAnastomosisArteriales 0..1 and 
+                 numeroAnastomosisVenosa 0..1
                
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -191,3 +192,11 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[PWAP] ^short = "presión de la aurícula izquierda (LA)"
 * entry[PWAP].resource only PAWPObservation
 * entry[PWAP].resource ^short = "Medida de la presión de la aurícula izquierda (LA) o presión de enclavamiento capilar pulmonar (PAWP)"
+
+* entry[numeroAnastomosisArteriales] ^short = "Número de anastomosis arteriales distales"
+* entry[numeroAnastomosisArteriales].resource only NumberOfDistalArterialAnastomosesObservation
+* entry[numeroAnastomosisArteriales].resource ^short = "Se indica el número de anastomosis arteriales distales"
+
+* entry[numeroAnastomosisVenosa] ^short = "Número de anastomosis venosa distales"
+* entry[numeroAnastomosisVenosa].resource only NumberOfDistalVenousAnastomosesObservation
+* entry[numeroAnastomosisVenosa].resource ^short = "Se indica el número de anastomosis venosa distales"
