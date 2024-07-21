@@ -59,7 +59,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  arteriasUsadasConductos 0..1 and 
                  estenosis 0..1 and 
                  dispositivoValvula 0..1 and 
-                 endocarditisInfecciosa 0..1
+                 endocarditisInfecciosa 0..1 and 
+                 valvulaNativaPatologia 0..1 and 
+                 procedimientoValvula 0..1
                  
                
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -227,5 +229,19 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[endocarditisInfecciosa] ^short = "Endocarditis infecciosa"
 * entry[endocarditisInfecciosa].resource only EndocarditisInfecciosaObservation
 * entry[endocarditisInfecciosa].resource ^short = "Se indica si padece de endocarditis infecciosa"
+
+* entry[valvulaNativaPatologia] ^short = "Patología de válvula nativa"
+* entry[valvulaNativaPatologia].resource only NativeValvePathologyObservation
+* entry[valvulaNativaPatologia].resource ^short = "Se indica si tiene patología de válvula nativa"
+
+* entry[procedimientoValvula] ^short = "Procedimiento de válvula"
+* entry[procedimientoValvula].resource only ValveProcedure
+* entry[procedimientoValvula].resource ^short = "Se indica si se hace un procedimiento de válvula"
+
+
+
+
+
+
 
 
