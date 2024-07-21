@@ -64,7 +64,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  procedimientoValvula 0..1 and 
                  ecocardiograma 0..1 and 
                  ecocardiogramaProcedimiento 0..1 and 
-                 perfusionTemperatura 0..1
+                 perfusionTemperatura 0..1 and 
+                 solucionCardioplegia 0..1 and 
+                 temperatureCardioplegia 0..1
                  
                
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -248,7 +250,14 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[perfusionTemperatura].resource ^short = "Se indica detalles de temperatura de perfusión"
 
 
+* entry[solucionCardioplegia] ^short = "Solución Cardioplegía"
+* entry[solucionCardioplegia].resource only CardioplegiaInfusionModeObservation
+* entry[solucionCardioplegia].resource ^short = "Se indica detalles de la solución de cardioplegía"
 
+
+* entry[temperatureCardioplegia] ^short = "Temperatura de  Cardioplegía"
+* entry[temperatureCardioplegia].resource only CardioplegiaTemperatureObservation
+* entry[temperatureCardioplegia].resource ^short = "Se indica detalles de la temperatura de cardioplegía"
 
 
 
