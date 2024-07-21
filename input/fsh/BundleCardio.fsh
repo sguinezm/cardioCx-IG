@@ -62,7 +62,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  endocarditisInfecciosa 0..1 and 
                  valvulaNativaPatologia 0..1 and 
                  procedimientoValvula 0..1 and 
-                 ecocardiograma 0..1
+                 ecocardiograma 0..1 and 
+                 ecocardiogramaProcedimiento 0..1 and 
+                 perfusionTemperatura 0..1
                  
                
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -213,12 +215,6 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[arteriasUsadasConductos].resource only ArteriesUsedAsConduitsObservation
 * entry[arteriasUsadasConductos].resource ^short = "Se indica el número de arterias usadas como conductos"
 
-/*
-* entry[insuficienciaValvulas] ^short = "Número de válvulas con insuficiencia"
-* entry[insuficienciaValvulas].resource only ValveInsuficiencyExt
-* entry[insuficienciaValvulas].resource ^short = "Se indica el número de válvulas con insuficiencia"
-*/
-
 * entry[estenosis] ^short = "Estenosis"
 * entry[estenosis].resource only StenosisObservation
 * entry[estenosis].resource ^short = "Se indica la presencia de estenosis"
@@ -239,9 +235,17 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[procedimientoValvula].resource only ValveProcedure
 * entry[procedimientoValvula].resource ^short = "Se indica si se hace un procedimiento de válvula"
 
+* entry[ecocardiogramaProcedimiento] ^short = "Procedimiento ecocardiograma"
+* entry[ecocardiogramaProcedimiento].resource only EchocardiogramProcedure
+* entry[ecocardiogramaProcedimiento].resource ^short = "Se indica detalles del procedimiento de ecocardiograma"
+
 * entry[ecocardiograma] ^short = "Ecocardiograma"
 * entry[ecocardiograma].resource only EchocardiogramsObservation
 * entry[ecocardiograma].resource ^short = "Se indica detalles de ecocardiogramas"
+
+* entry[perfusionTemperatura] ^short = "Temperatura de perfusion"
+* entry[perfusionTemperatura].resource only PerfusionTemperatureObservation
+* entry[perfusionTemperatura].resource ^short = "Se indica detalles de temperatura de perfusión"
 
 
 
