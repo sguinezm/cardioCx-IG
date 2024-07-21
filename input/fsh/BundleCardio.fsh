@@ -55,7 +55,12 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  LVED 0..1 and 
                  PWAP 0..1 and 
                  numeroAnastomosisArteriales 0..1 and 
-                 numeroAnastomosisVenosa 0..1
+                 numeroAnastomosisVenosa 0..1 and
+                 arteriasUsadasConductos 0..1 and 
+                 estenosis 0..1 and 
+                 dispositivoValvula 0..1 and 
+                 endocarditisInfecciosa 0..1
+                 
                
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
 * entry[cardioComposition].resource only CompositionCardiocirugia
@@ -200,3 +205,27 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[numeroAnastomosisVenosa] ^short = "Número de anastomosis venosa distales"
 * entry[numeroAnastomosisVenosa].resource only NumberOfDistalVenousAnastomosesObservation
 * entry[numeroAnastomosisVenosa].resource ^short = "Se indica el número de anastomosis venosa distales"
+
+* entry[arteriasUsadasConductos] ^short = "Número de arterias usadas como conductos"
+* entry[arteriasUsadasConductos].resource only ArteriesUsedAsConduitsObservation
+* entry[arteriasUsadasConductos].resource ^short = "Se indica el número de arterias usadas como conductos"
+
+/*
+* entry[insuficienciaValvulas] ^short = "Número de válvulas con insuficiencia"
+* entry[insuficienciaValvulas].resource only ValveInsuficiencyExt
+* entry[insuficienciaValvulas].resource ^short = "Se indica el número de válvulas con insuficiencia"
+*/
+
+* entry[estenosis] ^short = "Estenosis"
+* entry[estenosis].resource only StenosisObservation
+* entry[estenosis].resource ^short = "Se indica la presencia de estenosis"
+
+* entry[dispositivoValvula] ^short = "Dispositivo en válvula"
+* entry[dispositivoValvula].resource only ValveDevice
+* entry[dispositivoValvula].resource ^short = "Se indica si tiene dispositivo en válvula"
+
+* entry[endocarditisInfecciosa] ^short = "Endocarditis infecciosa"
+* entry[endocarditisInfecciosa].resource only EndocarditisInfecciosaObservation
+* entry[endocarditisInfecciosa].resource ^short = "Se indica si padece de endocarditis infecciosa"
+
+
