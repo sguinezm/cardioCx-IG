@@ -61,7 +61,8 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  dispositivoValvula 0..1 and 
                  endocarditisInfecciosa 0..1 and 
                  valvulaNativaPatologia 0..1 and 
-                 procedimientoValvula 0..1
+                 procedimientoValvula 0..1 and 
+                 ecocardiograma 0..1
                  
                
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -238,7 +239,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[procedimientoValvula].resource only ValveProcedure
 * entry[procedimientoValvula].resource ^short = "Se indica si se hace un procedimiento de válvula"
 
-
+* entry[ecocardiograma] ^short = "Ecocardiograma"
+* entry[ecocardiograma].resource only EchocardiogramsObservation
+* entry[ecocardiograma].resource ^short = "Se indica detalles de ecocardiogramas"
 
 
 
