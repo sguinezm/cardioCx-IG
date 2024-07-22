@@ -67,7 +67,15 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  perfusionTemperatura 0..1 and 
                  solucionCardioplegia 0..1 and 
                  temperatureCardioplegia 0..1 and 
-                 ritmoCardioplegia 0..1
+                 ritmoCardioplegia 0..1 and 
+                 balonContrapulsacion 0..1 and 
+                 razonBalon 0..1 and 
+                 tiempoPerfusion 0..1 and 
+                 tiempoAcumulado 0..1 and
+                 tiempoTotal 0..1 and 
+                 canulacionArterial 0..1 and 
+                 canulacionVenosa 0..1 and 
+                 circulacionObservacion 0..1
                  
                
 * entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
@@ -264,3 +272,37 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
 * entry[ritmoCardioplegia] ^short = "Ritmo de  Cardioplegía"
 * entry[ritmoCardioplegia].resource only  CardioplegiaRhytmObservation
 * entry[ritmoCardioplegia].resource ^short = "Se indica detalles del ritmo de cardioplegía"
+
+
+* entry[balonContrapulsacion] ^short = "Balón de contrapulsación"
+* entry[balonContrapulsacion].resource only  BallonCounterpulsationObservation
+* entry[balonContrapulsacion].resource ^short = "Se indica detalles del balón de contrapulsación"
+
+
+* entry[razonBalon] ^short = "Razón de balón de contrapulsación"
+* entry[razonBalon].resource only ReasonBallonObservation
+* entry[razonBalon].resource ^short = "Se indica detalles de la razón de balón de contrapulsación"
+
+* entry[tiempoPerfusion] ^short = "Tiempo de perfusión"
+* entry[tiempoPerfusion].resource only ReasonBallonObservation
+* entry[tiempoPerfusion].resource ^short = "Se indica detalles del tiempo de perfusión"
+
+* entry[tiempoAcumulado] ^short = "Tiempo acumulado"
+* entry[tiempoAcumulado].resource only CumulativeCrossClampTimeObservation
+* entry[tiempoAcumulado].resource ^short = "Se indica detalles de tiempo acumulado"
+
+* entry[tiempoTotal] ^short = "Tiempo total"
+* entry[tiempoTotal].resource only TotalCirculatoryArrestTimeObservation
+* entry[tiempoTotal].resource ^short = "Se indica detalles de tiempo total"
+
+* entry[canulacionArterial] ^short = "Canulacion Arterial"
+* entry[canulacionArterial].resource only ArterialCannulationObservation
+* entry[canulacionArterial].resource ^short = "Se indica detalles de canulación arterial"
+
+* entry[canulacionVenosa] ^short = "Canulacion Venosa"
+* entry[canulacionVenosa].resource only VenousCannulationsObservation
+* entry[canulacionVenosa].resource ^short = "Se indica detalles de canulación venosa"
+
+* entry[circulacionObservacion] ^short = "Circulación"
+* entry[circulacionObservacion].resource only CirculatoryObservation
+* entry[circulacionObservacion].resource ^short = "Se indica detalles de la circulación"
