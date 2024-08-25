@@ -78,9 +78,9 @@ Description: "Recurso que permite compartir la información de cirugia compleja.
                  circulacionObservacion 0..1
                  
                
-* entry[cardioComposition] ^short = "Entrada en el Bundle: contendrá un recurso cardioComposition"
+* entry[cardioComposition] ^short = "Registro de operación de Cardiocirugia"
 * entry[cardioComposition].resource only CompositionCardiocirugia
-* entry[cardioComposition].resource ^short = "Descripcion DETALLADA , PRIMER RECURSO COMPOSITION"
+* entry[cardioComposition].resource ^short = "Registro de operación de Cardiocirugia"
 
 * entry[paciente] ^short = "Paciente"
 * entry[paciente].resource only PatientCardio
